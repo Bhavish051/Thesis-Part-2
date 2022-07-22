@@ -1,5 +1,5 @@
-from numpy import block
 import requests
+import json
 
 # exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
 
@@ -46,10 +46,46 @@ transactionInfo = requests.request("GET", txUrl, headers=txHeaders, data=payload
 
 address = str(transactionInfo["out"][0]["addr"])
 
-addressUrl = "https://blockchain.info/rawaddr/" + address
+print(address)
 
+
+addressUrl = "https://blockchain.info/rawaddr/" + address
 
 
 addressHeaders = {
     
 }
+
+addressData = requests.request("GET", addressUrl, headers=addressHeaders, data=payload).json()
+
+print(float(addressData["final_balance"])/100000000)
+
+fileName = "./data/" + str(address) + ".json"
+
+
+
+bitcoinAbuseUrl = "https://www.bitcoinabuse.com/api/reports/check"
+
+abuseDBParams = {
+    'address' : address,
+    'api_token' : 'AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW'
+}
+
+isAbuseAddress = requests.request("GET", bitcoinAbuseUrl, params=abuseDBParams, headers=addressHeaders, data=payload).json()
+
+# print(isAbuseAddress)
+addressData.update(isAbuseAddress)
+
+isMaliciousAddress = {"isMaliciousAddress" , isAbuseAddress["count"] > 0 }
+
+print(isMaliciousAddress)
+
+
+
+deanonymizationUrls = ["", ""]
+
+
+jsonString = json.dumps(addressData, indent=4)
+jsonFile = open(fileName, "w")
+jsonFile.write(jsonString)
+jsonFile.close()
