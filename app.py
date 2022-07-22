@@ -1,7 +1,19 @@
+import re
 import requests
 import json
 
 # exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
+
+
+
+def extractTransactions(data) :
+    result = []
+    for x in data["txs"]:
+        for y in x["out"]:
+            if(y.__contains__("addr")):
+                if(y["addr"] is not None):
+                    result.append(y["addr"])
+    return result
 
 payload={}
 # exchangeHeaders = {
@@ -82,8 +94,14 @@ print(isMaliciousAddress)
 
 
 
+# Known Address like BTC ATM
+# Probably filter through all the transaction addresses and then see if any is either malicious or known
+
 deanonymizationUrls = ["", ""]
 
+interactedAddresses = extractTransactions(addressData)
+
+print(interactedAddresses)
 
 jsonString = json.dumps(addressData, indent=4)
 jsonFile = open(fileName, "w")
