@@ -1,8 +1,11 @@
 import re
 import requests
 import json
+import csv
 
-# exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
+blockUrl = "https://blockchain.info/latestblock"
+exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
+bitcoinAbuseUrl = "https://www.bitcoinabuse.com/api/reports/check"
 
 
 
@@ -15,7 +18,10 @@ def extractTransactions(data) :
                     result.append(y["addr"])
     return result
 
+    
+
 payload={}
+
 # exchangeHeaders = {
 #   'X-CoinAPI-Key': 'AB56A202-FE3F-4007-AFDB-28BF268BB3DA',
 #   'Accept': 'application/json',
@@ -26,8 +32,6 @@ payload={}
 
 # print(exhanges.text)
 
-
-blockUrl = "https://blockchain.info/latestblock"
 
 blockHeaders = {
     
@@ -58,7 +62,7 @@ transactionInfo = requests.request("GET", txUrl, headers=txHeaders, data=payload
 
 address = str(transactionInfo["out"][0]["addr"])
 
-print(address)
+# print(address)
 
 
 addressUrl = "https://blockchain.info/rawaddr/" + address
@@ -70,13 +74,12 @@ addressHeaders = {
 
 addressData = requests.request("GET", addressUrl, headers=addressHeaders, data=payload).json()
 
-print(float(addressData["final_balance"])/100000000)
+# print(float(addressData["final_balance"])/100000000)
 
 fileName = "./data/" + str(address) + ".json"
 
 
 
-bitcoinAbuseUrl = "https://www.bitcoinabuse.com/api/reports/check"
 
 abuseDBParams = {
     'address' : address,
@@ -90,18 +93,56 @@ addressData.update(isAbuseAddress)
 
 isMaliciousAddress = {"isMaliciousAddress" , isAbuseAddress["count"] > 0 }
 
-print(isMaliciousAddress)
-
-
+# print(isMaliciousAddress)
 
 # Known Address like BTC ATM
 # Probably filter through all the transaction addresses and then see if any is either malicious or known
 
-deanonymizationUrls = ["", ""]
+# deanonymizationUrls = ["", ""]
 
 interactedAddresses = extractTransactions(addressData)
 
-print(interactedAddresses)
+# def checkIfIteractedWithAbuseAddress(data) :
+#     print(len(data))
+#     i = 0
+#     for x in data :
+#         res = []
+#         result =requests.request("GET", bitcoinAbuseUrl, 
+#                                  params={
+#                                     'address':x,
+#                                     'api_token' : 'AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW'
+#         }, headers=addressHeaders, data=payload).json()
+#         i = i + 1
+#         print(i)
+#         print(result)
+#         res.append(result)
+#     return res
+
+# hasInteractedWithAbuseAddress = checkIfIteractedWithAbuseAddress(interactedAddresses)
+
+abuseDBReportURL = "https://www.bitcoinabuse.com/api/download/"
+
+def downloadFullAbuseDBReport() :
+    res = requests.request("GET", abuseDBReportURL, params={
+            'time_period':'forever',
+            'api_token' : 'AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW'
+        }, headers=addressHeaders, data=payload)    
+    f = open("./reports/abuseDBReport.csv", "w")
+    writer = csv.writer(f)
+    writer.writerows(res)
+    f.close()
+
+downloadFullAbuseDBReport()
+
+hasInteractedWithAbuseAddress = True
+
+jS = json.dumps(hasInteractedWithAbuseAddress, indent=4)
+jF = open("interaction.json", "w")
+jF.write(jS)
+jF.close()
+
+# print(interactedAddresses)
+# print(hasInteractedWithAbuseAddress)
 
 jsonString = json.dumps(addressData, indent=4)
 jsonFile = open(fileName, "w")
