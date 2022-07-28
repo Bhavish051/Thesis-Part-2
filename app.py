@@ -6,8 +6,7 @@ import csv
 blockUrl = "https://blockchain.info/latestblock"
 exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
 bitcoinAbuseUrl = "https://www.bitcoinabuse.com/api/reports/check"
-
-
+bitcoinWhoSWhoUrl = ""
 
 def extractTransactions(data) :
     result = []
@@ -17,8 +16,6 @@ def extractTransactions(data) :
                 if(y["addr"] is not None):
                     result.append(y["addr"])
     return result
-
-    
 
 payload={}
 
@@ -64,9 +61,7 @@ address = str(transactionInfo["out"][0]["addr"])
 
 # print(address)
 
-
 addressUrl = "https://blockchain.info/rawaddr/" + address
-
 
 addressHeaders = {
     
@@ -77,9 +72,6 @@ addressData = requests.request("GET", addressUrl, headers=addressHeaders, data=p
 # print(float(addressData["final_balance"])/100000000)
 
 fileName = "./data/" + str(address) + ".json"
-
-
-
 
 abuseDBParams = {
     'address' : address,
@@ -120,26 +112,27 @@ interactedAddresses = extractTransactions(addressData)
 
 # hasInteractedWithAbuseAddress = checkIfIteractedWithAbuseAddress(interactedAddresses)
 
-abuseDBReportURL = "https://www.bitcoinabuse.com/api/download/"
+abuseDBReportURL = "https://www.bitcoinabuse.com/api/download/30d"
 
-def downloadFullAbuseDBReport() :
-    res = requests.request("GET", abuseDBReportURL, params={
-            'time_period':'forever',
-            'api_token' : 'AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW'
-        }, headers=addressHeaders, data=payload)    
-    f = open("./reports/abuseDBReport.csv", "w")
-    writer = csv.writer(f)
-    writer.writerows(res)
-    f.close()
+# def downloadFullAbuseDBReport() :
+#     res = requests.request("GET", abuseDBReportURL, params={
+#             'time_period' : '30d',
+#             'api_token' : 'AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW'
+#         }, headers=addressHeaders, data=payload)
+#     print(res)
+#     f = open("./reports/abuseDBReport.csv", "w")
+#     writer = csv.writer(f)
+#     writer.writerows(res)
+#     f.close()
 
-downloadFullAbuseDBReport()
+# downloadFullAbuseDBReport()
 
-hasInteractedWithAbuseAddress = True
+# hasInteractedWithAbuseAddress = True
 
-jS = json.dumps(hasInteractedWithAbuseAddress, indent=4)
-jF = open("interaction.json", "w")
-jF.write(jS)
-jF.close()
+# jS = json.dumps(hasInteractedWithAbuseAddress, indent=4)
+# jF = open("interaction.json", "w")
+# jF.write(jS)
+# jF.close()
 
 # print(interactedAddresses)
 # print(hasInteractedWithAbuseAddress)
