@@ -1,0 +1,197 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\newcommand\myworries[1]{\textcolor{red}{#1}}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{codestyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    breaklines=true,
+    numbers=left,
+}
+
+\lstset{style=codestyle}
+
+\pagestyle{headings}
+\begin{document}
+\begin{titlepage}
+\title{Logbook Session 2 2022 {\\ Tracking Malicious Transactions in CryptoCurrencies}}
+\author{Bhavish Dhanda}
+\end{titlepage}
+\maketitle
+\begin{center}
+    \includegraphics[width=0.7\linewidth]{logo.jpg}\\[4ex]
+    Department of Computing and Engineering\\
+    Macquarie University\\
+    Australia
+\end{center}
+\pagebreak
+\tableofcontents
+\pagebreak
+
+
+\maketitle
+
+\section{July}
+    \subsection{1 July 2022}
+       
+        https://www.google.com/search?client=safari&rls=en&q=graph+attention+neural+networks&ie=UTF-8&oe=UTF-8
+    
+    \subsection{5 July 2022}
+        
+        Start data collection, most importantly ground truth data 
+        
+        https://www.kaggle.com/datasets/ellipticco/elliptic-data-set?resource=download
+        
+        Kaggle Dataset: Labelled dataset
+
+    \subsection{6 July 2022}
+       
+        Meeting
+            
+            Instead of working ML algo, take that Elliptic data and extract data about the node/ address -> then build it into a complete system, 
+            
+            Ethics -> Public Sources of Information -> to base that 
+            
+            Statistics -> About the malicious addresses, how persistent, 
+            
+            Find a way to see 
+            
+            Look at Elliptic data set paper on how they made the features
+            
+            Find a way to see if I can pass the list of transactions that went through a node, -> 
+            
+            https://www.kaggle.com/datasets/alexbenzik/deanonymized-995-pct-of-elliptic-transactions
+            
+            Check what they mean by deanonymization in this paper ^^^
+            
+            What Information this website like Bitcoinwhoiswho
+            
+
+
+    \subsection{9 July 2022}
+        
+        Papers related to the Kaggle DataSet
+        
+        https://habr.com/ru/post/479178/ -> Paper from the DataSet Author
+        
+    \subsection{14 July 2022}
+        
+        Papers from PETS Conference : 1C : Thursday : Blockchain would be useful
+        Maybe 4C : ML and Crypto : 
+        
+        PETS 
+        7B.1
+        How to prove any NP statement jointly? Efficient Distributed-prover Zero-Knowledge Protocols 
+        Proof of Assets
+        
+        
+        https://www.google.com/search?client=safari&rls=en&q=trace+transaction+propagation+through+BTC+Netwoerk&ie=UTF-8&oe=UTF-8
+        
+        https://www.researchgate.net/figure/Transaction-propagation-time-in-real-Bitcoin-network_fig3_303183824
+        
+
+    \subsection{16 July 2022}
+        
+        https://petsymposium.org/2022/files/papers/issue3/popets-2022-0091.pdf
+        
+        Paper from PET Symposium\cite{deuber2022sok} 
+
+    \subsection{18 July 2022}
+        
+        https://petsymposium.org/2022/files/papers/issue1/popets-2022-0022.pdf
+        
+        A very good example to showcase how to overcome ethical dellima issues. 
+        
+        
+    \subsection{19 July 2022}
+        
+        https://petsymposium.org/2022/files/papers/issue1/popets-2022-0022.pdf
+        
+        A very good job in terms of deanonimyzation but the issue it they only evaluated 2 dark web markets and their approach relies on the customer to leave a review for the vendor they purchase from. If a vendor doesnt have any review their approach would fail. There are a lot of dependencies on their research as their approach relies on how the market operates, how they process payments, them supporting review being the biggest one, do they give out the order amount in reviews, to what precision do they show the timestamp on reviews.
+        
+        https://www.usenix.org/system/files/sec19-yousaf_0.pdf
+        These guys work on cross-currency trading activities to see where is the limit of traceabiliy for these types of transactions. 
+    
+    
+    \subsection{20 July 2022}
+
+        What can BTC ATMs give us
+        
+        My real world case to identify the transaction I made on the BTC atm to point out the ATM address and then moving on see how the addresses connected to it behave.
+        
+        https://www.blockchain.com/btc/address/3P5YLy91WzjCsgnwZNPe4a8CRGGznDefiG
+        
+        https://coinatmradar.com/operator/72/cryptolink-bitcoin-atm-operator/
+        
+        Yeah These Bitcoin ATMs could be a good opportunity
+        
+        Get the service to hunt for addresses ready and probably try to identify the BTC address of the BTC atm. 
+        
+    \subsection{22 July 2022}
+        https://www.usenix.org/system/files/sec19-yousaf_0.pdf
+        
+        Worked in cross currency transcations to see how can we track when used moved from one currency to another. Although they only worked on one platform Shapeshit this can be extended depending on the APIs available to other platforms as well. 
+        Build the service to take in an address and output all the information related to the address
+        \textbf{Blockchain.info apply 8 decimal places to all the balances}
+        Bitcoinwhoiswho API key applied
+        Bitcoinabuse API Key: AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW
+        
+        
+    \subsection{24/23 July 2022}
+        Swordphish.io API This website provides data about site including IP and related information. If I an see that a particular address appeared on a particular website then I can look through APIs like this to trace and see details about the website. Usually domain names have a lot of information tied to them like registrar details which would be the target we are after, IP address amazing for tracing location or even if we can see where it is hosted like the service or the location then the local authorities would be able to get hold of that information. 
+         
+    \subsection{27 July 2022}
+        Meeting:
+            Why have they not used an approach like what I am doing to identify the data about addresses.
+            Analyse the information given by the online sources, all the sources collective what sort of information I can find. 
+            Beautiful Soup to parse the html
+            https://www.google.com/search?q=selenium+tool&client=safari&rls=en&ei=2ojgYs2LIJiE3LUP7viZ4As&ved=0ahUKEwjN4OGB6pf5AhUYArcAHW58BrwQ4dUDCA0&uact=5&oq=selenium+tool&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEdKBAhBGABKBAhGGABQgwVYxfIDYPrzA2gAcAJ4AIABAIgBAJIBAJgBAKABAcgBCMABAQ&sclient=gws-wiz
+            
+            Geolocation, Interactions with other addresses,  => 
+            
+        \subsection{28 July 2022}
+            BitcoinWhoIsWhoData: 
+                1. Number of website appearances
+                2. Balance
+                3. Scam Alerts
+                4. Website Appearances
+                
+        \subsection{30 July 2022}
+            The website apperances is like where these people posted for scams, 
+            
+            https://www.bitrocket.co/locations/nsw/sydney/cbd/LiverpoolSt-BitcoinATM/ 
+            Very interestingly this ATM doesn't accept cards. The easiest way to make money totally untraceable. 
+            
+            Remember to write about finding about a originator through network monitoring
+            
+            
+            https://www.blockonomics.co/#/search?q=16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg 
+            Tells Pending Transactions as well
+            
+            walletExplorer-> Put in the transaction and it will give the related wallet Not sure if API returns that
+            
+            https://hashxp.org/address/16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg
+            
+            Good Detail about the scams see 2 attached files at hashxp and btcwhoSwho 
+            
+            Now the issue is getting the IP is EXTREMELY DIFFICULT AND RARE. Even if I do I believe there is an extremely high chance that the person is already caught by the authorities. I mean why would they just leave that there and not catch him why they have literally all they need readily available. 
+            
+            The trick is to get closer to the ones whos information is NOT KNOWN. Idea is to start with a few known addresses and then see what information I can find and see if I can link my known address to the address in question and then draw suspicion from there depending on what is known.
+            
+            Meeting log different this time, make sure to update Hassan on this, I need to fill in myself.
+
+\pagebreak
+\bibliographystyle{ieeetr}
+\bibliography{citation} 
+\end{document}
