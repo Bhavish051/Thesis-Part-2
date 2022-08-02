@@ -1,3 +1,5 @@
+from audioop import add
+from os import PRIO_USER
 import re
 import requests
 import json
@@ -10,11 +12,14 @@ bitcoinWhoSWhoUrl = ""
 
 def extractTransactions(data) :
     result = []
-    for x in data["txs"]:
-        for y in x["out"]:
-            if(y.__contains__("addr")):
-                if(y["addr"] is not None):
-                    result.append(y["addr"])
+    if (data.__contains__("txs")):
+        for x in data["txs"]:
+            for y in x["out"]:
+                if(y.__contains__("addr")):
+                    if(y["addr"] is not None):
+                        result.append(y["addr"])
+    else :
+        print("no data found for the given address")
     return result
 
 payload={}
@@ -58,6 +63,15 @@ transactionInfo = requests.request("GET", txUrl, headers=txHeaders, data=payload
 # print(transactionInfo["out"][0]["addr"])
 
 address = str(transactionInfo["out"][0]["addr"])
+
+# print(address)
+
+addressFromUser = input("What is the address you want to check? \n")
+
+# print(addressFromUser)
+
+if(addressFromUser is not None):
+    address = addressFromUser
 
 # print(address)
 
@@ -136,7 +150,10 @@ abuseDBReportURL = "https://www.bitcoinabuse.com/api/download/30d"
 
 # print(interactedAddresses)
 # print(hasInteractedWithAbuseAddress)
-
+if (addressData.__contains__(addressData["message"])) :
+    if (addressData["message"].__eq__("Item not found or argument invalid")) :
+        print("No Data")    
+print(addressData)
 jsonString = json.dumps(addressData, indent=4)
 jsonFile = open(fileName, "w")
 jsonFile.write(jsonString)
