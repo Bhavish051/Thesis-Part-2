@@ -1,9 +1,7 @@
-from audioop import add
-from os import PRIO_USER
-import re
 import requests
 import json
-import csv
+
+knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like BTC atms and stuff otherwise will need to spend an entire day just to go around sydney and get BTC ATMs Addresses
 
 blockUrl = "https://blockchain.info/latestblock"
 exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
@@ -150,9 +148,11 @@ abuseDBReportURL = "https://www.bitcoinabuse.com/api/download/30d"
 
 # print(interactedAddresses)
 # print(hasInteractedWithAbuseAddress)
-if (addressData.__contains__(addressData["message"])) :
+
+if (addressData.__contains__("message")) :
     if (addressData["message"].__eq__("Item not found or argument invalid")) :
         print("No Data")    
+        
 print(addressData)
 jsonString = json.dumps(addressData, indent=4)
 jsonFile = open(fileName, "w")
