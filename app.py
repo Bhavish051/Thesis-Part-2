@@ -1,5 +1,6 @@
 import requests
 import json
+from bs4 import BeautifulSoup
 
 knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like BTC atms and stuff otherwise will need to spend an entire day just to go around sydney and get BTC ATMs Addresses
 
@@ -81,8 +82,23 @@ addressHeaders = {
 }
 
 addressData = requests.request("GET", addressUrl, headers=addressHeaders, data=payload)
-if addressData is not None :
-    addressData = addressData.json()
+
+testUrl = "https://www.bitcoinwhoswho.com/address/bc1qlza84x0ua24t08r7jww7fyndz3ta4au2yasv45"
+
+data = requests.request("GET", testUrl, headers=addressHeaders, data=payload).text
+
+with open("data.html", "w") as fp:
+    fp.write(data)
+
+with open("data.html") as fp:
+    soup = BeautifulSoup(fp, "html.parser")
+    print("Head tag is : \n")
+    print(soup.body)
+
+if (addressData.status_code != 200) :
+    raise Exception("There was an error with the request")
+
+addressData = addressData.json()
 
 # print(float(addressData["final_balance"])/100000000)
 
@@ -114,7 +130,9 @@ for x in interactedAddresses :
     intereactedAddressData = requests.request("GET", interactedAddressUrl, headers=addressHeaders, data=payload)
     if (intereactedAddressData is not None) :
         interactedJson = intereactedAddressData.json()
-        print(intereactedAddressData)    
+        print(intereactedAddressData)  
+        
+  
 # def checkIfIteractedWithAbuseAddress(data) :
 #     print(len(data))
 #     i = 0
