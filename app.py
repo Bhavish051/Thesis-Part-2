@@ -38,6 +38,7 @@ blockHeaders = {
 }
 
 latestBlock = requests.request("GET", blockUrl, headers=blockHeaders, data=payload).json()
+# print(latestBlock.text)
 
 # print(latestBlock.json())
 
@@ -64,14 +65,14 @@ address = str(transactionInfo["out"][0]["addr"])
 
 # print(address)
 
-addressFromUser = input("What is the address you want to check? \n")
+# addressFromUser = input("What is the address you want to check? \n")
 
 # print(addressFromUser)
 
-if(addressFromUser is not None):
-    address = addressFromUser
+# if(addressFromUser is not None):
+#     address = addressFromUser
 
-# print(address)
+print(address)
 
 addressUrl = "https://blockchain.info/rawaddr/" + address
 
@@ -79,7 +80,9 @@ addressHeaders = {
     
 }
 
-addressData = requests.request("GET", addressUrl, headers=addressHeaders, data=payload).json()
+addressData = requests.request("GET", addressUrl, headers=addressHeaders, data=payload)
+if addressData is not None :
+    addressData = addressData.json()
 
 # print(float(addressData["final_balance"])/100000000)
 
@@ -106,6 +109,12 @@ isMaliciousAddress = {"isMaliciousAddress" , isAbuseAddress["count"] > 0 }
 
 interactedAddresses = extractTransactions(addressData)
 
+for x in interactedAddresses : 
+    interactedAddressUrl = "https://blockchain.info/rawaddr/" + x
+    intereactedAddressData = requests.request("GET", interactedAddressUrl, headers=addressHeaders, data=payload)
+    if (intereactedAddressData is not None) :
+        interactedJson = intereactedAddressData.json()
+        print(intereactedAddressData)    
 # def checkIfIteractedWithAbuseAddress(data) :
 #     print(len(data))
 #     i = 0
@@ -153,6 +162,7 @@ if (addressData.__contains__("message")) :
     if (addressData["message"].__eq__("Item not found or argument invalid")) :
         print("No Data")    
         
+
 print(addressData)
 jsonString = json.dumps(addressData, indent=4)
 jsonFile = open(fileName, "w")
