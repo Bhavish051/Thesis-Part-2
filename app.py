@@ -1,6 +1,8 @@
+from audioop import add
 import requests
 import json
 from bs4 import BeautifulSoup
+import os
 
 knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like BTC atms and stuff otherwise will need to spend an entire day just to go around sydney and get BTC ATMs Addresses
 
@@ -20,6 +22,15 @@ def extractTransactions(data) :
     else :
         print("no data found for the given address")
     return result
+
+def extractAddressMetaData(address) : 
+    btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + address
+    data = requests.request("GET",btcWhoIsWhoUrl, headers={}, data={})
+    if (data is not None) :
+        with open(address + ".html", "w") as outfile:
+            outfile.write(data.text)
+    print(btcWhoIsWhoUrl)
+    return data.text
 
 payload={}
 
@@ -83,9 +94,11 @@ addressHeaders = {
 
 addressData = requests.request("GET", addressUrl, headers=addressHeaders, data=payload)
 
-testUrl = "https://www.bitcoinwhoswho.com/address/bc1qlza84x0ua24t08r7jww7fyndz3ta4au2yasv45"
+testUrl = "https://www.bitcoinwhoswho.com/address/16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg"
 
 data = requests.request("GET", testUrl, headers=addressHeaders, data=payload).text
+
+# os.remove("data.html")
 
 with open("data.html", "w") as fp:
     fp.write(data)
@@ -94,6 +107,19 @@ with open("data.html") as fp:
     soup = BeautifulSoup(fp, "html.parser")
     print("Head tag is : \n")
     print(soup.body)
+
+html = extractAddressMetaData(address)
+
+parsedHtml = BeautifulSoup(open("data.html"), "html.parser")
+
+# print()
+
+res = parsedHtml.body.find_all("div", {"id": "wrapper"})
+
+for result in res : 
+    result.find_all("div")
+
+# .results.find("section")
 
 if (addressData.status_code != 200) :
     raise Exception("There was an error with the request")
@@ -125,12 +151,19 @@ isMaliciousAddress = {"isMaliciousAddress" , isAbuseAddress["count"] > 0 }
 
 interactedAddresses = extractTransactions(addressData)
 
-for x in interactedAddresses : 
-    interactedAddressUrl = "https://blockchain.info/rawaddr/" + x
-    intereactedAddressData = requests.request("GET", interactedAddressUrl, headers=addressHeaders, data=payload)
-    if (intereactedAddressData is not None) :
-        interactedJson = intereactedAddressData.json()
-        print(intereactedAddressData)  
+for x in interactedAddresses :
+    data = extractAddressMetaData(x)
+    if (data is not None) :
+        with (open(x + ".html", "w")) as fp:
+            fp.write(data)
+
+# Throwing 429 error for too many requests
+# for x in interactedAddresses : 
+#     interactedAddressUrl = "https://blockchain.info/rawaddr/" + x
+#     intereactedAddressData = requests.request("GET", interactedAddressUrl, headers=addressHeaders, data=payload)
+#     if (intereactedAddressData is not None) :
+#         interactedJson = intereactedAddressData.json()
+#         print(intereactedAddressData)  
         
   
 # def checkIfIteractedWithAbuseAddress(data) :
