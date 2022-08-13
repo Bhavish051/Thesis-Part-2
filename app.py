@@ -106,7 +106,7 @@ with open("data.html", "w") as fp:
 with open("data.html") as fp:
     soup = BeautifulSoup(fp, "html.parser")
     print("Head tag is : \n")
-    print(soup.body)
+    # print(soup.body)
 
 html = extractAddressMetaData(address)
 
@@ -117,9 +117,14 @@ parsedHtml = BeautifulSoup(open("data.html"), "html.parser")
 res = parsedHtml.body.find_all("div", {"id": "wrapper"})
 
 for result in res : 
-    for d in result.find_all("div") :
-        d.find_all("div", {"class": "col-md-4"})
+    finalSection = result.find_all("section", {"id": "content"})
 
+Func = open("Parsed.html", "w")
+Func.write(str(finalSection))
+Func.close()
+
+
+print(finalSection)
 # .results.find("section")
 
 if (addressData.status_code != 200) :
