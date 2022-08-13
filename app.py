@@ -117,7 +117,8 @@ parsedHtml = BeautifulSoup(open("data.html"), "html.parser")
 res = parsedHtml.body.find_all("div", {"id": "wrapper"})
 
 for result in res : 
-    result.find_all("div")
+    for d in result.find_all("div") :
+        d.find_all("div", {"class": "col-md-4"})
 
 # .results.find("section")
 
