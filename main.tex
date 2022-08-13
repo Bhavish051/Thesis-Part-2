@@ -35,34 +35,65 @@
     Australia
 \end{center}
 \pagebreak
+
+\begin{center}
+    \section*{ACKNOWLEDGEMENTS}
+        \pagebreak
+    \section*{STATEMENT OF CANDIDATE}
+        \pagebreak
+\end{center}
+
 \tableofcontents
 \pagebreak
 \listoffigures
+\pagebreak
 \lstlistoflistings
 \pagebreak
 
-\section*{ACKNOWLEDGEMENTS}
-\pagebreak
-\section*{STATEMENT OF CANDIDATE}
-\pagebreak
 \section{Abstract}
-Cryptocurrencies form what is called the new decentralized finance world of digitial finances. They have become increasingly populor in the recent few years and with this technology becoming more and more accessible, the number of users of this form of payments have grown exponentially.On of the other side of coin, this mass usage of this technology gives a small percentage of people of hide in plain sight and do illegal activities. These people who are involved in such malicious activites are also supported by the anonymity features of this form of payments. \textbf{Our goal in this paper is to find ways to track down on these malicious transactions and to try and get as close as possible to the real world entity behind these activities.}
+Cryptocurrencies form what is called the new decentralized finance world of digital finances. They have become increasingly popular in the recent few years and with this technology becoming more and more accessible, the number of users of this form of payments have grown exponentially.On of the other side of coin, this mass usage of this technology gives a small percentage of people of hide in plain sight and do illegal activities. These people who are involved in such malicious activites are also supported by the anonymity features of this form of payments. 
 \pagebreak
 \section{Introduction}
-\subsection{What are cryptocurrencies}
-\subsection{How do cryptocurrencies work}
-\subsection{What exactly are malicious transactions in terms of cryptocurrencies}
-% What are crypto
-% How do they work
-% What do we mean by malicious
+Cryptocurrencies have become the modern form of decentralized finance giving the general public a level of visibility and control over financial systems that we could never imagine while using traditional financial systems. Their adoption has increased exponentially in the last few years with a few countries even deciding to make it a legal tender for their day to day transactions. Such countries include but are not limited to Central African Republic, El Salvador \cite{browne_2022} where Bitcoin has been deemed as a legal form of tender by the local authorities. 
+
+The striking difference between so-called decentralized finance\cite{zetzsche_arner_buckley_2020} formed by cryptocurrencies and traditional banking systems the type of ledger they maintain, and how the currency is controlled. Decentralized as the word suggests means that the control is not the in hands of a single person or entity rather the entire network, in this case, all the people using and servicing the cryptocurrency influence all the decisions that are made which include, the price largely controlled by supply and demand and the number of people mining and other factors, validation of transactions is normally done by validation nodes inside the networks and similar functions all are done by the public nodes inside the network. The second major factor that contributes to this decentralization is the public ledger these currencies maintain in contrast to a centralized secured ledger maintained by traditional banking systems where only certain authorized users can access the ledger, in the case of cryptocurrencies, anyone can access the ledger and see all sorts of information stored in a typical currency ledger which includes account balances, transactions made etc. 
+
+\textbf{Our goal in this paper is to find ways to track down on these malicious transactions and to try and get as close as possible to the real world entity behind these activities.}
+
 \pagebreak
 \section{Background}
+
+\subsection{What are cryptocurrencies}
+Cryptocurrencies are a modern form of digital currency which 
+\subsection{How do cryptocurrencies work?}
+Before we actually start exploring our area of research we need to be aware of how cryptocurrencies techincally operate. To simplify things we will be using Bitcoin as our reference to explain the technical architecture. Blockchain could be any is essentially is a LinkedList \cite{} of Blocks put one after another. 
+Each Block inside the blockchain is a primarily a collection of transaction with someother metadata associated.
+Modern cryptocurrencies work on maintaining a public ledger which is the distinguishing factor of these currencies with the standard paper currencies that we have been using for ages. 
+\subsection{What exactly are malicious transactions?}
+In this paper we will at times refer to a transaction or address being malicious. What we mean when are saying that an address or transaction is malicious, is that the particular address or the addresses involved in a particular transaction are trying to do something illegal. These illegal activites can include money laundering, malware, scams, ponzi schemes amongst other ways to cause harm to the general public. The basic intention over here to signify that the entity controlling the address or performing a transaction is doing something which would be deemed illegal in the context of local laws and is thereby prohibited by law. 
+\pagebreak
 % Graph about how popular cryptocurrencies have become in the last few years.
+
+\cite{kethineni_cao_2019}
 \pagebreak
 \section{Related Work}
-% Definitely the paper from the german guy at PETS
+In this section we will be going through the work that has been previously done in this area of research. 
+% Definitely the paper from the German guy at PETS
 \pagebreak
 \section{Methodology}
+ \subsection{Introduction}
+    Since there is not much information about cryptocurrencies except the information in the public ledger we will need to look outside that scope and see what information we can find about addresses and transactions to make some justified conclusion so as to eventually draw a suspicion explaining how is the address malicious and the conclusions we are making to justify its link with the real world entity. 
+    
+    The aim over here is now to find a target address either directly or through a transaction and find all the information I can related to it. We have shortlisted a few sources which keep records of information reported by the public, so we will need to scrape through all that information and its related reports to see if we can find something which can identify the person itself. If not we will need to move to the neighbour address and perform a similar search to observe the behaviour of the neighbour address and draw some conclusions. 
+    
+    The next plan is to identify a few strategic address whose physical location we are aware of with complete certainty and try and find interactions with those addresses.
+    
+    \subsection{Step 1}
+        The first step of the process for us is the data collection. For data collected there are couple of sources are we are using which includes a number of public APIs. We are using the public APIs to start with to get 2 different types of data
+        \begin{enumerate}
+            \item Data about the latest Block in the BlockChain
+        \end{enumerate}
+        
 \pagebreak
 \section{Critical Judgement and Evaluation of Results}
 \pagebreak
@@ -70,4 +101,6 @@ Cryptocurrencies form what is called the new decentralized finance world of digi
 \pagebreak
 \section{Potential Future Work}
 \pagebreak
+\bibliographystyle{ieeetr}
+\bibliography{citation} 
 \end{document}
