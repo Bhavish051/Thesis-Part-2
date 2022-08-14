@@ -10,13 +10,18 @@ knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like 
 blockUrl = "https://blockchain.info/latestblock"
 exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
 bitcoinAbuseUrl = "https://www.bitcoinabuse.com/api/reports/check"
-bitcoinWhoSWhoUrl = ""
+
 
 def extractTransactions(data) :
     result = []
     if (data.__contains__("txs")):
         for x in data["txs"]:
             for y in x["out"]:
+                if(y.__contains__("addr")):
+                    if(y["addr"] is not None):
+                        result.append(y["addr"])
+# Add inputs as well
+            for y in x["inputs"]:
                 if(y.__contains__("addr")):
                     if(y["addr"] is not None):
                         result.append(y["addr"])
@@ -27,10 +32,11 @@ def extractTransactions(data) :
 def extractAddressMetaData(address) : 
     btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + address
     data = requests.request("GET",btcWhoIsWhoUrl, headers={}, data={})
+    print(data.status_code)
     if (data is not None) :
         with open(address + ".html", "w") as outfile:
             outfile.write(data.text)
-    print(btcWhoIsWhoUrl)
+    # print(btcWhoIsWhoUrl)
     return data.text
 
 payload={}
@@ -106,7 +112,7 @@ with open("data.html", "w") as fp:
 
 with open("data.html") as fp:
     soup = BeautifulSoup(fp, "html.parser")
-    print("Head tag is : \n")
+    # print("Head tag is : \n")
     # print(soup.body)
 
 html = extractAddressMetaData(address)
@@ -116,6 +122,8 @@ parsedHtml = BeautifulSoup(open(str(address) + ".html"), "html.parser")
 # print()
 
 res = parsedHtml.body.find_all("div", {"id": "wrapper"})
+
+finalSection = object()
 
 for result in res : 
     for d in result.find_all("section", {"id": "content"}) :
@@ -133,11 +141,9 @@ for result in res :
                                                 if z is not None : 
                                                     finalSection = z.find_all("div", {"class" : "col-md-11"})[0]
 
-if finalSection is None :
-    finalSection = object()
-
-htmlData = {}
-htmlData.update({str(address), finalSection})
+htmlData = []
+# htmlData   {str(address), finalSection}
+htmlData.append({str(address), finalSection})
 
 if (open("Parsed.html") is not None) :
     os.remove("Parsed.html")
@@ -180,13 +186,25 @@ isMaliciousAddress = {"isMaliciousAddress" , isAbuseAddress["count"] > 0 }
 
 interactedAddresses = extractTransactions(addressData)
 
+print("Number of addresses the target address has interacted with is: \n")
+print(interactedAddresses.__sizeof__())
+i = 0
 for x in interactedAddresses :
     print(x)
+    print("\n")
+    i = i + 1
+    print(i)
+    # print(interactedAddresses.index(x))
     # Get HTML for each page and then extract the data from there into an object
     htmlfile = extractAddressMetaData(x)
     parsedFile = BeautifulSoup(open(str(x) + ".html"), "html.parser")
     r = parsedFile.body.find_all("div", {"id": "wrapper"})
+    finalData = object()
+    # print(res.__sizeof__())
+    # i = 0
     for result in res : 
+        # i = i + 1
+        # print(i)
         for d in result.find_all("section", {"id": "content"}) :
             for x in d.find_all("div", {"id" : "search_address_index", "class" : "container"}) :
                 for y in x.find_all("div", {"class" : "row"}) :
@@ -201,7 +219,7 @@ for x in interactedAddresses :
                                         # Working till here something going on down here
                                                     if z is not None : 
                                                         finalData = z.find_all("div", {"class" : "col-md-11"})[0]
-    htmlData.update({str(x), finalData})
+    htmlData.append({str(x), finalData})
 
     
 print(htmlData)
