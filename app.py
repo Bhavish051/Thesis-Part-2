@@ -2,6 +2,8 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import os
+import spacy
+spacy.load('en_core_web_sm')
 
 knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like BTC atms and stuff otherwise will need to spend an entire day just to go around sydney and get BTC ATMs Addresses
 
@@ -109,7 +111,7 @@ with open("data.html") as fp:
 
 html = extractAddressMetaData(address)
 
-parsedHtml = BeautifulSoup(open("data.html"), "html.parser")
+parsedHtml = BeautifulSoup(open(str(address) + ".html"), "html.parser")
 
 # print()
 
@@ -117,18 +119,25 @@ res = parsedHtml.body.find_all("div", {"id": "wrapper"})
 
 for result in res : 
     for d in result.find_all("section", {"id": "content"}) :
-            for x in d.find_al("div", {"id" : "search_address_index", "class" : "container"}) :
-                for y in x.find_all("div", {"class" : "row"}) :
-                    for z in y.find_all("div", {"class" : "col-lg-12"}) :
-                        for w in z.find_all("div", {"class" : "row"}) :
-                            for z in w.find_all("div", {"class" : "col-lg-12 float_left_box"}) :
-                                for x in z.find_all("div", {"class" : "row text-center"}) :
-                                    for z in x.find_all("div", {"class" : "col-lg-12"}) :
-                                        for y in z.find_all("div", {"class" : "float_left_box flb_scam_records_table"}) :
-                                            for x in y.find_all("div", {"class" : "collapse", "id" : "scam_records_table"}) :
-                                                for z in x.find_all("div", {"class" : "row row_odd hide", "id" : "scam_info_71212"}) :
-                                                    finalSection = z.find_all("div", {"class" : "col-md-11 strtr_div"})
+        for x in d.find_all("div", {"id" : "search_address_index", "class" : "container"}) :
+            for y in x.find_all("div", {"class" : "row"}) :
+                for z in y.find_all("div", {"class" : "col-lg-12"}) :
+                    for w in z.find_all("div", {"class" : "row"}) :
+                        for z in w.find_all("div", {"class" : "col-lg-12 float_left_box"}) :
+                            for x in z.find_all("div", {"class" : "row text-center"}) :
+                                for z in x.find_all("div", {"class" : "col-lg-12"}) :
+                                    for y in z.find_all("div", {"class" : "float_left_box flb_scam_records_table"}) :
+                                        for x in y.find_all("div", {"class" : "collapse", "id" : "scam_records_table"}) :
+                                            for z in x.find_all("div", {"class" : "row row_odd hide", "id" : "scam_info_71212"}) :
+                                    # Working till here something going on down here for some addresses
+                                                if z is not None : 
+                                                    finalSection = z.find_all("div", {"class" : "col-md-11"})[0]
 
+if finalSection is None :
+    finalSection = object()
+
+htmlData = {}
+htmlData.update({str(address), finalSection})
 
 if (open("Parsed.html") is not None) :
     os.remove("Parsed.html")
@@ -172,10 +181,38 @@ isMaliciousAddress = {"isMaliciousAddress" , isAbuseAddress["count"] > 0 }
 interactedAddresses = extractTransactions(addressData)
 
 for x in interactedAddresses :
-    data = extractAddressMetaData(x)
-    if (data is not None) :
-        with (open(x + ".html", "w")) as fp:
-            fp.write(data)
+    print(x)
+    # Get HTML for each page and then extract the data from there into an object
+    htmlfile = extractAddressMetaData(x)
+    parsedFile = BeautifulSoup(open(str(x) + ".html"), "html.parser")
+    r = parsedFile.body.find_all("div", {"id": "wrapper"})
+    for result in res : 
+        for d in result.find_all("section", {"id": "content"}) :
+            for x in d.find_all("div", {"id" : "search_address_index", "class" : "container"}) :
+                for y in x.find_all("div", {"class" : "row"}) :
+                    for z in y.find_all("div", {"class" : "col-lg-12"}) :
+                        for w in z.find_all("div", {"class" : "row"}) :
+                            for z in w.find_all("div", {"class" : "col-lg-12 float_left_box"}) :
+                                for x in z.find_all("div", {"class" : "row text-center"}) :
+                                    for z in x.find_all("div", {"class" : "col-lg-12"}) :
+                                        for y in z.find_all("div", {"class" : "float_left_box flb_scam_records_table"}) :
+                                            for x in y.find_all("div", {"class" : "collapse", "id" : "scam_records_table"}) :
+                                                for z in x.find_all("div", {"class" : "row row_odd hide", "id" : "scam_info_71212"}) :
+                                        # Working till here something going on down here
+                                                    if z is not None : 
+                                                        finalData = z.find_all("div", {"class" : "col-md-11"})[0]
+    htmlData.update({str(x), finalData})
+
+    
+print(htmlData)
+
+# print(interactedAddresses)
+
+# for x in interactedAddresses :
+#     data = extractAddressMetaData(x)
+#     if (data is not None) :
+#         with (open(x + ".html", "w")) as fp:
+#             fp.write(data)
 
 # Throwing 429 error for too many requests
 # for x in interactedAddresses : 
