@@ -1,4 +1,3 @@
-from audioop import add
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -117,14 +116,29 @@ parsedHtml = BeautifulSoup(open("data.html"), "html.parser")
 res = parsedHtml.body.find_all("div", {"id": "wrapper"})
 
 for result in res : 
-    finalSection = result.find_all("section", {"id": "content"})
+    for d in result.find_all("section", {"id": "content"}) :
+            for x in d.find_al("div", {"id" : "search_address_index", "class" : "container"}) :
+                for y in x.find_all("div", {"class" : "row"}) :
+                    for z in y.find_all("div", {"class" : "col-lg-12"}) :
+                        for w in z.find_all("div", {"class" : "row"}) :
+                            for z in w.find_all("div", {"class" : "col-lg-12 float_left_box"}) :
+                                for x in z.find_all("div", {"class" : "row text-center"}) :
+                                    for z in x.find_all("div", {"class" : "col-lg-12"}) :
+                                        for y in z.find_all("div", {"class" : "float_left_box flb_scam_records_table"}) :
+                                            for x in y.find_all("div", {"class" : "collapse", "id" : "scam_records_table"}) :
+                                                for z in x.find_all("div", {"class" : "row row_odd hide", "id" : "scam_info_71212"}) :
+                                                    finalSection = z.find_all("div", {"class" : "col-md-11 strtr_div"})
+
+
+if (open("Parsed.html") is not None) :
+    os.remove("Parsed.html")
 
 Func = open("Parsed.html", "w")
 Func.write(str(finalSection))
 Func.close()
 
 
-print(finalSection)
+# print(finalSection)
 # .results.find("section")
 
 if (addressData.status_code != 200) :
