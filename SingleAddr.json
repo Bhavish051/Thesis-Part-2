@@ -1,0 +1,197 @@
+{
+    "hash160": "5e9b23809261178723055968d134a947f47e799f",
+    "address": "19dENFt4wVwos6xtgwStA6n8bbA57WCS58",
+    "n_tx": 10638,
+    "n_unredeemed": 160,
+    "total_received": 6672872758903,
+    "total_sent": 6609785308209,
+    "final_balance": 63087450694,
+    "txs": [
+        {
+            "hash": "68a0b7e0ee87f580fbf17afefdf8e397efac32215d47cd02f52496f288247d8f",
+            "ver": 2,
+            "vin_sz": 1,
+            "vout_sz": 2,
+            "size": 217,
+            "weight": 760,
+            "fee": 0,
+            "relayed_by": "0.0.0.0",
+            "lock_time": 0,
+            "tx_index": 5048564692439748,
+            "double_spend": false,
+            "time": 1660349777,
+            "block_index": 749197,
+            "block_height": 749197,
+            "inputs": [
+                {
+                    "sequence": 4294967295,
+                    "witness": "01200000000000000000000000000000000000000000000000000000000000000000",
+                    "script": "038d6e0b0451edf6622f466f756e6472792055534120506f6f6c202364726f70676f6c642f1b052293000042a024660100",
+                    "index": 0,
+                    "prev_out": {
+                        "tx_index": 0,
+                        "value": 0,
+                        "n": 4294967295,
+                        "type": 0,
+                        "spent": true,
+                        "script": "",
+                        "spending_outpoints": [
+                            {
+                                "tx_index": 5048564692439748,
+                                "n": 0
+                            }
+                        ]
+                    }
+                }
+            ],
+            "out": [
+                {
+                    "type": 0,
+                    "spent": false,
+                    "value": 638621401,
+                    "spending_outpoints": [],
+                    "n": 0,
+                    "tx_index": 5048564692439748,
+                    "script": "76a9145e9b23809261178723055968d134a947f47e799f88ac",
+                    "addr": "19dENFt4wVwos6xtgwStA6n8bbA57WCS58"
+                },
+                {
+                    "type": 0,
+                    "spent": false,
+                    "value": 0,
+                    "spending_outpoints": [],
+                    "n": 1,
+                    "tx_index": 5048564692439748,
+                    "script": "6a24aa21a9ed8855481a2704f6e6220201c7311fda2128b81689a33a4a4b1fa3c068ebffdb06"
+                }
+            ],
+            "result": 638621401,
+            "balance": 63087450694
+        },
+        {
+            "hash": "dd2dde28f1b7a33163f959b5a20c4670554542dc040fe03c1dcb73c7456dddce",
+            "ver": 2,
+            "vin_sz": 1,
+            "vout_sz": 2,
+            "size": 217,
+            "weight": 760,
+            "fee": 0,
+            "relayed_by": "0.0.0.0",
+            "lock_time": 0,
+            "tx_index": 7278413324283513,
+            "double_spend": false,
+            "time": 1660349287,
+            "block_index": 749196,
+            "block_height": 749196,
+            "inputs": [
+                {
+                    "sequence": 4294967295,
+                    "witness": "01200000000000000000000000000000000000000000000000000000000000000000",
+                    "script": "038c6e0b0468ebf6622f466f756e6472792055534120506f6f6c202364726f70676f6c642f112ee6a688dc020000000000",
+                    "index": 0,
+                    "prev_out": {
+                        "tx_index": 0,
+                        "value": 0,
+                        "n": 4294967295,
+                        "type": 0,
+                        "spent": true,
+                        "script": "",
+                        "spending_outpoints": [
+                            {
+                                "tx_index": 7278413324283513,
+                                "n": 0
+                            }
+                        ]
+                    }
+                }
+            ],
+            "out": [
+                {
+                    "type": 0,
+                    "spent": false,
+                    "value": 645134567,
+                    "spending_outpoints": [],
+                    "n": 0,
+                    "tx_index": 7278413324283513,
+                    "script": "76a9145e9b23809261178723055968d134a947f47e799f88ac",
+                    "addr": "19dENFt4wVwos6xtgwStA6n8bbA57WCS58"
+                },
+                {
+                    "type": 0,
+                    "spent": false,
+                    "value": 0,
+                    "spending_outpoints": [],
+                    "n": 1,
+                    "tx_index": 7278413324283513,
+                    "script": "6a24aa21a9ed668b12b36b8b1e107f9190d36bea153086e2e32e119123b33106eaf1d89719d9"
+                }
+            ],
+            "result": 645134567,
+            "balance": 62448829293
+        },
+        {
+            "hash": "5312aff6f09a1366c7b24036967ce687636dafa2759228941548a6a4aa688a48",
+            "ver": 2,
+            "vin_sz": 1,
+            "vout_sz": 2,
+            "size": 217,
+            "weight": 760,
+            "fee": 0,
+            "relayed_by": "0.0.0.0",
+            "lock_time": 0,
+            "tx_index": 2552297558414537,
+            "double_spend": false,
+            "time": 1660348141,
+            "block_index": 749193,
+            "block_height": 749193,
+            "inputs": [
+                {
+                    "sequence": 4294967295,
+                    "witness": "01200000000000000000000000000000000000000000000000000000000000000000",
+                    "script": "03896e0b04e7e6f6622f466f756e6472792055534120506f6f6c202364726f70676f6c642f1159a429fb0e000000000000",
+                    "index": 0,
+                    "prev_out": {
+                        "tx_index": 0,
+                        "value": 0,
+                        "n": 4294967295,
+                        "type": 0,
+                        "spent": true,
+                        "script": "",
+                        "spending_outpoints": [
+                            {
+                                "tx_index": 2552297558414537,
+                                "n": 0
+                            }
+                        ]
+                    }
+                }
+            ],
+            "out": [
+                {
+                    "type": 0,
+                    "spent": false,
+                    "value": 630066392,
+                    "spending_outpoints": [],
+                    "n": 0,
+                    "tx_index": 2552297558414537,
+                    "script": "76a9145e9b23809261178723055968d134a947f47e799f88ac",
+                    "addr": "19dENFt4wVwos6xtgwStA6n8bbA57WCS58"
+                },
+                {
+                    "type": 0,
+                    "spent": false,
+                    "value": 0,
+                    "spending_outpoints": [],
+                    "n": 1,
+                    "tx_index": 2552297558414537,
+                    "script": "6a24aa21a9ed0c4d24d3af3a82f76a0979c986824a0a1990b2a1eacbef0c8a4fe44c0358a861"
+                }
+            ],
+            "result": 630066392,
+            "balance": 61803694726
+        },
+        {
+            "hash": "More transactions depending on the address"
+        }
+    ]
+}
