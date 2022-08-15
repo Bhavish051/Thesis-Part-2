@@ -1,3 +1,4 @@
+from typing import Set
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -10,6 +11,18 @@ knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like 
 blockUrl = "https://blockchain.info/latestblock"
 exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
 bitcoinAbuseUrl = "https://www.bitcoinabuse.com/api/reports/check"
+
+
+def checkIsAddressKnownOrHasInteractedWithKnown(set, address) :
+    res = False
+    for x in knownAddresses :
+        if x in set :
+            print("Our address has interacted with " + x + "which is known")
+            res = True
+    if address in knownAddresses :
+        print("Our address is known")
+        res = True
+    return res
 
 
 def extractTransactions(data) :
@@ -184,14 +197,16 @@ isMaliciousAddress = {"isMaliciousAddress" , isAbuseAddress["count"] > 0 }
 
 # deanonymizationUrls = ["", ""]
 
-interactedAddresses = extractTransactions(addressData)
+interactedAddresses = set(extractTransactions(addressData))
+# interactedAddressesSet = set(interactedAddresses)
 
-print("Number of addresses the target address has interacted with is: \n")
-print(interactedAddresses.__sizeof__())
+print("Number of addresses the target address has interacted with is: " + str(len(interactedAddresses)))
+# print(interactedAddresses.__sizeof__())
+# print(len(interactedAddresses))
+
 i = 0
 for x in interactedAddresses :
     print(x)
-    print("\n")
     i = i + 1
     print(i)
     # print(interactedAddresses.index(x))
@@ -222,7 +237,11 @@ for x in interactedAddresses :
     htmlData.append({str(x), finalData})
 
     
-print(htmlData)
+
+    
+# print(htmlData)
+# htmlData
+knownAddress = checkIsAddressKnownOrHasInteractedWithKnown(interactedAddresses, address)
 
 # print(interactedAddresses)
 
