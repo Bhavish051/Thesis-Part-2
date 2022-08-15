@@ -1313,9 +1313,14 @@
                 },
                 {
                     "type": 0,
-                    "spent": false,
+                    "spent": true,
                     "value": 129788,
-                    "spending_outpoints": [],
+                    "spending_outpoints": [
+                        {
+                            "tx_index": 2276771889725755,
+                            "n": 685
+                        }
+                    ],
                     "n": 6,
                     "tx_index": 3450501421099909,
                     "script": "a914fbaff0292b56c694d05d04bb73b6bdfa604b0f2887",
@@ -1593,9 +1598,14 @@
                 },
                 {
                     "type": 0,
-                    "spent": false,
+                    "spent": true,
                     "value": 138421,
-                    "spending_outpoints": [],
+                    "spending_outpoints": [
+                        {
+                            "tx_index": 2276771889725755,
+                            "n": 848
+                        }
+                    ],
                     "n": 27,
                     "tx_index": 3450501421099909,
                     "script": "a9144389868e771f88258465bf439407df435d11069687",
@@ -1728,9 +1738,14 @@
                 },
                 {
                     "type": 0,
-                    "spent": false,
+                    "spent": true,
                     "value": 137460,
-                    "spending_outpoints": [],
+                    "spending_outpoints": [
+                        {
+                            "tx_index": 2276771889725755,
+                            "n": 836
+                        }
+                    ],
                     "n": 38,
                     "tx_index": 3450501421099909,
                     "script": "a914c1074b5cf4b371ec0cf727fb30888efff56d37e087",
@@ -1753,9 +1768,14 @@
                 },
                 {
                     "type": 0,
-                    "spent": false,
+                    "spent": true,
                     "value": 189815,
-                    "spending_outpoints": [],
+                    "spending_outpoints": [
+                        {
+                            "tx_index": 5267121329802538,
+                            "n": 799
+                        }
+                    ],
                     "n": 40,
                     "tx_index": 3450501421099909,
                     "script": "a914ed4717a02abb4c908de3ae17af60f44c012ca07d87",
@@ -6156,7 +6176,7 @@
             "lock_time": 749110,
             "tx_index": 2903998545615818,
             "double_spend": false,
-            "time": 1660298415,
+            "time": 1660298416,
             "block_index": 749112,
             "block_height": 749112,
             "inputs": [

@@ -1,9 +1,12 @@
-from typing import Set
 import requests
 import json
 from bs4 import BeautifulSoup
 import os
 import spacy
+from progressbar import ProgressBar, Percentage, Bar, ETA
+
+pbar = ProgressBar()
+
 spacy.load('en_core_web_sm')
 
 knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like BTC atms and stuff otherwise will need to spend an entire day just to go around sydney and get BTC ATMs Addresses
@@ -45,7 +48,7 @@ def extractTransactions(data) :
 def extractAddressMetaData(address) : 
     btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + address
     data = requests.request("GET",btcWhoIsWhoUrl, headers={}, data={})
-    print(data.status_code)
+    # print(data.status_code)
     if (data is not None) :
         with open(address + ".html", "w") as outfile:
             outfile.write(data.text)
@@ -204,11 +207,11 @@ print("Number of addresses the target address has interacted with is: " + str(le
 # print(interactedAddresses.__sizeof__())
 # print(len(interactedAddresses))
 
-i = 0
-for x in interactedAddresses :
-    print(x)
-    i = i + 1
-    print(i)
+# i = 0
+for x in pbar(interactedAddresses) :
+    # print(x)
+    # i = i + 1
+    # print(i)
     # print(interactedAddresses.index(x))
     # Get HTML for each page and then extract the data from there into an object
     htmlfile = extractAddressMetaData(x)
@@ -308,7 +311,7 @@ if (addressData.__contains__("message")) :
         print("No Data")    
         
 
-print(addressData)
+# print(addressData)
 jsonString = json.dumps(addressData, indent=4)
 jsonFile = open(fileName, "w")
 jsonFile.write(jsonString)
