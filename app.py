@@ -31,12 +31,12 @@ def checkIsAddressKnownOrHasInteractedWithKnown(set, address) :
 def extractTransactions(data) :
     result = []
     if (data.__contains__("txs")):
-        for x in data["txs"]:
+        print("Extracting Neighbours now")
+        for x in pbar(data["txs"]):
             for y in x["out"]:
                 if(y.__contains__("addr")):
                     if(y["addr"] is not None):
                         result.append(y["addr"])
-# Add inputs as well
             for y in x["inputs"]:
                 if(y.__contains__("addr")):
                     if(y["addr"] is not None):
@@ -208,7 +208,9 @@ print("Number of addresses the target address has interacted with is: " + str(le
 # print(len(interactedAddresses))
 
 # i = 0
-for x in pbar(interactedAddresses) :
+print("Check data about the neighbours now")
+
+for x in interactedAddresses :
     # print(x)
     # i = i + 1
     # print(i)
@@ -234,7 +236,6 @@ for x in pbar(interactedAddresses) :
                                         for y in z.find_all("div", {"class" : "float_left_box flb_scam_records_table"}) :
                                             for x in y.find_all("div", {"class" : "collapse", "id" : "scam_records_table"}) :
                                                 for z in x.find_all("div", {"class" : "row row_odd hide", "id" : "scam_info_71212"}) :
-                                        # Working till here something going on down here
                                                     if z is not None : 
                                                         finalData = z.find_all("div", {"class" : "col-md-11"})[0]
     htmlData.append({str(x), finalData})
@@ -245,6 +246,12 @@ for x in pbar(interactedAddresses) :
 # print(htmlData)
 # htmlData
 knownAddress = checkIsAddressKnownOrHasInteractedWithKnown(interactedAddresses, address)
+
+fileName = "finalData" + str(address) + ".html"
+with open(fileName, "w") as outfile :
+    for x in htmlData :
+        for key,val in x.items():
+            outfile.write({key + ":" + val})
 
 # print(interactedAddresses)
 
