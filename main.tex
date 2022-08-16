@@ -4,6 +4,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{listings}
 \usepackage{xcolor}
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -77,7 +78,10 @@ In this paper we will at times refer to a transaction or address being malicious
 \cite{kethineni_cao_2019}
 \pagebreak
 \section{Related Work}
-In this section we will be going through the work that has been previously done in this area of research. 
+In this section we will be going through the work that has been previously done in this area of research. As we will go through this section we will realise that a lot of people are already working to break through this issue of governance in cryptocurrencies. As we saw in the last section that illegal and malicious transactions in cryptocurrencies is an ever increasing problem so its very important that some action is taken to add some sort of regulation.
+
+Muller et al\cite{jochen_schäfer_christian_müller_and_frederik_..._-_petsymposium.org} 
+
 % Definitely the paper from the German guy at PETS
 \pagebreak
 \section{Methodology}
@@ -88,48 +92,65 @@ In this section we will be going through the work that has been previously done 
     
     The next plan is to identify a few strategic address whose physical location we are aware of with complete certainty and try and find interactions with those addresses. 
     
-    \subsection{Step 1}
+    \subsection{Step 1 : The target address}
         The first step of the process for us is the data collection. For data collected there are couple of sources are we are using which includes a number of public APIs. We are using the public APIs to start with to get 2 different types of data.
-        \begin{enumerate}
-            \item Data about the latest Block in the blockchain to get a transaction address to hit to start
-        \end{enumerate}
         
     \subsection{Step 2}
         \textbf{Collection of metadata about the address or transaction}. 
         This is the tricky part for us since our research purely relies on data publically available which can be on the blockchain or information reported by private entitites on the interent. This information is very limited specially if we pick up a random address for our investigation and the reason for this is due to the pseudoanonymous nature of cryptocurrencies. In cryptocurrencies a person can essentially set up as many addresses or so called account numbers as he wishes without any personally identifiable information in contrast to traditional banking system where a proper KYC is mandatory before one can use those services. Due to this the only information readily available is the public key of the user using the services which is his wallet address. What we can do is use that wallet address to query different sources to get as much information as possible about it. For this we be utilizing a mix of API services and also build a web scraping service to extract information no available from API due to reasons highlighted below.
         
-        In case our starting point is a transaction we will be targeting one of the addrresses in the transaciton. The information about getting the addresses from the transaction is available readily on the internet thorugh APIs.
+        In case our starting point is a transaction we will be targeting one of the addresses in the transaction. The information about getting the addresses from the transaction is available readily on the internet thorugh APIs.
         
-        Our application can work both on an address or a transaction so our inital call will depend on what we are targetting. 
-        To extract the address from the transcation we can utilize the public API available from Blockchain.info\cite{blockchain.com}. 
+        Our application can work both on an address or a transaction so our initial call will depend on what we are targeting. 
+        
+        To extract the address from the transaction we can utilize the public API available from Blockchain.info\cite{blockchain.com}. 
         
         Blockchain.info ........ \textbf{Information about this source V IMP}
         
         \textbf{Url : GET} \url{https://blockchain.info/rawtx/{{tx_hash_or_id}}}
-        Every transaction in the blockchain gets a hash value when generated and verified so this API takes in that as a path variable and returns the response below for a sample random transaction we picked up. The data model for the reponse is also shown in figure \cite{Fig}.
+        Every transaction in the blockchain gets a hash value when generated and verified so this API takes in that as a path variable and returns the response below for a sample random transaction we picked up. The data model for the response is also shown in figure \cite{Fig}.
+        
         \textbf{Sample Response: }
         \lstinputlisting[caption=A single transaction from the blockchain]{SingleTx.json}
+        
         As we can see from the sample response we can directly access the input and output address as our target and move on to the next step which is getting data about the individual address itself.
         
         Now the task for us is to pick up the address in question and identify as much information as possible about it before we move on.
+        
         Firstly we will be utilizing an API from Blockchain.info\cite{blockchain.com} to get basic information about the address. The API below from this source gives us
         \textbf{Url : GET} \url{https://blockchain.info/rawaddr/{{address_id}}}
+        
         This API takes in the wallet address which is the publicly available on the blockchain as a path variable and gives all the information about it directly from the blockchain. The data structure of the response is shown in the figure\cite{} from which we will observe the interactions of the address inside the blockchain.
         
         \textbf{Sample Response: }
+        
         \lstinputlisting[caption=A single address from the blockchain]{SingleAddr.json}
+        
         The main information we need to extract from here is the interactions of the address throughout the blockchain. As we can see from the sample response we get a list of transactions in the \textbf{txs} object though which we can loop through to get to the immediate neighbours of the address. We refer immediate neighbours to addresses which directly interact with the address though a transaction where our target address can either be the sender or the receiver. 
         
-    \subsection{Step 3}
+    \subsection{Step 3: Web Scraping}
         Now that we have most of the metadata about the address we need to understand the nature of the address, we will starting digging into the address to find links to the real world. For this we will be building a web scraping service to go through a couple of identified online sources which seem have data which can help us get as close to the real world entity as possible. 
+        
+        When it comes to web scraping we will be downloading the entire page as an HTML instead of using APIs and then parsing the page element by element. This approach has both advantages and dis-advantages but in our cases the advantages outweigh the negatives so we are using this approach. Firstly when it comes to APIs, these sources are not best known to provide these services so getting an API key is very hard. We applied for an API key but its been over months since we have got anything so we decided to use the web crawling service as it will also give us more control over what data we can process. And finally APIs always have this security throttling feature against Denial of Service attacks so we can bypass this while scraping the web as we are acting as if a lot of users are accessing the web page which is a very normal behaviour and most websites do not have any restriction to the number of users who can access their page.
         
         The sources we are targeting right now are 
         \begin{enumerate}
             \item Bitcoin Who is Who \cite{bitcoinwhoswho}
             \item Hash XP \cite{hashxp.org}
         \end{enumerate}
-        In the sections below we will go though in detail the data provided by each source in detail but brefily these 2 sources provide nearly the same information except in some case one is known to have more information about the address than the other so it is always good to have 2 sources and also helps in better data validation. In the end we cannot completely rely on this information as this is publicly sourced and there are high chances of false positives as well so we have to take a cautious approach when analyzing this data and making further conclusions. 
+        In the sections below we will go though in detail the data provided by each source in detail but breifly these 2 sources provide nearly the same information except in some case one is known to have more information about the address than the other so it is always good to have 2 sources and also helps in better data validation. In the end we cannot completely rely on this information as this is publicly sourced and there are high chances of false positives as well so we have to take a cautious approach when analyzing this data and making further conclusions. 
+        
         In short these sources provide some very good insights about an address such as the basic information from the blockchain such as balance(s), transaction(s), but the main data we are interested in from these sources is the scam alert which we will be scraping using our service. These are reports submitted by people from all over the world wherein an address was known to perform a malicious activity. We will analyzing that data to make further conclusions about the address.
+        
+        In the web scraping service what we are doing is starting to get data about the actual address itself and then moving on to the neighbours of the address identified earlier through it transactions and getting data about them to observe and understand the behaviour of the address though the neighbours and if needed might move the second neighbours as well which is the addresses to which the direct neighbours have interacted with.
+        \begin{enumerate}
+            \item BitcoinWhoIsWho : From this source when we download the page we get HTML of the sample page attached in fig \cite{} . From here the main data we are after is the scam alerts section which in this case a bunch of reports sent through by random people online who have either witnessed or been targeted by a particular address. 
+            \item HashXp : 
+        \end{enumerate}
+        
+        After we have extracted the data from the 2 sources we are saving it in a seperate file to analyze and understand what sort of information we can get and what conclusions we can make about the target address from the data about the address and its neighbours.
+        
+    \subsection{Step 4 : Analyzing data obtained to get some results}
         
 \pagebreak
 \section{Critical Judgement and Evaluation of Results}
