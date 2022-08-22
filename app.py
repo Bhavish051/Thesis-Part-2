@@ -2,12 +2,12 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import os
-import spacy
+# import spacy
 from progressbar import ProgressBar, Percentage, Bar, ETA
 
 pbar = ProgressBar()
 
-spacy.load('en_core_web_sm')
+# spacy.load('en_core_web_sm')
 
 knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like BTC atms and stuff otherwise will need to spend an entire day just to go around sydney and get BTC ATMs Addresses
 
@@ -250,8 +250,9 @@ knownAddress = checkIsAddressKnownOrHasInteractedWithKnown(interactedAddresses, 
 fileName = "finalData" + str(address) + ".html"
 with open(fileName, "w") as outfile :
     for x in htmlData :
-        for key,val in x.items():
-            outfile.write({key + ":" + val})
+        outfile.write("\nNew Address\n")
+        for y in x:
+            outfile.write(str(y))
 
 # print(interactedAddresses)
 

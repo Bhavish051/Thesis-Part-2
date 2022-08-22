@@ -89,7 +89,7 @@
 <li><a href="https://www.bitcoinwhoswho.com/tags">Tag An Address</a></li>
 <li><a href="https://www.bitcoinwhoswho.com/blog">Blog</a></li>
 </ul>
-<div style="float:right; margin:15px 66px 0px 0px; color: #BBBBBB;">BTC = $21429.34</div>
+<div style="float:right; margin:15px 66px 0px 0px; color: #BBBBBB;">BTC = $21401.11</div>
 </div>
 </div>
 <div id="top_nav_right_box" class="col-md-4 pull-right">
@@ -114,12 +114,10 @@
 <div class="row">
 <div class="col-lg-12">
 <div class="float_left_box">
- <h3 class="page-header">
+<h3 class="page-header">
 BITCOIN ADDRESS REPORT
-
-<span class="top_scam_alert" id="top_scam_alert_red">
-Scam Alert: This address has been reported as fraudulent (1 time)
-</span>
+<span class="top_scam_alert" id="top_scam_alert_green">Scam Alert: None</span>
+<span class="top_scam_alert" id="top_scam_alert_red" style="display: none;"></span>
 <span class="create-btn-wrap top_btn_box">
 
 <button type="button" class="btn btn-warning " id="scam_report_btn" data-toggle="modal" data-target="#scam_report_modal">Report Scam</button>
@@ -177,7 +175,7 @@ Scam Alert: This address has been reported as fraudulent (1 time)
 <div class="alert alert-warning loading-icon" role="alert" id="atm_file_loading" style="display: none;">Please wait...</div>
 <div class="alert alert-danger" role="alert" id="atm_file_error" style="display: none;"></div>
 </div>
-<div class="form-group">
+ <div class="form-group">
 <input type="image" name="atm_captcha" id="atm_captcha" src="public/images/ajax-loader_200x70.gif" onclick="javascript:return false;" />
 <div id="atm_change_captcha_box">
 <a href="javascript:return false;" onclick="document.getElementById('atm_captcha').src='https://www.bitcoinwhoswho.com/google/captcha.php?'+Math.random();document.getElementById('atm_captcha_input').focus();" id="atm_change_captcha">Not readable? Change text.</a>
@@ -189,7 +187,7 @@ Scam Alert: This address has been reported as fraudulent (1 time)
 </div>
 </div>
 <div class="modal-footer" id="atm_footer">
-<input type="hidden" name="atm_bitcoin_address" id="atm_bitcoin_address" value="1GNgwA8JfG7Kc8akJ8opdNWJUihqUztfPe">
+<input type="hidden" name="atm_bitcoin_address" id="atm_bitcoin_address" value="1JAXNETJAXNETJAXNETJAXNETJAXW3bkUN">
 <button onClick="fbq('track', 'Purchase')" type="button" class="btn btn-primary" id="atm_submit_btn">Submit</button>
 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 <div id="atm_status_box">
@@ -267,7 +265,7 @@ Scam Alert: This address has been reported as fraudulent (1 time)
 <div class="alert alert-danger" role="alert" id="srm_error" style="display: none;"></div>
 </div>
 <div class="modal-footer" id="srm_footer">
-<input type="hidden" name="srm_bitcoin_address" id="srm_bitcoin_address" value="1GNgwA8JfG7Kc8akJ8opdNWJUihqUztfPe">
+<input type="hidden" name="srm_bitcoin_address" id="srm_bitcoin_address" value="1JAXNETJAXNETJAXNETJAXNETJAXW3bkUN">
 <button onClick="fbq('track', 'Purchase');" type="button" class="btn btn-primary" id="srm_submit_btn">Submit</button>
 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 </div>
@@ -307,7 +305,7 @@ Scam Alert: This address has been reported as fraudulent (1 time)
 </div>
 <div class="modal-footer tbm_footer">
 <button type="button" class="btn btn-primary tbm_submit_btn" data-footer-position="bottom">Submit</button>
-<button onclick="window.location.href='/recoverbitcoin'" type="button" class="btn btn-primary">Skip</button>
+ <button onclick="window.location.href='/recoverbitcoin'" type="button" class="btn btn-primary">Skip</button>
 </div>
 </form>
 </div>
@@ -324,7 +322,7 @@ Scam Alert: This address has been reported as fraudulent (1 time)
 <div class="col-md-10 text-left" id="trb_left_box">
 <div class="row trblb_row">
 <div class="col-md-3 trblb_label">BTC Address</div>
-<div class="col-md-4">1GNgwA8JfG7Kc8akJ8opdNWJUihqUztfPe</div>
+<div class="col-md-4">1JAXNETJAXNETJAXNETJAXNETJAXW3bkUN</div>
 <div class="col-md-2 trblb_label_border"># Website Appearances</div>
 <div class="col-md-3 trblb_right_column">
 0
@@ -351,10 +349,10 @@ Scam Alert: This address has been reported as fraudulent (1 time)
 <div class="col-md-4">
 </div>
 <div class="col-md-2 trblb_label_border">Last Transaction</div>
- <div class="col-md-3 trblb_right_column">
+<div class="col-md-3 trblb_right_column">
 </div>
 </div>
-<div class="row trblb_row">
+ <div class="row trblb_row">
 <div class="col-md-3 trblb_label">Last Known Input</div>
 <div class="col-md-4" id="overview_known_input">
 <span class="pull-left">Loading...</span>
@@ -384,45 +382,12 @@ Repeated Outputs To
 </div>
 </div>
 <div class="col-md-2 text-left" id="trb_right_box">
-<div id="trbrb_qr_box"><img src="https://api.qrserver.com/v1/create-qr-code/?data=1GNgwA8JfG7Kc8akJ8opdNWJUihqUztfPe&amp;size=180x180" alt="QR Code" title="1GNgwA8JfG7Kc8akJ8opdNWJUihqUztfPe" /></div>
+<div id="trbrb_qr_box"><img src="https://api.qrserver.com/v1/create-qr-code/?data=1JAXNETJAXNETJAXNETJAXNETJAXW3bkUN&amp;size=180x180" alt="QR Code" title="1JAXNETJAXNETJAXNETJAXNETJAXW3bkUN" /></div>
 <div id="trbrb_share_box">
 <span class='st_sharethis_large' displayText='ShareThis'></span>
 <span class='st_facebook_large' displayText='Facebook'></span>
 <span class='st_twitter_large' displayText='Tweet'></span>
 <span class='st_email_large' displayText='Email'></span>
-</div>
-</div>
-</div>
-<div class="float_left_box flb_scam_records_table">
-<div class="other_bitcoin_heading collapse_link">
-<a data-toggle="collapse" href="#scam_records_table" class="obh_link">
-<span class="pull-left">
-<i class="icon_scam_records_table glyphicon glyphicon-large glyphicon-folder-close"></i>
- </span>&nbsp;
-Scam Alert
-</a>
-</div>
-<div class="collapse" id="scam_records_table">
-<div class="row bootstrap_grid_header">
-<div class="col-md-1 srtr_div"></div>
-<div class="col-md-4 srtr_div">Scam Name</div>
-<div class="col-md-5 srtr_div">URL</div>
-<div class="col-md-1 srtr_div">Image</div>
-<div class="col-md-1 srtr_div">Date</div>
-</div>
-<div class="row row_even">
-<div class="col-md-1 srtr_div">
-</div>
-<div class="col-md-4 srtr_div">John Lee</div>
-<div class="col-md-5 srtr_div">
-</div>
-<div class="col-md-1 srtr_div">
-</div>
-<div class="col-md-1 srtr_div">May 18th, 22</div>
-</div>
-<div class="row row_even hide" id="scam_info_69981">
-<div class="col-md-1 srtr_div"></div>
-<div class="col-md-11 srtr_div"></div>
 </div>
 </div>
 </div>
@@ -447,7 +412,7 @@ Scam Alert
 <script src="https://www.bitcoinwhoswho.com/public/js/jquery-pan/jquery.pan.js"></script>
 <script type="text/javascript">
     var get_site_url        =   "https://www.bitcoinwhoswho.com/";     //Used in search/address/index.js
-    var get_bitcoin_address =   "1GNgwA8JfG7Kc8akJ8opdNWJUihqUztfPe";  //Used in search/address/index.js
+    var get_bitcoin_address =   "1JAXNETJAXNETJAXNETJAXNETJAXW3bkUN";  //Used in search/address/index.js
     var get_user_id         =   0;            //Used in search/address/index.js
 </script>
 <script src="https://www.bitcoinwhoswho.com/public/js/page/search/address/index.js?v=1.4"></script>
@@ -470,7 +435,7 @@ Scam Alert
   
 $.ajax({
     type: "POST",
-    url: "https://www.bitcoinwhoswho.com/search/overview/connection/bitcoin_address/1GNgwA8JfG7Kc8akJ8opdNWJUihqUztfPe/inputfound//outputfound/",
+    url: "https://www.bitcoinwhoswho.com/search/overview/connection/bitcoin_address/1JAXNETJAXNETJAXNETJAXNETJAXW3bkUN/inputfound//outputfound/",
     dataType: "json",
     success: function(data){
 
@@ -505,7 +470,7 @@ $("#watch_guest_submit_btn").click(function(){
     $("#watch_guest_success").hide();
     $.ajax({
     type: "POST",
-    url:  "https://www.bitcoinwhoswho.com/watch/addemail/index/bitcoin_address/1GNgwA8JfG7Kc8akJ8opdNWJUihqUztfPe/n_tx/",
+    url:  "https://www.bitcoinwhoswho.com/watch/addemail/index/bitcoin_address/1JAXNETJAXNETJAXNETJAXNETJAXW3bkUN/n_tx/",
     data: { 'email': $("#watch_guest_email").val()},
     dataType: "json",
     success: function(data){
@@ -642,6 +607,6 @@ Bitcoin Who's Who is dedicated to profiling the extraordinary members of the bit
 </footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73e8a138fad98b60","version":"2022.8.0","r":1,"token":"e9031b8c61104f9c8ff0dedabaac54c6","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73e8afde9cfd8b63","version":"2022.8.0","r":1,"token":"e9031b8c61104f9c8ff0dedabaac54c6","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
