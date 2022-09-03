@@ -89,7 +89,7 @@
 <li><a href="https://www.bitcoinwhoswho.com/tags">Tag An Address</a></li>
 <li><a href="https://www.bitcoinwhoswho.com/blog">Blog</a></li>
 </ul>
-<div style="float:right; margin:15px 66px 0px 0px; color: #BBBBBB;">BTC = $21401.11</div>
+<div style="float:right; margin:15px 66px 0px 0px; color: #BBBBBB;">BTC = $19896.46</div>
 </div>
 </div>
 <div id="top_nav_right_box" class="col-md-4 pull-right">
@@ -122,7 +122,6 @@ Scam Alert: This address has been reported as fraudulent (21 times)
 </span>
 <span class="create-btn-wrap top_btn_box">
 
-<button type="button" class="btn btn-info" id="watch_guest_watch_btn" data-toggle="modal" data-target="#watch_guest_modal">Watch</button>
 <button type="button" class="btn btn-warning " id="scam_report_btn" data-toggle="modal" data-target="#scam_report_modal">Report Scam</button>
 <button type="button" class="btn btn-primary" id="add_tag_btn" data-toggle="modal" data-target="#add_tag_modal">Add Tag</button>
 </span>
@@ -178,7 +177,7 @@ Scam Alert: This address has been reported as fraudulent (21 times)
 <div class="alert alert-warning loading-icon" role="alert" id="atm_file_loading" style="display: none;">Please wait...</div>
 <div class="alert alert-danger" role="alert" id="atm_file_error" style="display: none;"></div>
 </div>
-<div class="form-group">
+ <div class="form-group">
 <input type="image" name="atm_captcha" id="atm_captcha" src="public/images/ajax-loader_200x70.gif" onclick="javascript:return false;" />
 <div id="atm_change_captcha_box">
 <a href="javascript:return false;" onclick="document.getElementById('atm_captcha').src='https://www.bitcoinwhoswho.com/google/captcha.php?'+Math.random();document.getElementById('atm_captcha_input').focus();" id="atm_change_captcha">Not readable? Change text.</a>
@@ -225,7 +224,7 @@ Scam Alert: This address has been reported as fraudulent (21 times)
 <div>Make sure to erase or <b>blackout your personal information</b> before attaching!</div>
 <div>Image with .jpg or .png format with 10 MB maximum file size is allowed.</div>
 </div>
-<div class="alert alert-success" role="alert" id="srm_file_success" style="display: none;"></div>
+ <div class="alert alert-success" role="alert" id="srm_file_success" style="display: none;"></div>
 </div>
 <div class="form-group">
 <div class="field_label">Name of Scam:</div>
@@ -318,6 +317,7 @@ Scam Alert: This address has been reported as fraudulent (21 times)
 </div>
 <div class="row">
 <div class="col-lg-12 float_left_box">
+<div class="alert alert-danger" role="alert">Couldn't read BTC address data from blockchain. Please refresh the page or try again later. You can still report a scam using the button above.</div>
 <div class="row text-center">
 <div class="col-lg-12">
 <div class="col-md-12 float_left_box" id="top_report_box">
@@ -333,26 +333,26 @@ Scam Alert: This address has been reported as fraudulent (21 times)
 <div class="row trblb_row">
 <div class="col-md-3 trblb_label">Current Balance</div>
 <div class="col-md-4">
-0.00443522 &nbsp;&nbsp;=&nbsp;&nbsp;$0
+&nbsp;&nbsp;=&nbsp;&nbsp;$0
 </div>
 <div class="col-md-2 trblb_label_border">Total Received</div>
 <div class="col-md-3 trblb_right_column">
-0.00443522 &nbsp;&nbsp;=&nbsp;&nbsp;$0
+&nbsp;&nbsp;=&nbsp;&nbsp;$0
 </div>
 </div>
 <div class="row trblb_row">
 <div class="col-md-3 trblb_label"># Transactions</div>
-<div class="col-md-4">1</div>
+<div class="col-md-4"></div>
 <div class="col-md-2 trblb_label_border"># Output Transactions</div>
 <div class="col-md-3 trblb_right_column" id="trb_total_output_transactions">Loading...</div>
 </div>
 <div class="row trblb_row">
 <div class="col-md-3 trblb_label">First Transaction</div>
 <div class="col-md-4">
-29 Jul 22 </div>
+</div>
 <div class="col-md-2 trblb_label_border">Last Transaction</div>
 <div class="col-md-3 trblb_right_column">
-29 Jul 22 </div>
+ </div>
 </div>
 <div class="row trblb_row">
 <div class="col-md-3 trblb_label">Last Known Input</div>
@@ -398,11 +398,11 @@ Repeated Outputs To
 <a data-toggle="collapse" href="#scam_records_table" class="obh_link">
 <span class="pull-left">
 <i class="icon_scam_records_table glyphicon glyphicon-large glyphicon-folder-close"></i>
- </span>&nbsp;
+</span>&nbsp;
 Scam Alert
 </a>
 </div>
-<div class="collapse" id="scam_records_table">
+ <div class="collapse" id="scam_records_table">
 <div class="row bootstrap_grid_header">
 <div class="col-md-1 srtr_div"></div>
 <div class="col-md-4 srtr_div">Scam Name</div>
@@ -445,7 +445,7 @@ Scam Alert
 <div class="col-md-1 srtr_div">
 <a href="" class="sl_show show" id="sl_show_71211" data-scam-id="71211" data-toggle="tooltip" title="Show Details"><span class="glyphicon glyphicon-plus"></span></a>
 <a href="" class="sl_hide hide" id="sl_hide_71211" data-scam-id="71211" data-toggle="tooltip" title="Hide Details"><span class="glyphicon glyphicon-minus"></span></a>
-</div>
+ </div>
 <div class="col-md-4 srtr_div">Blackmail</div>
 <div class="col-md-5 srtr_div">
 </div>
@@ -509,7 +509,7 @@ Latitude/Longitude: -34.0486, 18.4811<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="423a3a3a3a023b3b3b3b6c212d2f">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1e666666665e67676767307d7173">[email&#160;protected]</a><br />
 Received: (qmail 15326 invoked from network); 27 Jul 2022 07:53:25 -0000<br />
 Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br />
 (envelope-sender )<br />
@@ -519,7 +519,7 @@ Received: from [197.92.144.176] (helo=197-92-144-176.hff.mweb.co.za)<br />
 by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oGbr1-0004zE-Vi<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7d050505053d04040404531e1210">[email&#160;protected]</a>; Wed, 27 Jul 2022 00:53:16 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe86868686be87878787d09d9193">[email&#160;protected]</a>; Wed, 27 Jul 2022 00:53:16 -0700<br />
 Message-ID: <br />
 From: <br />
 To: <br />
@@ -532,7 +532,7 @@ Content-Transfer-Encoding: 7bit<br />
 X-Mailer: Umsvjvo xkyxrwo 7.6<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 197.92.144.176 (failed)<br />
 X-SA-Exim-Connect-IP: 197.92.144.176<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="620b0d12040e0c0b0b2205030f07010d010906030b0e1b4c010d0f">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e37312e38323037371e393f333b3d313d353a3f373227703d3133">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000005,0.010163)], BW: [Enabled, t:<br />
@@ -558,7 +558,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bec6c6c6c6fec7c7c7c790ddd1d3">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ccb4b4b4b48cb5b5b5b5e2afa3a1">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -664,7 +664,7 @@ Latitude/Longitude: 22.518, 88.3832<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2f575757576f56565656014c4042">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a4dcdcdcdce4dddddddd8ac7cbc9">[email&#160;protected]</a><br />
 Received: (qmail 21664 invoked from network); 27 Jul 2022 09:30:05 -0000<br />
 Received: from unknown (HELO xsmtp22.mail2web.com) ([10.100.68.61])<br />
 (envelope-sender )<br />
@@ -674,7 +674,7 @@ Received: from [103.75.160.109] (helo=[103.75.160.108])<br />
 by xsmtp22.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oGdMa-0002Yw-Tl<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aed6d6d6d6eed7d7d7d780cdc1c3">[email&#160;protected]</a>; Wed, 27 Jul 2022 02:29:57 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="90e8e8e8e8d0e9e9e9e9bef3fffd">[email&#160;protected]</a>; Wed, 27 Jul 2022 02:29:57 -0700<br />
 From: <br />
 To: <br />
 Subject: [spam][Bitdefender malware detection] Don't miss your<br />
@@ -690,7 +690,7 @@ Thread-Index: Ac819n9b77v0dw9i819n9b77v0dw9i==<br />
 X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17514<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 103.75.160.109 (deferred)<br />
 X-SA-Exim-Connect-IP: 103.75.160.109<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e99f8e809b889c8da98a9b809a9d868f8685c78a8684">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f781909e85968293b794859e84839891989bd994989a">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp22.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000006,0.010203)], BW: [Enabled, t:<br />
@@ -717,7 +717,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="770f0f0f0f370e0e0e0e5914181a">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f58d8d8d8db58c8c8c8cdb969a98">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -786,7 +786,7 @@ My recommendation - ensure all your passwords are replaced with new ones on a re
 </div>
 <div class="row row_odd hide" id="scam_info_71220">
 <div class="col-md-1 srtr_div"></div>
-<div class="col-md-11 srtr_div">Sent from email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aeddcfc2cbddeec3c7dec280c1dcc980dbc5">[email&#160;protected]</a></div>
+<div class="col-md-11 srtr_div">Sent from email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="05766469607645686c75692b6a77622b706e">[email&#160;protected]</a></div>
 </div>
 <div class="row row_even">
 <div class="col-md-1 srtr_div">
@@ -805,7 +805,7 @@ My recommendation - ensure all your passwords are replaced with new ones on a re
 <div class="col-md-11 srtr_div">Typical cut-n-paste attempt at illegal blackmail. If any hosting service is providing or hosting this wallet address monitor access and notify the authorities. Be aware this kind of thing lowers the value of bitcoin and hurts your bottom line so anything you can do to bring this pathetic idiot to justice will help your own profits.<br />
 </div>
 </div>
- <div class="row row_odd">
+<div class="row row_odd">
 <div class="col-md-1 srtr_div">
 <a href="" class="sl_show show" id="sl_show_71222" data-scam-id="71222" data-toggle="tooltip" title="Show Details"><span class="glyphicon glyphicon-plus"></span></a>
 <a href="" class="sl_hide hide" id="sl_hide_71222" data-scam-id="71222" data-toggle="tooltip" title="Hide Details"><span class="glyphicon glyphicon-minus"></span></a>
@@ -893,7 +893,7 @@ My recommendation - ensure all your passwords are replaced with new ones on a re
 <div class="col-md-1 srtr_div">
 <a href="" class="sl_show show" id="sl_show_71223" data-scam-id="71223" data-toggle="tooltip" title="Show Details"><span class="glyphicon glyphicon-plus"></span></a>
 <a href="" class="sl_hide hide" id="sl_hide_71223" data-scam-id="71223" data-toggle="tooltip" title="Hide Details"><span class="glyphicon glyphicon-minus"></span></a>
- </div>
+</div>
 <div class="col-md-4 srtr_div">Extortion Attempt</div>
 <div class="col-md-5 srtr_div">
 </div>
@@ -912,7 +912,7 @@ My recommendation - ensure all your passwords are replaced with new ones on a re
 </div>
 <div class="col-md-4 srtr_div">Sextortion</div>
 <div class="col-md-5 srtr_div">
-</div>
+ </div>
 <div class="col-md-1 srtr_div">
 <a href="javascript:void(0)" class="pan" data-big="https://www.bitcoinwhoswho.com/public/images/scam_image_alert.png"><img class="img-thumbnail" src="https://www.bitcoinwhoswho.com/public/images/scam/small/62e3b9ba4794b62e3b9ba4794e5.37513352.png" alt="Sextortion"></a>
 </div>
@@ -944,7 +944,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference: <br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e89090909090909090a8869a8987c68d8c9d">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6bebebebebebebebe86a8b4a7a9e8a3a2b3">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -1057,7 +1057,7 @@ Latitude/Longitude: 11.5386, 106.9188<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d5adadadad95acacacacfbb6bab8">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6dedededee6dfdfdfdf88c5c9cb">[email&#160;protected]</a><br />
 Received: (qmail 20008 invoked from network); 29 Jul 2022 13:30:39 -0000<br />
 Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br />
 (envelope-sender )<br />
@@ -1067,7 +1067,7 @@ Received: from [171.233.201.22]<br />
 by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oHQ4W-0006In-Cu<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b7cfcfcfcff7cececece99d4d8da">[email&#160;protected]</a>; Fri, 29 Jul 2022 06:30:33 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2cacacacaf2cbcbcbcb9cd1dddf">[email&#160;protected]</a>; Fri, 29 Jul 2022 06:30:33 -0700<br />
 Date: 30 Jul 2022 02:00:29 +0600<br />
 From: <br />
 X-Priority: 3<br />
@@ -1080,7 +1080,7 @@ Content-Type: text/plain; charset="iso-8859-1"<br />
 Content-Transfer-Encoding: 7bit<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 171.233.201.22 (failed)<br />
 X-SA-Exim-Connect-IP: 171.233.201.22<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dfafb7b0babdbabdbebaa5be9fb5b0bdf1abbeb3beabbeb3b4">[email&#160;protected]</a>.com<br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8fffe7e0eaedeaedeeeaf5eecfe5e0eda1fbeee3eefbeee3e4a1ece0e2">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000005,0.010291)], BW: [Enabled, t:<br />
@@ -1107,7 +1107,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4ccccccccf4cdcdcdcd9ad7dbd9">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="512929292911282828287f323e3c">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -1169,7 +1169,7 @@ My recommendation - ensure all your passwords are replaced with new ones on a re
 </div>
 <div class="col-md-4 srtr_div">Extortion Attempt</div>
 <div class="col-md-5 srtr_div">
-</div>
+ </div>
 <div class="col-md-1 srtr_div">
 </div>
 <div class="col-md-1 srtr_div">Jul 29th, 22</div>
@@ -1213,7 +1213,7 @@ Latitude/Longitude: 4.8093, -75.697<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a2dadadadae2dbdbdbdb8cc1cdcf">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ec94949494ac95959595c28f8381">[email&#160;protected]</a><br />
 Received: (qmail 19233 invoked from network); 28 Jul 2022 23:02:18 -0000<br />
 Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br />
 (envelope-sender )<br />
@@ -1223,7 +1223,7 @@ Received: from [186.83.184.104] (helo=dynamic-ip-18683184104.cable.net.co)<br />
 by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oHCWC-0005Pr-OO<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="364e4e4e4e764f4f4f4f1855595b">[email&#160;protected]</a>; Thu, 28 Jul 2022 16:02:13 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="91e9e9e9e9d1e8e8e8e8bff2fefc">[email&#160;protected]</a>; Thu, 28 Jul 2022 16:02:13 -0700<br />
 Message-ID: <br />
 From: <br />
 To: <br />
@@ -1240,7 +1240,7 @@ X-Mailer: Microsoft Windows Live Mail 15.4.3508.1109<br />
 X-MimeOLE: Produced By Microsoft MimeOLE V15.4.3508.1109<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 186.83.184.104 (failed)<br />
 X-SA-Exim-Connect-IP: 186.83.184.104<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1564706c6355777262703b767a78">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98e9fde1eed8faffeffdb6fbf7f5">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000008,0.009867)], BW: [Enabled, t:<br />
@@ -1267,7 +1267,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="daa2a2a2a29aa3a3a3a3f4b9b5b7">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa82828282ba83838383d4999597">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -1373,7 +1373,7 @@ Latitude/Longitude: 18.4914, -69.9<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a7dfdfdfdfe7dededede89c4c8ca">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="acd4d4d4d4ecd5d5d5d582cfc3c1">[email&#160;protected]</a><br />
 Received: (qmail 21522 invoked from network); 29 Jul 2022 01:03:19 -0000<br />
 Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br />
 (envelope-sender )<br />
@@ -1383,7 +1383,7 @@ Received: from [152.0.197.155] (helo=155.197.0.152.d.dyn.claro.net.do)<br />
 by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oHEPH-00028s-GH<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb93939393ab92929292c5888486">[email&#160;protected]</a>; Thu, 28 Jul 2022 18:03:11 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="463e3e3e3e063f3f3f3f6825292b">[email&#160;protected]</a>; Thu, 28 Jul 2022 18:03:11 -0700<br />
 Message-ID: <br />
 From: <br />
 To: <br />
@@ -1400,7 +1400,7 @@ X-Mailer: Microsoft Outlook Express 6.00.2800.1106<br />
 X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1106<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 152.0.197.155 (failed)<br />
 X-SA-Exim-Connect-IP: 152.0.197.155<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="81ede0f4f3e4efe2e4c1e0e3f3e0ecf2efe4f5afe2eeec">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="721e130700171c111732131000131f011c17065c111d1f">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000007,0.010019)], BW: [Enabled, t:<br />
@@ -1426,7 +1426,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3a424242427a4343434314595557">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89f1f1f1f1c9f0f0f0f0a7eae6e4">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -1532,17 +1532,17 @@ Latitude/Longitude: 11.5386, 106.9188<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a2dadadadae2dbdbdbdb8cc1cdcf">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb83838383bb82828282d5989496">[email&#160;protected]</a><br />
 Received: (qmail 20008 invoked from network); 29 Jul 2022 13:30:39 -0000<br />
 Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br />
- (envelope-sender )<br />
+(envelope-sender )<br />
 by xmail04.myhosting.com (qmail-ldap-1.03) with AES256-SHA encrypted SMTP<br />
 for ; 29 Jul 2022 13:30:33 -0000<br />
 Received: from [171.233.201.22]<br />
 by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oHQ4W-0006In-Cu<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d5adadadad95acacacacfbb6bab8">[email&#160;protected]</a>; Fri, 29 Jul 2022 06:30:33 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="433b3b3b3b033a3a3a3a6d202c2e">[email&#160;protected]</a>; Fri, 29 Jul 2022 06:30:33 -0700<br />
 Date: 30 Jul 2022 02:00:29 +0600<br />
 From: <br />
 X-Priority: 3<br />
@@ -1555,7 +1555,7 @@ Content-Type: text/plain; charset="iso-8859-1"<br />
 Content-Transfer-Encoding: 7bit<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 171.233.201.22 (failed)<br />
 X-SA-Exim-Connect-IP: 171.233.201.22<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0b0a8afa5a2a5a2a1a5baa180aaafa2eeb4a1aca1b4a1acabeea3afad">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="24544c4b4146414645415e45644e4b460a504548455045484f0a474b49">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000005,0.010291)], BW: [Enabled, t:<br />
@@ -1582,7 +1582,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a020202023a0303030354191517">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="08707070704871717171266b6765">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -1639,7 +1639,7 @@ My recommendation - ensure all your passwords are replaced with new ones on a re
 </div>
 <div class="row row_odd">
 <div class="col-md-1 srtr_div">
- <a href="" class="sl_show show" id="sl_show_71240" data-scam-id="71240" data-toggle="tooltip" title="Show Details"><span class="glyphicon glyphicon-plus"></span></a>
+<a href="" class="sl_show show" id="sl_show_71240" data-scam-id="71240" data-toggle="tooltip" title="Show Details"><span class="glyphicon glyphicon-plus"></span></a>
 <a href="" class="sl_hide hide" id="sl_hide_71240" data-scam-id="71240" data-toggle="tooltip" title="Hide Details"><span class="glyphicon glyphicon-minus"></span></a>
 </div>
 <div class="col-md-4 srtr_div">Extortion Attempt</div>
@@ -1688,7 +1688,7 @@ Latitude/Longitude: 18.4914, -69.9<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c646464645c65656565327f7371">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="403838383800393939396e232f2d">[email&#160;protected]</a><br />
 Received: (qmail 21522 invoked from network); 29 Jul 2022 01:03:19 -0000<br />
 Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br />
 (envelope-sender )<br />
@@ -1698,7 +1698,7 @@ Received: from [152.0.197.155] (helo=155.197.0.152.d.dyn.claro.net.do)<br />
 by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oHEPH-00028s-GH<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d5adadadad95acacacacfbb6bab8">[email&#160;protected]</a>; Thu, 28 Jul 2022 18:03:11 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="18606060605861616161367b7775">[email&#160;protected]</a>; Thu, 28 Jul 2022 18:03:11 -0700<br />
 Message-ID: <br />
 From: <br />
 To: <br />
@@ -1715,7 +1715,7 @@ X-Mailer: Microsoft Outlook Express 6.00.2800.1106<br />
 X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1106<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 152.0.197.155 (failed)<br />
 X-SA-Exim-Connect-IP: 152.0.197.155<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="600c011512050e030520010212010d130e05144e030f0d">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff939e8a8d9a919c9abf9e9d8d9e928c919a8bd19c9092">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000007,0.010019)], BW: [Enabled, t:<br />
@@ -1741,7 +1741,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ceb6b6b6b68eb7b7b7b7e0ada1a3">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="760e0e0e0e360f0f0f0f5815191b">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -1808,7 +1808,7 @@ My recommendation - ensure all your passwords are replaced with new ones on a re
 </div>
 <div class="col-md-1 srtr_div">Jul 29th, 22</div>
 </div>
- <div class="row row_even hide" id="scam_info_71241">
+<div class="row row_even hide" id="scam_info_71241">
 <div class="col-md-1 srtr_div"></div>
 <div class="col-md-11 srtr_div"><br />
 =====[ NOTES ]==================================================================<br />
@@ -1847,7 +1847,7 @@ Latitude/Longitude: 4.8093, -75.697<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b5cdcdcdcdf5cccccccc9bd6dad8">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d1a9a9a9a991a8a8a8a8ffb2bebc">[email&#160;protected]</a><br />
 Received: (qmail 19233 invoked from network); 28 Jul 2022 23:02:18 -0000<br />
 Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br />
 (envelope-sender )<br />
@@ -1857,7 +1857,7 @@ Received: from [186.83.184.104] (helo=dynamic-ip-18683184104.cable.net.co)<br />
 by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oHCWC-0005Pr-OO<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a2dadadadae2dbdbdbdb8cc1cdcf">[email&#160;protected]</a>; Thu, 28 Jul 2022 16:02:13 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1d656565655d64646464337e7270">[email&#160;protected]</a>; Thu, 28 Jul 2022 16:02:13 -0700<br />
 Message-ID: <br />
 From: <br />
 To: <br />
@@ -1874,7 +1874,7 @@ X-Mailer: Microsoft Windows Live Mail 15.4.3508.1109<br />
 X-MimeOLE: Produced By Microsoft MimeOLE V15.4.3508.1109<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 186.83.184.104 (failed)<br />
 X-SA-Exim-Connect-IP: 186.83.184.104<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4b3a2e323d0b292c3c2e65282426">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7405110d0234161303115a171b19">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000008,0.009867)], BW: [Enabled, t:<br />
@@ -1901,7 +1901,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="176f6f6f6f576e6e6e6e3974787a">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="304848484870494949491e535f5d">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -2041,7 +2041,7 @@ Latitude/Longitude: 51.4724, 11.9572<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="611919191921181818184f020e0c">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e991919191a990909090c78a8684">[email&#160;protected]</a><br />
 Received: (qmail 24303 invoked from network); 30 Jul 2022 11:25:43 -0000<br />
 Received: from unknown (HELO xsmtp22.mail2web.com) ([10.100.68.61])<br />
 (envelope-sender )<br />
@@ -2051,7 +2051,7 @@ Received: from [92.206.191.250]<br />
 by xsmtp22.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oHkbA-00021v-Is<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a020202023a0303030354191517">[email&#160;protected]</a>; Sat, 30 Jul 2022 04:25:37 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="19616161615960606060377a7674">[email&#160;protected]</a>; Sat, 30 Jul 2022 04:25:37 -0700<br />
 From: <br />
 To: <br />
 Date: 30 Jul 2022 13:47:33 +0100<br />
@@ -2066,7 +2066,7 @@ Content-transfer-encoding: 7BIT<br />
 Content-description: Mail message body<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 92.206.191.250 (failed)<br />
 X-SA-Exim-Connect-IP: 92.206.191.250<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6aaafa8a2b5a7bff7f286aab2afa8a3b2e8a5a9ab">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0aca9aea4b3a1b9f1f480acb4a9aea5b4eea3afad">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp22.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000008,0.009837)], BW: [Enabled, t:<br />
@@ -2093,7 +2093,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a323232320a3333333364292527">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e098989898a099999999ce838f8d">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -2199,7 +2199,7 @@ Latitude/Longitude: 26.4803, 87.2901<br />
 -----[ Email Header ]-----------------------------------------------------------<br />
 <br />
 Return-Path: <br />
-Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f28a8a8a8ab28b8b8b8bdc919d9f">[email&#160;protected]</a><br />
+Delivered-To: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e767676764e77777777206d6163">[email&#160;protected]</a><br />
 Received: (qmail 23006 invoked from network); 31 Jul 2022 07:28:01 -0000<br />
 Received: from unknown (HELO xsmtp22.mail2web.com) ([10.100.68.61])<br />
 (envelope-sender )<br />
@@ -2209,7 +2209,7 @@ Received: from [103.181.226.232]<br />
 by xsmtp22.mail2web.com with esmtp (Exim 4.92)<br />
 (envelope-from )<br />
 id 1oI3Mg-0005xS-Mu<br />
-for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="740c0c0c0c340d0d0d0d5a171b19">[email&#160;protected]</a>; Sun, 31 Jul 2022 00:27:55 -0700<br />
+for <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c5bdbdbdbd85bcbcbcbceba6aaa8">[email&#160;protected]</a>; Sun, 31 Jul 2022 00:27:55 -0700<br />
 From: <br />
 To: <br />
 Subject: [spam][Bitdefender malware detection] Don't miss your<br />
@@ -2225,7 +2225,7 @@ Thread-Index: Acxag75mbt9avmnvxag75mbt9avmnv==<br />
 Content-Language: en-us<br />
 X-Host-Lookup-Failed: Reverse DNS lookup failed for 103.181.226.232 (failed)<br />
 X-SA-Exim-Connect-IP: 103.181.226.232<br />
-X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="32585d57464657725e535c565f5340595c57461c5c5746">[email&#160;protected]</a><br />
+X-SA-Exim-Mail-From: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6ccc9c3d2d2c3e6cac7c8c2cbc7d4cdc8c3d288c8c3d2">[email&#160;protected]</a><br />
 X-SA-Exim-Scanned: No (on xsmtp22.mail2web.com); SAEximRunCond expanded to false<br />
 X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.3.1423, Stamp: 3],<br />
 Multi: [Enabled, t: (0.000008,0.010136)], BW: [Enabled, t:<br />
@@ -2252,7 +2252,7 @@ Moving forward, I have started observing your internet activities on continuous 
 <br />
 Go ahead and take a look at the sequence of events provided below for your reference:<br />
 Initially I bought an exclusive access from hackers to a long list of email accounts (in today's world, that is really a common thing, which can arranged via internet).<br />
-Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7bfbfbfbf87bebebebee9a4a8aa">[email&#160;protected]</a>).<br />
+Evidently, it wasn't hard for me to proceed with logging in your email account (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4ccccccccf4cdcdcdcd9ad7dbd9">[email&#160;protected]</a>).<br />
 <br />
 Within the same week, I moved on with installing a Trojan virus in Operating Systems for all devices that you use to login to email.<br />
 Frankly speaking, it wasn't a challenging task for me at all (since you were kind enough to click some of the links in your inbox emails before).<br />
@@ -2324,7 +2324,7 @@ Website Appearances/Public Sightings
 <div class="col-md-2">Description</div>
 <div class="col-md-2">More Detail</div>
 <div class="col-md-5">Website URL</div>
- <div class="col-md-2">URL Country</div>
+<div class="col-md-2">URL Country</div>
 </div>
 <div class="row row_even">
 <div class="col-md-1">27 Jul 22</div>
@@ -2333,47 +2333,6 @@ Website Appearances/Public Sightings
 <div class="col-md-5"><a href="https://www.bitcoinwhoswho.com/address/16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg">https://www.bitcoinwhoswho.com/address/16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg</a></div>
 <div class="col-md-2 ip2country ip2country_0" data-ip-address="0">Loading...</div>
 </div>
-</div>
-</div>
-<div class="other_bitcoin_heading collapse_link">
-<a data-toggle="collapse" href="#transaction_history_box" class="obh_link">
-<span class="pull-left">
-<i class="icon_transaction_history_box glyphicon glyphicon-large glyphicon-folder-close"></i>
-</span>&nbsp;
-Transaction History
-</a>
-</div>
-<div class="collapse" id="transaction_history_box">
-<table class="table table-striped responsive responsive1">
-<tbody>
-<tr class="active">
-<td class="grid_hash grid_td_1">96dc11bd5e4ef9d58848a8bdc8d9a02da52d9ff510a2a15bb771ebf9c7746a35</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-07-29 00:45:36 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/bc1qk07qsspdxfqw290jd6tkwtj2csrm5r3ajpzalkdvs3s4s5zr7t6sm9r5qw/urlid/0">bc1qk07qsspdxfqw290jd6tkwtj2csrm5r3ajpzalkdvs3s4s5zr7t6sm9r5qw</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_green.png">
-</td>
-<td class="grid_address_output">
-<span class="pull-left">16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg</span>
-</td>
-<td class="grid_value">
-0.00443522 BTC </td>
-</tr> </tbody>
-</table>
-<div class="col-lg-12">
 </div>
 </div>
 </div>
@@ -2403,7 +2362,7 @@ Transaction History
 <script src="https://www.bitcoinwhoswho.com/public/js/page/search/address/index.js?v=1.4"></script>
 <script> 
 // START: # Output Transactions
-    $("#trb_total_output_transactions").html('0');
+    $("#trb_total_output_transactions").html('');
 // END: # Output Transactions
 
 // STRAT: REPEATED INPUT OR OUTPTS.
@@ -2420,7 +2379,7 @@ Transaction History
   
 $.ajax({
     type: "POST",
-    url: "https://www.bitcoinwhoswho.com/search/overview/connection/bitcoin_address/16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg/inputfound/0/outputfound/0",
+    url: "https://www.bitcoinwhoswho.com/search/overview/connection/bitcoin_address/16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg/inputfound//outputfound/",
     dataType: "json",
     success: function(data){
 
@@ -2455,7 +2414,7 @@ $("#watch_guest_submit_btn").click(function(){
     $("#watch_guest_success").hide();
     $.ajax({
     type: "POST",
-    url:  "https://www.bitcoinwhoswho.com/watch/addemail/index/bitcoin_address/16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg/n_tx/1",
+    url:  "https://www.bitcoinwhoswho.com/watch/addemail/index/bitcoin_address/16bHkVFULVmxTGVi2XKpwzkt5KrRnThzPg/n_tx/",
     data: { 'email': $("#watch_guest_email").val()},
     dataType: "json",
     success: function(data){
@@ -2619,6 +2578,6 @@ Bitcoin Who's Who is dedicated to profiling the extraordinary members of the bit
 </footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73e8aefda82c1995","version":"2022.8.0","r":1,"token":"e9031b8c61104f9c8ff0dedabaac54c6","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"744ac41128308b6f","version":"2022.8.1","r":1,"token":"e9031b8c61104f9c8ff0dedabaac54c6","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
