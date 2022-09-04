@@ -1,11 +1,18 @@
 import re
+from turtle import pen
 # import nltk
 # import spacy
 import requests
 from progressbar import ProgressBar
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-# import locationtagger
+import locationtagger
+import nltk
+
+nltk.download('punkt')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
+nltk.download('averaged_perceptron_tagger')
 
 # GeoPy gives the extact address as well.
 
@@ -108,7 +115,13 @@ for x in ipData :
 print(urls)
 
 # place_entity = locationtagger.find_locations(text = string)
-# print(place_entity.country_regions)
+# print(place_entity)
+
+loc = []
+for line in pbar(string):
+    loc.append(locationtagger.find_locations(text = line))
+    
+print(loc)
 
 print(emails)
 
