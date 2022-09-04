@@ -1,12 +1,10 @@
-import csv
-import imp
 import requests
 import json
 from bs4 import BeautifulSoup
 import os
 import spacy
 import time
-from progressbar import ProgressBar, Percentage, Bar, ETA
+from progressbar import ProgressBar
 
 pbar = ProgressBar()
 
@@ -85,7 +83,7 @@ payload={}
 
 
 blockHeaders = {
-    
+
 }
 
 latestBlock = requests.request("GET", blockUrl, headers=blockHeaders, data=payload).json()
