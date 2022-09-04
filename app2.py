@@ -1,13 +1,17 @@
 import re
 from turtle import pen
 # import nltk
-# import spacy
+import os
+import spacy
 import requests
-from progressbar import ProgressBar
+from progressbar import Percentage, ProgressBar,Bar,ETA
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-import locationtagger
+# import locationtagger
 import nltk
+import sqlite3
+
+conn = sqlite3.connect(os.path.dirname(os.path.realpath(__file__)) + "/locationdata.db")
 
 nltk.download('punkt')
 nltk.download('maxent_ne_chunker')
@@ -16,13 +20,14 @@ nltk.download('averaged_perceptron_tagger')
 
 # GeoPy gives the extact address as well.
 
-pbar = ProgressBar()
+pbar = ProgressBar(widgets=[Bar('>', '[', ']'), ' ',Percentage(), ' ',ETA()])
 
 # nltk.download('punkt')
 
 # nltk.download('averaged_perceptron_tagger')
 
 # nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('en_core_web_trf')
 
 with open ("data.html", "r") as f:
     string = f.readlines()
@@ -117,13 +122,33 @@ print(urls)
 # place_entity = locationtagger.find_locations(text = string)
 # print(place_entity)
 
-loc = []
-for line in pbar(string):
-    loc.append(locationtagger.find_locations(text = line))
+
+# TODO: Need to check issue here what is going on, it is not working, sqlite3.OperationalError: unable to open database file
+# "/Users/bhavish051/micromamba/lib/python3.9/site-packages/locationtagger/locationextractor.py", line 71, in __init__
+# "/Users/bhavish051/micromamba/lib/python3.9/site-packages/locationtagger/__init__.py", line 7, in find_locations
+# loc = []
+# for line in pbar(string):
+#     loc.append(locationtagger.find_locations(text = line))
     
-print(loc)
+# print(loc)
 
 print(emails)
 
 # for url in urls:
     
+# names = []
+
+# spacy_parser = nlp(string)
+
+# for entity in spacy_parser.ents:
+    # print(f'Found: {entity.text} of type: {entity.label_}')
+    
+spacy_data = []
+
+for line in string:
+    spacy_parser = nlp(line)
+    for entity in spacy_parser.ents:
+        spacy_data.append({'text': entity.text, 'label': entity.label_})
+        print(f'Found: {entity.text} of type: {entity.label_}')
+        
+print(spacy_data)
