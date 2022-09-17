@@ -349,6 +349,3 @@ jsonString = json.dumps(addressData, indent=4)
 jsonFile = open(fileName, "w")
 jsonFile.write(jsonString)
 jsonFile.close()
-
-
-
