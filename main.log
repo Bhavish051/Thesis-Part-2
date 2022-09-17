@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.31)  16 AUG 2022 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.31)  17 SEP 2022 19:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -192,24 +192,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 No file main.aux.
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count278
@@ -229,7 +229,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 26.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -239,33 +239,33 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count284
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 \c@lstlisting=\count285
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 32.
+(Font)              <12> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 32.
+(Font)              <8> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 32.
+(Font)              <6> on input line 33.
 
-/Users/bhavish051/Desktop/ThesisPython/main.tex:32: Missing } inserted.
+/Users/bhavish051/Desktop/ThesisPython/main.tex:33: Missing } inserted.
 <inserted text> 
                 }
-l.32 \begin
+l.33 \begin
            {center}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-/Users/bhavish051/Desktop/ThesisPython/main.tex:32: Missing { inserted.
+/Users/bhavish051/Desktop/ThesisPython/main.tex:33: Missing { inserted.
 <inserted text> 
                 {
-l.32 \begin
+l.33 \begin
            {center}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -274,7 +274,7 @@ Try to go on, since this might almost work.
 <logo.jpg, id=4, 3159.805pt x 2161.07375pt>
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg  used on input line 33.
+Package pdftex.def Info: logo.jpg  used on input line 34.
 (pdftex.def)             Requested size: 241.49895pt x 165.14023pt.
 [1
 
@@ -295,43 +295,63 @@ Package hyperref Warning: old lol file detected, not used; run LaTeX again.
 
 [6] [7]
 
-LaTeX Warning: Citation `browne_2022' on page 8 undefined on input line 58.
+LaTeX Warning: Citation `browne_2022' on page 8 undefined on input line 61.
 
 
-LaTeX Warning: Citation `zetzsche_arner_buckley_2020' on page 8 undefined on input line 60.
-
-[8] [9]
-
-LaTeX Warning: Citation `kethineni_cao_2019' on page 10 undefined on input line 78.
-
-[10]
-/Users/bhavish051/Desktop/ThesisPython/main.tex:83: Missing \endcsname inserted.
-<to be read again> 
-                   \unhbox 
-l.83 ...¼ller_and_frederik_..._-_petsymposium.org}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
+LaTeX Warning: Citation `zetzsche_arner_buckley_2020' on page 8 undefined on input line 63.
 
 
-LaTeX Warning: Citation `jochen_sch\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {a\global \mathchardef \accent@spacefactor \spacefactor }\let \begingroup \let \typeout \begingroup\def 
-               {
-(Font)              }\let \immediate\write \m@ne {LaTeX Font Info:    \def  { } on input line 83.}\endgroup \endgroup \relax \let \ignorespaces \relax \accent 127 a\egroup \spacefactor \accent@spacefactor fer_christian_m\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {u\global \mathchardef \accent@spacefactor \spacefactor }\let \begingroup \let \typeout \begingroup\def 
-               {
-(Font)              }\let \immediate\write \m@ne {LaTeX Font Info:    \def  { } on input line 83.}\endgroup \endgroup \relax \let \ignorespaces \relax \accent 127 u\egroup \spacefactor \accent@spacefactor ller_and_frederik_..._-_petsymposium.org' on page 11 undefined on input line 83.
+LaTeX Warning: Citation `kethineni_cao_2019' on page 8 undefined on input line 65.
 
-[11] [12]
 
-LaTeX Warning: Citation `blockchain.com' on page 13 undefined on input line 106.
+LaTeX Warning: Citation `getmonero.org' on page 8 undefined on input line 65.
+
+
+LaTeX Warning: Citation `dash_2022' on page 8 undefined on input line 65.
+
+[8] [9] [10] [11]
+<BTC_Popularity.png, id=69, 1182.4175pt x 422.57875pt>
+File: BTC_Popularity.png Graphic file (type png)
+<use BTC_Popularity.png>
+Package pdftex.def Info: BTC_Popularity.png  used on input line 94.
+(pdftex.def)             Requested size: 345.0pt x 123.29266pt.
+<BTC_Price.png, id=71, 669.50125pt x 313.17pt>
+File: BTC_Price.png Graphic file (type png)
+<use BTC_Price.png>
+Package pdftex.def Info: BTC_Price.png  used on input line 95.
+(pdftex.def)             Requested size: 345.0pt x 161.3823pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 94--96
+[][]
+ []
+
+[12 <./BTC_Popularity.png> <./BTC_Price.png>]
+
+LaTeX Warning: Citation `kethineni_cao_2019' on page 13 undefined on input line 107.
+
+[13]
+
+LaTeX Warning: Citation `muller' on page 14 undefined on input line 113.
+
+
+LaTeX Warning: Citation `Fig' on page 14 undefined on input line 115.
+
+[14]
+
+LaTeX Warning: Citation `tracing_transactions_across_cryptocurrency_ledgers_-_usenix' on page 15 undefined on input line 120.
+
+[15] [16] [17]
+
+LaTeX Warning: Citation `blockchain.com' on page 18 undefined on input line 165.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 110.
+(Font)              <7> on input line 171.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 110.
+(Font)              <5> on input line 171.
 
-LaTeX Warning: Citation `Fig' on page 13 undefined on input line 111.
+LaTeX Warning: Citation `Fig' on page 18 undefined on input line 172.
 
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 114.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 175.
 (./SingleTx.json
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/omscmr.fd
@@ -344,7 +364,7 @@ Overfull \hbox (83.00415pt too wide) in paragraph at lines 2--3
 [][] 
  []
 
-
+[18]
 Overfull \hbox (2159.02527pt too wide) in paragraph at lines 19--20
 [][] 
  []
@@ -354,21 +374,21 @@ Overfull \hbox (155.00488pt too wide) in paragraph at lines 28--29
 [][] 
  []
 
-[13]
+
 Overfull \hbox (143.00476pt too wide) in paragraph at lines 35--36
 [][] 
  []
 
-)
+[19])
 
-LaTeX Warning: Citation `blockchain.com' on page 14 undefined on input line 120.
+LaTeX Warning: Citation `blockchain.com' on page 20 undefined on input line 181.
 
-[14] (./SingleAddr.json
+(./SingleAddr.json
 Overfull \hbox (119.00452pt too wide) in paragraph at lines 11--12
 [][] 
  []
 
-
+[20]
 Overfull \hbox (221.00555pt too wide) in paragraph at lines 28--29
 [][] 
  []
@@ -378,12 +398,12 @@ Overfull \hbox (365.00702pt too wide) in paragraph at lines 29--30
 [][] 
  []
 
-[15]
+
 Overfull \hbox (83.00415pt too wide) in paragraph at lines 55--56
 [][] 
  []
 
-
+[21]
 Overfull \hbox (245.0058pt too wide) in paragraph at lines 65--66
 [][] 
  []
@@ -393,7 +413,7 @@ Overfull \hbox (131.00464pt too wide) in paragraph at lines 72--73
 [][] 
  []
 
-[16]
+
 Overfull \hbox (221.00555pt too wide) in paragraph at lines 89--90
 [][] 
  []
@@ -403,7 +423,7 @@ Overfull \hbox (365.00702pt too wide) in paragraph at lines 90--91
 [][] 
  []
 
-[17]
+[22]
 Overfull \hbox (83.00415pt too wide) in paragraph at lines 116--117
 [][] 
  []
@@ -418,12 +438,12 @@ Overfull \hbox (107.0044pt too wide) in paragraph at lines 133--134
 [][] 
  []
 
-
+[23]
 Overfull \hbox (221.00555pt too wide) in paragraph at lines 150--151
 [][] 
  []
 
-[18]
+
 Overfull \hbox (353.0069pt too wide) in paragraph at lines 151--152
 [][] 
  []
@@ -433,19 +453,19 @@ Overfull \hbox (83.00415pt too wide) in paragraph at lines 177--178
 [][] 
  []
 
-
+[24]
 Overfull \hbox (245.0058pt too wide) in paragraph at lines 187--188
 [][] 
  []
 
-[19])
+) [25]
 
-LaTeX Warning: Citation `bitcoinwhoswho' on page 20 undefined on input line 138.
+LaTeX Warning: Citation `bitcoinwhoswho' on page 26 undefined on input line 201.
 
 
-LaTeX Warning: Citation `hashxp.org' on page 20 undefined on input line 139.
+LaTeX Warning: Citation `hashxp.org' on page 26 undefined on input line 202.
 
-[20] [21] [22] [23] [24]
+[26] [27] [28] [29] [30] [31] [32]
 No file main.bbl.
 (./main.aux)
 
@@ -458,21 +478,21 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  C7E36A571650A9C407E0922D65AF6388;2607.
+(rerunfilecheck)             After:  E646FDFCDC28D3A065DE5DE05D77661B;4151.
  ) 
 Here is how much of TeX's memory you used:
- 10537 strings out of 478268
- 160749 string characters out of 5846347
- 552977 words of memory out of 5000000
- 28338 multiletter control sequences out of 15000+600000
+ 10566 strings out of 478268
+ 161163 string characters out of 5846347
+ 550977 words of memory out of 5000000
+ 28348 multiletter control sequences out of 15000+600000
  474035 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,63p,1266b,1813s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,6n,63p,1341b,1813s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (24 pages, 427357 bytes).
+Output written on main.pdf (32 pages, 545922 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
- 305 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 321 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
