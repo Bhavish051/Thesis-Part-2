@@ -3,27 +3,17 @@ import json
 from bs4 import BeautifulSoup
 import os
 import spacy
-import time
-from progressbar import ProgressBar
+from progressbar import ProgressBar, Percentage, Bar, ETA
 
 pbar = ProgressBar()
 
-# /Users/bhavish051/Desktop/ThesisPython/data.html -> This file is the html file of the address
-
-nlp = spacy.load('en_core_web_sm')
+spacy.load('en_core_web_sm')
 
 knownAddresses = ["a1", "a2"] # Need to figure out how to get addresses of like BTC atms and stuff otherwise will need to spend an entire day just to go around sydney and get BTC ATMs Addresses
 
 blockUrl = "https://blockchain.info/latestblock"
 exchangeUrl = "https://rest-sandbox.coinapi.io/v1/exchanges"
 bitcoinAbuseUrl = "https://www.bitcoinabuse.com/api/reports/check"
-
-
-def extractDataFromHtml(data) :
-    doc = nlp(data)
-    for sen in doc.ents:
-        print(sen.text, sen.label_)
-    print(data)
 
 
 def checkIsAddressKnownOrHasInteractedWithKnown(set, address) :
@@ -57,12 +47,8 @@ def extractTransactions(data) :
 
 def extractAddressMetaData(address) : 
     btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + address
-    time.sleep(1)    
     data = requests.request("GET",btcWhoIsWhoUrl, headers={}, data={})
     # print(data.status_code)
-    # Add a delay to avoid getting banned 
-    # Check 503 error code... 
-    # Sleep of 1 second
     if (data is not None) :
         with open(address + ".html", "w") as outfile:
             outfile.write(data.text)
@@ -83,7 +69,7 @@ payload={}
 
 
 blockHeaders = {
-
+    
 }
 
 latestBlock = requests.request("GET", blockUrl, headers=blockHeaders, data=payload).json()
@@ -167,6 +153,7 @@ for result in res :
                                     for y in z.find_all("div", {"class" : "float_left_box flb_scam_records_table"}) :
                                         for x in y.find_all("div", {"class" : "collapse", "id" : "scam_records_table"}) :
                                             for z in x.find_all("div", {"class" : "row row_odd hide", "id" : "scam_info_71212"}) :
+                                    # Working till here something going on down here for some addresses
                                                 if z is not None : 
                                                     finalSection = z.find_all("div", {"class" : "col-md-11"})[0]
 
@@ -217,15 +204,13 @@ interactedAddresses = set(extractTransactions(addressData))
 # interactedAddressesSet = set(interactedAddresses)
 
 print("Number of addresses the target address has interacted with is: " + str(len(interactedAddresses)))
-# Note this figure for statistical purposes. 
-# Neighbours of Malicious Address : How my 
 # print(interactedAddresses.__sizeof__())
 # print(len(interactedAddresses))
 
 # i = 0
 print("Check data about the neighbours now")
 
-for x in pbar(interactedAddresses) :
+for x in interactedAddresses :
     # print(x)
     # i = i + 1
     # print(i)
@@ -256,19 +241,17 @@ for x in pbar(interactedAddresses) :
     htmlData.append({str(x), finalData})
 
     
-# Use table from the website
 
-extractDataFromHtml(htmlData)
     
 # print(htmlData)
 # htmlData
 knownAddress = checkIsAddressKnownOrHasInteractedWithKnown(interactedAddresses, address)
 
-with open("./finalData/" + str(address) + ".html", "w") as outfile :
+fileName = "finalData" + str(address) + ".html"
+with open(fileName, "w") as outfile :
     for x in htmlData :
-        outfile.write("\nNew Address\n")
-        # for y in x:
-        outfile.write(str(y))
+        for key,val in x.items():
+            outfile.write({key + ":" + val})
 
 # print(interactedAddresses)
 
@@ -307,27 +290,18 @@ with open("./finalData/" + str(address) + ".html", "w") as outfile :
 
 abuseDBReportURL = "https://www.bitcoinabuse.com/api/download/30d"
 
-def downloadFullAbuseDBReport() :
-    res = requests.request("GET", abuseDBReportURL, params={
-            'time_period' : '30d',
-            'api_token' : 'AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW'
-        }, headers=addressHeaders, data=payload)
-    print(res)
-    # res.content
-    # cr = csv.reader(res.content, dialect=csv.excel_tab)
-    # writer = csv.writer(res.content, delimiter=',')
-    # for line in     
-    # for row in cr:
-    #     print(row)
-    f = open("./reports/abuseDBReport.csv", "w")
-    f.write(str(res.content))
-    f.close()
-        # f = open("./reports/abuseDBReport.csv", "w")
-    # writer = csv.writer(f)
-    # writer.writerows(res.content)
-    # f.close()
+# def downloadFullAbuseDBReport() :
+#     res = requests.request("GET", abuseDBReportURL, params={
+#             'time_period' : '30d',
+#             'api_token' : 'AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW'
+#         }, headers=addressHeaders, data=payload)
+#     print(res)
+#     f = open("./reports/abuseDBReport.csv", "w")
+#     writer = csv.writer(f)
+#     writer.writerows(res)
+#     f.close()
 
-downloadFullAbuseDBReport()
+# downloadFullAbuseDBReport()
 
 # hasInteractedWithAbuseAddress = True
 

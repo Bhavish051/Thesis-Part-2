@@ -76,6 +76,7 @@ In the following sections we will go through everything mentioned above in detai
 Cryptocurrencies are a modern form of digital decentralized currencies which aim to put all the control of a currency and how it works in the hands of the consumers. The distinguishing factor between the conventional currencies we normally use and crypto is first its operation of a public ledger and second decentralized control. Now, every currency needs to maintain a ledger to keep track of the consumers, their activites i.e. the transactions, their account balances, in traditional banking systems all of this information is confidential and only a select group of people have access to it whereas in the cryptocurrencies everything is public, anyone can download the blockchain on their systems or access it through a number of APIs available these days to look at this information. However with all this information, it doesn't mean that you know how much money someone has because cryptocurrencies hide their users' identity behind wallet addresses and there is no direct link between the real work identity of a person and his wallet address. So you can check how money there is in a wallet address, the transactions the address has made but cannot check who operates/owns the wallet address.
 
 \subsection{How do cryptocurrencies work?}
+\includegraphics[]{Simple Blockchain.jpeg}
 Before we actually start exploring our area of research we need to be aware of how cryptocurrencies technically operate. To simplify things we will be using Bitcoin as our reference to explain the technical architecture.
 
 As said earlier all currencies need a ledger to work so in case of cryptocurrencies it is the blockchain itself. Blockchain could be any is essentially is a Linked List \cite{} of Blocks put one after another. Each Block inside the blockchain is a primarily a collection of transaction with some other metadata associated. Modern cryptocurrencies work on maintaining a public ledger which is the distinguishing factor of these currencies with the standard paper currencies that we have been using for ages. 
@@ -92,7 +93,7 @@ In this paper we will at times refer to a transaction or address being malicious
 \pagebreak
 
 \includegraphics[width=1\linewidth]{BTC_Popularity.png}
-\includegraphics[width=1\linewidth]{BTC_Price.png}
+\includegraphics[width=1.1\linewidth]{BTC_Price.png}
 
 \pagebreak
 
@@ -196,10 +197,14 @@ The main point we need to keep in mind here is although we are working with publ
         
         When it comes to web scraping we will be downloading the entire page as an HTML instead of using APIs and then parsing the page element by element. This approach has both advantages and dis-advantages but in our cases the advantages outweigh the negatives so we are using this approach. Firstly when it comes to APIs, these sources are not best known to provide these services so getting an API key is very hard. We applied for an API key but its been over months since we have got anything so we decided to use the web crawling service as it will also give us more control over what data we can process. And finally APIs always have this security throttling feature against Denial of Service attacks so we can bypass this while scraping the web as we are acting as if a lot of users are accessing the web page which is a very normal behaviour and most websites do not have any restriction to the number of users who can access their page.
         
+        For the web scraping of the page obtained from the sources we have to tailor write our code to adapt to the HTML returned from the page to target and extract data from the exact section of the page we are after. The main section of the page we are interested is the scam alerts \cite{}. In order to do so we are using the python's\cite{python.org} beautiful soup\cite{beautiful_soup_documentation} library which is well known to be used for these applications where we want to read exact sections from an HTML page.
+        
+        % Insert Code for the scraping
+        
         The sources we are targeting right now are 
         \begin{enumerate}
             \item Bitcoin Who is Who \cite{bitcoinwhoswho}
-            \item Hash XP \cite{hashxp.org}
+            % \item Hash XP \cite{hashxp.org}
         \end{enumerate}
         In the sections below we will go though in detail the data provided by each source in detail but breifly these 2 sources provide nearly the same information except in some case one is known to have more information about the address than the other so it is always good to have 2 sources and also helps in better data validation. In the end we cannot completely rely on this information as this is publicly sourced and there are high chances of false positives as well so we have to take a cautious approach when analyzing this data and making further conclusions. 
         
