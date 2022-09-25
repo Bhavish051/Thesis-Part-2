@@ -7,6 +7,8 @@ import requests
 from bs4 import BeautifulSoup
 import time
 from progressbar import Percentage, ProgressBar,Bar,ETA
+from tabulate import tabulate
+import pandas as pd
 
 pbar = ProgressBar(widgets=[Bar('>', '[', ']'), ' ',Percentage(), ' ',ETA()])
 
@@ -47,7 +49,9 @@ html = extractHTML(address)
 
 parsedHtml = BeautifulSoup(html, "html.parser")
 
-finalSection = object()
+finalSection = []
+numScamAlerts = 0
+
 res = parsedHtml.body.find_all("div", {"id": "wrapper"})
 
 # print(res)
@@ -63,14 +67,29 @@ for result in res :
                                 for z in x.find_all("div", {"class" : "col-lg-12"}) :
                                     for y in z.find_all("div", {"class" : "float_left_box flb_scam_records_table"}) :
                                         for x in y.find_all("div", {"class" : "collapse", "id" : "scam_records_table"}) :
-                                            for z in x.find_all("div", {"class" : "row row_odd hide", "id" : "scam_info_71212"}) :
-                                                finalSection = z.find_all("div", {"class" : "col-md-11"})[0]
+                                            # for z in x.find_all("div", {"class" : "row row_odd hide", "id":lambda x: x and x.startswith('scam_info')}) :
+                                            numScamAlerts = len(x.find_all("div", {"class" :lambda x: x and x.startswith('row row_')}))/2
+                                            for z in x.find_all("div", {"class" :lambda x: x and x.startswith('row row_')}) :
+                                                finalSection.append(z.find_all("div", {"class" : "col-md-11"}))
 
 # Need to figure out the number of scam alerts recieved from BTC who is WHO
 # Cross check that with BTCAbuseDB to see what it says
+
+data = []
+col_names = ["Address", "Scam Alerts", "Number of Scam Alerts from BTC Who is WHO", "Number of Scam Alerts from AbuseDB"]
+
+print(numScamAlerts)
+
+if (numScamAlerts > 0) :
+    print("Scam Alerts Recieved from BTC Who is WHO")
+    
 
 btcAbuseResponse = requests.get(BTC_ABUSE_ADDRESS_URL, params={"address": address, 'api_token' : 'AypnQ9bsgY931zWSAK8NdErbZl9wf9SDrG9RI3qW'}).json()
 print(btcAbuseResponse['count'])
 if (btcAbuseResponse['count'] > 0):
     maliciousAddress = True
     print("This address has been reported as a scam address")
+    
+# print(tabulate(data, headers=col_names, tablefmt="fancy_grid", showindex="always"))
+
+print(len(set(pd.read_csv("report.csv")['address'].values)))
