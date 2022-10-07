@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from progressbar import Percentage, ProgressBar,Bar,ETA
 import pandas as pd
+import time
 
 db = mysql.connector.connect(user='root', password='1234', host='Bhavishs-MacBook-Air.local')
 dbCursor = db.cursor()
@@ -11,6 +12,7 @@ dbCursor.execute("USE btc;")
 pbar = ProgressBar(widgets=[Bar('>', '[', ']'), ' ',Percentage(), ' ',ETA()])
 
 def extractHTML(address) : 
+    time.sleep(1) 
     btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + address
     data = requests.request("GET",btcWhoIsWhoUrl, headers={}, data={})
     return data.text
@@ -59,25 +61,31 @@ def writeToFile(addressData, x) :
     with open("./finalAddressAndNeighbourData/" + str(x) + ".html", "w") as outfile :
         outfile.write(str(addressData))
 
-def validateResults(addresses) :
+def validateResults(data) :
+    print(len(data))
     addresses = []
-    print(len(maliciousAddressesToInvestigate))
-    for x in pbar(addresses) :
+    addresswithNeighbours = []
+    for x in pbar(data) :
         print(x)
         addressData = []
         result = findIfBtcWhoIsWhoHasReport(x)
+        print("Address : " + x + " has " + str(result["numScamAlerts"]) + " scam alerts")
         if (result['numScamAlerts'] > 0) :
             addresses.append(x)
-            addressData.append(result['finalSection'])
+            addressData.append({"address" : x, "data" : result['finalSection']})
             # Check NeighBourData
-            neighbours = extractNeighbours(x)
-            for x in neighbours :
-                result = findIfBtcWhoIsWhoHasReport(x)
-                neighBourData = findIfBtcWhoIsWhoHasReport(neighbours)
-                if (neighBourData['numScamAlerts'] > 0) :
-                    addressData.append(neighBourData['finalSection'])
-                writeToFile(addressData, x)
-    return {"addresses" : addresses}
+        neighbours = set(extractNeighbours(x))
+        for y in neighbours :
+            neighBourData = findIfBtcWhoIsWhoHasReport(y)
+            print("Neighbour : " + y + " has " + str(neighBourData["numScamAlerts"]) + " scam alerts of " + x)
+            if (neighBourData['numScamAlerts'] > 0) :
+                addressData.append({"address" : y, "data" : neighBourData['finalSection']})
+        print(addressData)
+        print(len(neighbours))
+        addresswithNeighbours.append({"address":x,"neighbours": neighbours})
+        if addressData :
+            writeToFile(addressData, x)
+    return {"addresses" : addresses, "addresswithNeighbours" : addresswithNeighbours}
         
 dbCursor.execute("SELECT label,count(*) FROM bitcoinheistdata group by label;")
 
@@ -95,26 +103,19 @@ for x in set(legitAddresses) :
     legitAddressesToInvestigate.append((str(x)).replace("(''","").replace("',)",""))
 
 
-dbCursor.execute("SELECT address FROM bitcoinheistdata where label != 'white';")
+dbCursor.execute("select address from bitcoinheistdata where label = 'montrealSamSam' order by neighbors asc limit 100;")
 # Correct addresses this way but very slow
 
 maliciousAddresses = dbCursor.fetchall()
 
-print(len(maliciousAddresses))
-
 maliciousAddressesToInvestigate = []
 
-for x in set(maliciousAddresses) :
+for x in maliciousAddresses :
     maliciousAddressesToInvestigate.append((str(x)).replace("('","").replace("',)",""))
 
 
-maliciousWithScamData = validateResults(maliciousAddressesToInvestigate)
+maliciousWithScamData = validateResults(set(maliciousAddressesToInvestigate))
 print("Malicious Addresses with Scams : " + str(maliciousWithScamData['addresses']))
+print(maliciousWithScamData["addresswithNeighbours"])
 TruePositives = len(maliciousWithScamData['addresses'])/len(maliciousAddressesToInvestigate)
 print("True Positives : " + str(TruePositives))
-
-
-# legitWithScams = validateResults(legitAddressesToInvestigate)
-# print("Legit Addresses with Scams : " + str(legitWithScams))
-# FalsePositives = legitWithScams/len(legitAddressesToInvestigate)
-# print("False Positives : " + str(FalsePositives))
