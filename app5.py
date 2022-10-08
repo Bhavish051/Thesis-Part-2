@@ -18,12 +18,17 @@ async def extractHTML(session, address) :
     btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + address
     async with session.get(btcWhoIsWhoUrl) as response:
         data = await response.text()
+        print(data)
         return data
 
 async def findIfBtcWhoIsWhoHasReport(address,session) : 
+    print("Extracting HTML")
+    print(address)
     html = await extractHTML(session, address)
+    if html is not None:
+        print(html)
+        writeToFile(html, address)
     # parsedHtml = BeautifulSoup(html, "html.parser")
-    # writeToFile(parsedHtml, address)
     
     # if parsedHtml.body is not None :
     #     res = parsedHtml.body.find_all("div", {"id": "wrapper"})
@@ -68,21 +73,21 @@ def extractNeighbours(address) :
     
 def writeToFile(addressData, x) :
     print("Writing to file for " + x)
-    with open("./finalAddressAndNeighbourData/" + str(x) + ".html", "w") as outfile :
+    with open("./fData/" + str(x) + ".html", "w") as outfile :
         outfile.write(str(addressData))
 
 async def validateResults(data) :
     async with aiohttp.ClientSession() as session:
-        print(len(data))
+        # print(len(data))
         addresses = []
         addresswithNeighbours = []
         tasks = []
         for x in pbar(data) :
-            print(x)
+            # print(x)
             addressData = []
             result = asyncio.ensure_future(findIfBtcWhoIsWhoHasReport(x, session))
             tasks.append(result)
-            print("Address : " + x + " scam alerts")
+            # print("Address : " + x + " scam alerts")
             # if (result['numScamAlerts'] > 0) :
                 # addresses.append(x)
                 # addressData.append({"address" : x, "data" : result['finalSection']})
@@ -95,7 +100,7 @@ async def validateResults(data) :
                 # if (neighBourData['numScamAlerts'] > 0) :
                     # addressData.append({"address" : y, "data" : neighBourData['finalSection']})
             # print(addressData)
-            print(len(neighbours))
+            # print(len(neighbours))
             addresswithNeighbours.append({"address":x,"neighbours": neighbours})
             if addressData :
                 writeToFile(addressData, x)
@@ -103,24 +108,27 @@ async def validateResults(data) :
         await asyncio.gather(*tasks)
     return {"addresses" : addresses, "addresswithNeighbours" : addresswithNeighbours}
         
-dbCursor.execute("SELECT label,count(*) FROM bitcoinheistdata group by label;")
+# dbCursor.execute("SELECT label,count(*) FROM bitcoinheistdata group by label;")
 
-result = dbCursor.fetchall()
+# result = dbCursor.fetchall()
 
-classifiedAddresses = pd.DataFrame(result)
+# classifiedAddresses = pd.DataFrame(result)
 
-dbCursor.execute("SELECT address FROM bitcoinheistdata where label = 'white';")
+# dbCursor.execute("SELECT address FROM bitcoinheistdata where label = 'white';")
 
-legitAddressesToInvestigate = []
+# legitAddressesToInvestigate = []
 
-legitAddresses = dbCursor.fetchall()
+# legitAddresses = dbCursor.fetchall()
 
-if legitAddresses is not None : 
-    for x in set(legitAddresses) :
-        legitAddressesToInvestigate.append((str(x)).replace("(''","").replace("',)",""))
+# if legitAddresses is not None : 
+#     for x in set(legitAddresses) :
+#         legitAddressesToInvestigate.append((str(x)).replace("(''","").replace("',)",""))
 
 
-dbCursor.execute("select address from bitcoinheistdata where label = 'montrealSamSam' order by neighbors asc limit 100;")
+# dbCursor.execute("select address from bitcoinheistdata where label = 'montrealSamSam' order by neighbors asc limit 100;")
+STATEMENT = "select address from bitcoinheistdata where label != 'white';"
+print("Executing " + STATEMENT)
+dbCursor.execute(STATEMENT)
 # Correct addresses this way but very slow
 
 maliciousAddresses = dbCursor.fetchall()
