@@ -74,7 +74,7 @@ def extractNeighbours(address) :
     
 def writeToFile(addressData, x) :
     print("Writing to file for " + x)
-    with open("./finalDataFolder/" + str(x) + ".html", "w") as outfile :
+    with open("./finalData/" + str(x) + ".html", "w") as outfile :
         outfile.write(str(addressData))
 
 async def validateResults(data) :
@@ -139,7 +139,7 @@ if maliciousAddresses is not None :
     for x in maliciousAddresses :
         maliciousAddressesToInvestigate.append((str(x)).replace("('","").replace("',)",""))
 
-
+print(len(set(maliciousAddressesToInvestigate)))
 
 # maliciousWithScamData = asyncio.run(validateResults(set(maliciousAddressesToInvestigate)))
 # print("Malicious Addresses with Scams : " + str(maliciousWithScamData['addresses']))
