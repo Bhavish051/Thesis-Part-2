@@ -1,3 +1,4 @@
+from contextlib import suppress
 import mysql.connector
 import requests
 from bs4 import BeautifulSoup
@@ -73,7 +74,7 @@ def extractNeighbours(address) :
     
 def writeToFile(addressData, x) :
     print("Writing to file for " + x)
-    with open("./fData/" + str(x) + ".html", "w") as outfile :
+    with open("./finalDataFolder/" + str(x) + ".html", "w") as outfile :
         outfile.write(str(addressData))
 
 async def validateResults(data) :
@@ -126,7 +127,7 @@ async def validateResults(data) :
 
 
 # dbCursor.execute("select address from bitcoinheistdata where label = 'montrealSamSam' order by neighbors asc limit 100;")
-STATEMENT = "select address from bitcoinheistdata where label != 'white';"
+STATEMENT = "select address from bitcoinheistdata where label = 'paduaCryptoWall';"
 print("Executing " + STATEMENT)
 dbCursor.execute(STATEMENT)
 # Correct addresses this way but very slow
@@ -139,8 +140,14 @@ if maliciousAddresses is not None :
         maliciousAddressesToInvestigate.append((str(x)).replace("('","").replace("',)",""))
 
 
-maliciousWithScamData = asyncio.run(validateResults(set(maliciousAddressesToInvestigate)))
-print("Malicious Addresses with Scams : " + str(maliciousWithScamData['addresses']))
-print(maliciousWithScamData["addresswithNeighbours"])
-TruePositives = len(maliciousWithScamData['addresses'])/len(maliciousAddressesToInvestigate)
-print("True Positives : " + str(TruePositives))
+
+# maliciousWithScamData = asyncio.run(validateResults(set(maliciousAddressesToInvestigate)))
+# print("Malicious Addresses with Scams : " + str(maliciousWithScamData['addresses']))
+
+# print(maliciousWithScamData["addresswithNeighbours"])
+# TruePositives = len(maliciousWithScamData['addresses'])/len(maliciousAddressesToInvestigate)
+# print("True Positives : " + str(TruePositives))
+
+loop = asyncio.get_event_loop() 
+with suppress(asyncio.TimeoutError) : 
+    loop.run_until_complete(validateResults(set(maliciousAddressesToInvestigate)))
