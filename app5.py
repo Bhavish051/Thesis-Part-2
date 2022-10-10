@@ -16,7 +16,7 @@ dbCursor.execute("USE btc;")
 pbar = ProgressBar(widgets=[Bar('>', '[', ']'), ' ',Percentage(), ' ',ETA()])
 
 async def extractHTML(session, address) : 
-    btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + address
+    btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + (address)
     async with session.get(btcWhoIsWhoUrl) as response:
         data = await response.text()
         print(data)
@@ -74,7 +74,7 @@ def extractNeighbours(address) :
     
 def writeToFile(addressData, x) :
     print("Writing to file for " + x)
-    with open("./finalData/" + str(x) + ".html", "w") as outfile :
+    with open("./btcabuseaddresses/" + str(x) + ".html", "w") as outfile :
         outfile.write(str(addressData))
 
 async def validateResults(data) :
@@ -127,19 +127,19 @@ async def validateResults(data) :
 
 
 # dbCursor.execute("select address from bitcoinheistdata where label = 'montrealSamSam' order by neighbors asc limit 100;")
-STATEMENT = "select address from bitcoinheistdata where label = 'paduaCryptoWall';"
-print("Executing " + STATEMENT)
-dbCursor.execute(STATEMENT)
+# STATEMENT = "select address from bitcoinheistdata where label = 'paduaCryptoWall';"
+# print("Executing " + STATEMENT)
+# dbCursor.execute(STATEMENT)
 # Correct addresses this way but very slow
 
-maliciousAddresses = dbCursor.fetchall()
+# maliciousAddresses = dbCursor.fetchall()
 
-maliciousAddressesToInvestigate = []
-if maliciousAddresses is not None :
-    for x in maliciousAddresses :
-        maliciousAddressesToInvestigate.append((str(x)).replace("('","").replace("',)",""))
+# maliciousAddressesToInvestigate = []
+# if maliciousAddresses is not None :
+#     for x in maliciousAddresses :
+#         maliciousAddressesToInvestigate.append((str(x)).replace("('","").replace("',)",""))
 
-print(len(set(maliciousAddressesToInvestigate)))
+# print(len(set(maliciousAddressesToInvestigate)))
 
 # maliciousWithScamData = asyncio.run(validateResults(set(maliciousAddressesToInvestigate)))
 # print("Malicious Addresses with Scams : " + str(maliciousWithScamData['addresses']))
@@ -147,6 +147,20 @@ print(len(set(maliciousAddressesToInvestigate)))
 # print(maliciousWithScamData["addresswithNeighbours"])
 # TruePositives = len(maliciousWithScamData['addresses'])/len(maliciousAddressesToInvestigate)
 # print("True Positives : " + str(TruePositives))
+
+maliciousAddressesToInvestigate = []
+# Populate this list from the csv
+
+df = pd.read_csv("latestReport.csv")
+
+# print(df['address'])
+# letters = df.Letter.to_list()
+list = df.address.to_list()
+
+for x in list :
+    maliciousAddressesToInvestigate.append(str(x))
+
+print(len(set(maliciousAddressesToInvestigate)))
 
 loop = asyncio.get_event_loop() 
 with suppress(asyncio.TimeoutError) : 
