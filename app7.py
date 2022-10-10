@@ -1,4 +1,5 @@
 import os
+from typing import Set
 from bs4 import BeautifulSoup
 from progressbar import Percentage, ProgressBar,Bar,ETA
 
@@ -25,14 +26,14 @@ def processHTML(x, y) :
                                                 numScamAlerts = len(x.find_all("div", {"class" :lambda x: x and x.startswith('row row_')}))/2
                                                 for z in x.find_all("div", {"class" :lambda x: x and x.startswith('row row_')}) :
                                                     finalSection.append(z.find_all("div", {"class" : "col-md-11"}))
-    return finalSection, numScamAlerts  
+    return {"HTML" : finalSection,"numberOfAlerts" : numScamAlerts}  
 
 def read_file(file_path) :
     with open(file_path, "r") as f :
         return f.read()
     
 x = 0
-
+addressesWithData = []
     
 for file in pbar(os.listdir(path)) : 
     if x == 0 :
@@ -40,4 +41,12 @@ for file in pbar(os.listdir(path)) :
         x = 1
     data = read_file(file)
     print(file)
-    print(processHTML(data, file))
+    res = processHTML(data, file)
+    print(res)
+    if res["numberOfAlerts"] > 0 :
+        addressesWithData.append(file)
+
+print(len(set(addressesWithData)))
+with open ("addressesWithData.txt", "w") as f :
+    for address in set(addressesWithData) :
+        f.write(address + ",")
