@@ -5,4 +5,3 @@ import pandas as pd
 top_sites = pd.read_csv(ALEXA_TOP_1M, header=None)
 
 print(top_sites.head())
-

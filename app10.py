@@ -45,11 +45,17 @@ print(len(set(targetNeighbours)))
 
 count = 0
 
+html = []
+
 for x in pbar(set(targetNeighbours)) :
     file_exists = exists("./btcabuseNeighbours/" + x + ".html")
     if file_exists :
         count = count + 1
         with open("./btcabuseNeighbours/" + x + ".html") as f :
-            print(processHTML(f.read()))
+            data = processHTML(f.read())
+            if data["numberOfAlerts"] > 0 :
+                html.append({"address" : x, "HTML" : data["HTML"]})
 
-print(count)
+
+with open (TARGET_ADDRESS + "TARGET_ADDRESS" + ".json", "w") as f :
+    f.write(json.dumps(str(html)))
