@@ -29,7 +29,7 @@ pbar = ProgressBar(widgets=[Bar('>', '[', ']'), ' ',Percentage(), ' ',ETA()])
 # nlp = spacy.load('en_core_web_lg')
 nlp = spacy.load('en_core_web_trf')
 
-with open ("data.html", "r") as f:
+with open ("3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85BTARGET_ADDRESS.json", "r") as f:
     string = f.readlines()
     
 # tokens = nlkt.word_tokenize(string)
@@ -43,7 +43,7 @@ urls = []
 emails = []
 ipList = []
 
-with open("data.html") as file:
+with open("3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85BTARGET_ADDRESS.json") as file:
         for line in file:
             # \b((?:https?://)?(?:(?:www\.)?(?:[\da-z\.-]+)\.(?:[a-z]{2,6})|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|(?:(?:[0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,7}:|(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}|(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}|(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}|(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:(?:(?::[0-9a-fA-F]{1,4}){1,6})|:(?:(?::[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(?::[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(?:ffff(?::0{1,4}){0,1}:){0,1}(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])|(?:[0-9a-fA-F]{1,4}:){1,4}:(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])))(?::[0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])?(?:/[\w\.-]*)*/?)\b
 
@@ -88,31 +88,32 @@ headers = {
 }
 
 # data = '["208.80.152.201", "91.198.174.192"]'
+if len(ipList) > 0:
+    data = "["
+    for x in ipList:
+        data = data + '"' + x + '"' + ", "
 
-data = "["
-for x in ipList:
-    data = data + '"' + x + '"' + ", "
 
+    data = data + '"' + ipList[0] + '"' + "]"
 
-data = data + '"' + ipList[0] + '"' + "]"
+    session = requests.Session()
+    retry = Retry(connect=3, backoff_factor=0.5)
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
 
-session = requests.Session()
-retry = Retry(connect=3, backoff_factor=0.5)
-adapter = HTTPAdapter(max_retries=retry)
-session.mount('http://', adapter)
-session.mount('https://', adapter)
+    ipData = session.post('http://ip-api.com/batch', headers=headers, data=data).json()
 
-ipData = session.post('http://ip-api.com/batch', headers=headers, data=data).json()
-# ipData = requests.request("POST", "http://ip-api.com/batch", headers = headers , data = data)
+    # ipData = requests.request("POST", "http://ip-api.com/batch", headers = headers , data = data)
 
-print(ipData)
+    print(ipData)
 
 # with open('data.json', 'w') as f:
 #     f.write(str(ipData))
 
-for x in ipData :
-    if (x['status'].lower() == 'success'):
-        print(x['query'] + " : " + x['country'] + " : " + x['city'] + " : " + x['isp'] + " : " + x['zip'] + ":" + str(x['lat']) + ":" + str(x['lon']))
+    for x in ipData :
+        if (x['status'].lower() == 'success'):
+            print(x['query'] + " : " + x['country'] + " : " + x['city'] + " : " + x['isp'] + " : " + x['zip'] + ":" + str(x['lat']) + ":" + str(x['lon']))
         
 
 
@@ -151,4 +152,4 @@ for line in string:
         spacy_data.append({'text': entity.text, 'label': entity.label_})
         print(f'Found: {entity.text} of type: {entity.label_}')
         
-print(spacy_data)
+# print(spacy_data)
