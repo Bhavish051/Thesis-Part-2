@@ -31,6 +31,7 @@ def extractNeighbours(address) :
 neighborData = []
 
 for x in lines :
+    x = x.split(".")[0]
     neighborData.append({"address" : x, "neighbours" : extractNeighbours(x)})
     
 with open("neighborData.json", "w") as f :
