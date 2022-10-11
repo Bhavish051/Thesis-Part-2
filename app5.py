@@ -1,4 +1,5 @@
 from contextlib import suppress
+import os
 import mysql.connector
 import requests
 from bs4 import BeautifulSoup
@@ -7,11 +8,12 @@ import pandas as pd
 import time
 import aiohttp
 import asyncio
+import json
 
-
-db = mysql.connector.connect(user='root', password='1234', host='Bhavishs-MacBook-Air.local')
-dbCursor = db.cursor()
-dbCursor.execute("USE btc;")
+# Commenting for now since working with neighbours already.
+# db = mysql.connector.connect(user='root', password='1234', host='Bhavishs-MacBook-Air.local')
+# dbCursor = db.cursor()
+# dbCursor.execute("USE btc;")
 
 pbar = ProgressBar(widgets=[Bar('>', '[', ']'), ' ',Percentage(), ' ',ETA()])
 
@@ -74,7 +76,7 @@ def extractNeighbours(address) :
     
 def writeToFile(addressData, x) :
     print("Writing to file for " + x)
-    with open("./btcabuseaddresses/" + str(x) + ".html", "w") as outfile :
+    with open("./btcabuseNeighbours/" + str(x) + ".html", "w") as outfile :
         outfile.write(str(addressData))
 
 async def validateResults(data) :
@@ -85,7 +87,7 @@ async def validateResults(data) :
         tasks = []
         for x in pbar(data) :
             # print(x)
-            addressData = []
+            # addressData = []
             result = asyncio.ensure_future(findIfBtcWhoIsWhoHasReport(x, session))
             tasks.append(result)
             # print("Address : " + x + " scam alerts")
@@ -93,18 +95,23 @@ async def validateResults(data) :
                 # addresses.append(x)
                 # addressData.append({"address" : x, "data" : result['finalSection']})
                 # Check NeighBourData
-            neighbours = set(extractNeighbours(x))
-            for y in neighbours :
-                neighBourData = asyncio.ensure_future(findIfBtcWhoIsWhoHasReport(y, session))
-                tasks.append(neighBourData)
-                print("Neighbour : " + y + " scam alerts of " + x)
+                
+                
+            # Commenting for now since working with neighbours already.
+            # neighbours = set(extractNeighbours(x))
+            # for y in neighbours :
+            #     neighBourData = asyncio.ensure_future(findIfBtcWhoIsWhoHasReport(y, session))
+            #     tasks.append(neighBourData)
+            #     print("Neighbour : " + y + " scam alerts of " + x)
                 # if (neighBourData['numScamAlerts'] > 0) :
                     # addressData.append({"address" : y, "data" : neighBourData['finalSection']})
             # print(addressData)
             # print(len(neighbours))
-            addresswithNeighbours.append({"address":x,"neighbours": neighbours})
-            if addressData :
-                writeToFile(addressData, x)
+            # addresswithNeighbours.append({"address":x,"neighbours": neighbours})
+            
+            
+            # if addressData :
+            #     writeToFile(addressData, x)
                 
         await asyncio.gather(*tasks)
     return {"addresses" : addresses, "addresswithNeighbours" : addresswithNeighbours}
@@ -160,8 +167,30 @@ list = df.address.to_list()
 for x in list :
     maliciousAddressesToInvestigate.append(str(x))
 
-print(len(set(maliciousAddressesToInvestigate)))
+# print(len(set(maliciousAddressesToInvestigate)))
+
+
+FILE_NAME = "neighborData.json"
+
+with open(FILE_NAME, "r") as f :
+    data = f.read()
+    data = json.loads(data)
+    
+addressesToInvestigate = []
+for x in data :
+    if len(x["neighbours"]) > 0 :
+        for x in x["neighbours"] :
+            addressesToInvestigate.append(x)
+
+
+# loop = asyncio.get_event_loop() 
+# with suppress(asyncio.TimeoutError) : 
+#     loop.run_until_complete(validateResults(set(maliciousAddressesToInvestigate)))
+print(len(set(addressesToInvestigate)))
+
+BUFFER = 10000
 
 loop = asyncio.get_event_loop() 
-with suppress(asyncio.TimeoutError) : 
-    loop.run_until_complete(validateResults(set(maliciousAddressesToInvestigate)))
+while len(os.listdir("./btcabuseNeighbours")) < len(set(addressesToInvestigate)) - BUFFER :
+    with suppress(asyncio.TimeoutError) : 
+        loop.run_until_complete(validateResults(set(addressesToInvestigate)))
