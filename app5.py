@@ -10,6 +10,7 @@ import aiohttp
 import asyncio
 import json
 
+
 # Commenting for now since working with neighbours already.
 # db = mysql.connector.connect(user='root', password='1234', host='Bhavishs-MacBook-Air.local')
 # dbCursor = db.cursor()
@@ -175,10 +176,12 @@ FILE_NAME = "neighborData.json"
 with open(FILE_NAME, "r") as f :
     data = f.read()
     data = json.loads(data)
+
+TARGET_ADDRESS = "3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85B"
     
 addressesToInvestigate = []
 for x in data :
-    if len(x["neighbours"]) > 0 :
+    if len(x["neighbours"]) > 0 and x["address"] == TARGET_ADDRESS :
         for x in x["neighbours"] :
             addressesToInvestigate.append(x)
 
@@ -191,6 +194,6 @@ print(len(set(addressesToInvestigate)))
 BUFFER = 10000
 
 loop = asyncio.get_event_loop() 
-while len(os.listdir("./btcabuseNeighbours")) < len(set(addressesToInvestigate)) - BUFFER :
-    with suppress(asyncio.TimeoutError) : 
-        loop.run_until_complete(validateResults(set(addressesToInvestigate)))
+# while len(os.listdir("./btcabuseNeighbours")) < len(set(addressesToInvestigate)) - BUFFER :
+with suppress(asyncio.TimeoutError) : 
+    loop.run_until_complete(validateResults(set(addressesToInvestigate)))

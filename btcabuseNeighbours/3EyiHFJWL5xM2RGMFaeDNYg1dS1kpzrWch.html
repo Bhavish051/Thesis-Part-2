@@ -89,7 +89,7 @@
 <li><a href="https://www.bitcoinwhoswho.com/tags">Tag An Address</a></li>
 <li><a href="https://www.bitcoinwhoswho.com/blog">Blog</a></li>
 </ul>
-<div style="float:right; margin:15px 66px 0px 0px; color: #BBBBBB;">BTC = $19044.48</div>
+<div style="float:right; margin:15px 66px 0px 0px; color: #BBBBBB;">BTC = $19031.82</div>
 </div>
 </div>
 <div id="top_nav_right_box" class="col-md-4 pull-right">
@@ -177,7 +177,7 @@ BITCOIN ADDRESS REPORT
 <div class="alert alert-danger" role="alert" id="atm_file_error" style="display: none;"></div>
 </div>
 <div class="form-group">
- <input type="image" name="atm_captcha" id="atm_captcha" src="public/images/ajax-loader_200x70.gif" onclick="javascript:return false;" />
+<input type="image" name="atm_captcha" id="atm_captcha" src="public/images/ajax-loader_200x70.gif" onclick="javascript:return false;" />
 <div id="atm_change_captcha_box">
 <a href="javascript:return false;" onclick="document.getElementById('atm_captcha').src='https://www.bitcoinwhoswho.com/google/captcha.php?'+Math.random();document.getElementById('atm_captcha_input').focus();" id="atm_change_captcha">Not readable? Change text.</a>
 </div>
@@ -225,6 +225,7 @@ BITCOIN ADDRESS REPORT
 </div>
 <div class="alert alert-success" role="alert" id="srm_file_success" style="display: none;"></div>
 </div>
+
 <div class="form-group">
 <div class="field_label">Name of Scam:</div>
 <input type="text" name="srm_scam_name" id="srm_scam_name" placeholder="Enter name of scam" class="form-control">
@@ -265,7 +266,7 @@ BITCOIN ADDRESS REPORT
 <div class="alert alert-warning loading-icon" role="alert" id="srm_loading" style="display: none;">Please wait...</div>
 <div class="alert alert-danger" role="alert" id="srm_error" style="display: none;"></div>
 </div>
-<div class="modal-footer" id="srm_footer">
+ <div class="modal-footer" id="srm_footer">
 <input type="hidden" name="srm_bitcoin_address" id="srm_bitcoin_address" value="3EyiHFJWL5xM2RGMFaeDNYg1dS1kpzrWch">
 <button onClick="fbq('track', 'Purchase');" type="button" class="btn btn-primary" id="srm_submit_btn">Submit</button>
 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -307,7 +308,7 @@ BITCOIN ADDRESS REPORT
 <div class="modal-footer tbm_footer">
 <button type="button" class="btn btn-primary tbm_submit_btn" data-footer-position="bottom">Submit</button>
 <button onclick="window.location.href='/recoverbitcoin'" type="button" class="btn btn-primary">Skip</button>
-</div>
+ </div>
 </form>
 </div>
 </div>
@@ -356,7 +357,7 @@ BITCOIN ADDRESS REPORT
 <div class="col-md-3 trblb_label">Last Known Input</div>
 <div class="col-md-4" id="overview_known_input">
 <span class="pull-left">Loading...</span>
-<span class="pull-right">Loading...</span>
+ <span class="pull-right">Loading...</span>
 </div>
 <div class="col-md-2 trblb_label_border">Last Known Output</div>
 <div class="col-md-3 trblb_right_column" id="overview_known_output">
@@ -376,7 +377,7 @@ Repeated Outputs To
 </div>
 <div class="col-md-3 trblb_right_column overview_repeated" id="overview_repeated_output">Loading...</div>
 </div>
- <div class="row trblb_row">
+<div class="row trblb_row">
 <div class="col-md-3 trblb_label">Tags</div>
 <div class="col-md-9 trblb_right_column" id="overview_tag">Loading...</div>
 </div>
@@ -402,6 +403,7 @@ Transaction History
 <div class="collapse" id="transaction_history_box">
 <table class="table table-striped responsive responsive1">
 <tbody>
+
 <tr class="active">
 <td class="grid_hash grid_td_1">193d062bd593adceb1e046005f0db7a8a18c2b84a3c33693830aca8f52c39b80</td>
 <td class="grid_td_2"></td>
@@ -429,7 +431,7 @@ Transaction History
 0.10069518 BTC </td>
 </tr><tr class="active">
 <td class="grid_hash grid_td_1">6b3e1021853ce6fa1342593730d98e80764a73e15eccbbac336b47a2b6e99f04</td>
- <td class="grid_td_2"></td>
+<td class="grid_td_2"></td>
 <td class="grid_td_3"></td>
 <td class="grid_time grid_td_4">
 2022-03-21 05:31:23 </td>
@@ -583,7 +585,7 @@ Transaction History
 </p>
 </td>
 <td class="grid_value">
-0.02889190 BTC </td>
+ 0.02889190 BTC </td>
 </tr><tr class="active">
 <td class="grid_hash grid_td_1">fae2d575b410cf39c732b0ea7cb6ebeb196f494e92374c6ff7f45342ab5d2058</td>
 <td class="grid_td_2"></td>
@@ -668,7 +670,7 @@ Transaction History
 0.01285918 BTC<br>2.15480726 BTC </td>
 </tr> </tbody>
 </table>
- <div class="col-lg-12">
+<div class="col-lg-12">
 <div class="col-sm-5 col-md-6 pagecount">
 42 records found. Showing 1 of 5.
 </div>
@@ -945,6 +947,6 @@ Bitcoin Who's Who is dedicated to profiling the extraordinary members of the bit
 </footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"758689d79de4a87a","version":"2022.8.1","r":1,"token":"e9031b8c61104f9c8ff0dedabaac54c6","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7586d4951d99a8a6","version":"2022.8.1","r":1,"token":"e9031b8c61104f9c8ff0dedabaac54c6","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
