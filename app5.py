@@ -1,5 +1,6 @@
 from contextlib import suppress
 import os
+from re import L
 import mysql.connector
 import requests
 from bs4 import BeautifulSoup
@@ -181,9 +182,9 @@ TARGET_ADDRESS = "3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85B"
     
 addressesToInvestigate = []
 for x in data :
-    if len(x["neighbours"]) > 0 and x["address"] == TARGET_ADDRESS :
-        for x in x["neighbours"] :
-            addressesToInvestigate.append(x)
+    if len(x["neighbours"]) > 0 :
+        for y in x["neighbours"] :
+            addressesToInvestigate.append(y)
 
 
 # loop = asyncio.get_event_loop() 
@@ -193,7 +194,11 @@ print(len(set(addressesToInvestigate)))
 
 BUFFER = 10000
 
+
 loop = asyncio.get_event_loop() 
+asyncio.ensure_future(validateResults(set(addressesToInvestigate)))
+loop.run_forever()
+
 # while len(os.listdir("./btcabuseNeighbours")) < len(set(addressesToInvestigate)) - BUFFER :
-with suppress(asyncio.TimeoutError) : 
-    loop.run_until_complete(validateResults(set(addressesToInvestigate)))
+# with suppress(asyncio.TimeoutError) : 
+# loop.run_until_complete(validateResults(set(addressesToInvestigate)))
