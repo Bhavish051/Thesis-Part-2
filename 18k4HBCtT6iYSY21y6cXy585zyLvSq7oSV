@@ -1,0 +1,151 @@
+python3 app2.py
+============ADDRESS===============
+['10.100.68.60', '201.215.23.71', '201.215.23.71', '177.52.192.82', '10.100.68.60', '109.111.121.91', '109.111.121.91', '109.111.121.91', '200.83.82.98', '104.18.138.190', '104.26.8.241', '150.95.9.226', '23.95.97.34', '23.95.97.34', '23.95.97.34', '104.20.17.14']
+[{'status': 'fail', 'message': 'private range', 'query': '10.100.68.60'}, {'status': 'success', 'country': 'Chile', 'countryCode': 'CL', 'region': 'BI', 'regionName': 'Region del Biobio', 'city': 'Concepción', 'zip': '', 'lat': -36.8335, 'lon': -73.0487, 'timezone': 'America/Santiago', 'isp': 'VTR BANDA ANCHA S.A.', 'org': 'VTR BANDA ANCHA S.A', 'as': 'AS22047 VTR BANDA ANCHA S.A.', 'query': '201.215.23.71'}, {'status': 'success', 'country': 'Chile', 'countryCode': 'CL', 'region': 'BI', 'regionName': 'Region del Biobio', 'city': 'Concepción', 'zip': '', 'lat': -36.8335, 'lon': -73.0487, 'timezone': 'America/Santiago', 'isp': 'VTR BANDA ANCHA S.A.', 'org': 'VTR BANDA ANCHA S.A', 'as': 'AS22047 VTR BANDA ANCHA S.A.', 'query': '201.215.23.71'}, {'status': 'success', 'country': 'Brazil', 'countryCode': 'BR', 'region': 'RJ', 'regionName': 'Rio de Janeiro', 'city': 'Rio de Janeiro', 'zip': '24000', 'lat': -22.9201, 'lon': -43.0811, 'timezone': 'America/Sao_Paulo', 'isp': 'Nortenet Telecomunicacoes Do Brasil Ltda - EPP', 'org': 'Nortenet Telecomunicacoes Do Brasil Ltda - EPP', 'as': 'AS262450 NORTENET TELECOMUNICACOES DO BRASIL LTDA - EPP', 'query': '177.52.192.82'}, {'status': 'fail', 'message': 'private range', 'query': '10.100.68.60'}, {'status': 'success', 'country': 'Andorra', 'countryCode': 'AD', 'region': '07', 'regionName': 'Andorra la Vella', 'city': 'Andorra la Vella', 'zip': '', 'lat': 42.5015, 'lon': 1.5144, 'timezone': 'Europe/Andorra', 'isp': 'Andorra Telecom SAU', 'org': 'Andorra Telecom SAU', 'as': 'AS6752 ANDORRA TELECOM, S.A.U.', 'query': '109.111.121.91'}, {'status': 'success', 'country': 'Andorra', 'countryCode': 'AD', 'region': '07', 'regionName': 'Andorra la Vella', 'city': 'Andorra la Vella', 'zip': '', 'lat': 42.5015, 'lon': 1.5144, 'timezone': 'Europe/Andorra', 'isp': 'Andorra Telecom SAU', 'org': 'Andorra Telecom SAU', 'as': 'AS6752 ANDORRA TELECOM, S.A.U.', 'query': '109.111.121.91'}, {'status': 'success', 'country': 'Andorra', 'countryCode': 'AD', 'region': '07', 'regionName': 'Andorra la Vella', 'city': 'Andorra la Vella', 'zip': '', 'lat': 42.5015, 'lon': 1.5144, 'timezone': 'Europe/Andorra', 'isp': 'Andorra Telecom SAU', 'org': 'Andorra Telecom SAU', 'as': 'AS6752 ANDORRA TELECOM, S.A.U.', 'query': '109.111.121.91'}, {'status': 'success', 'country': 'Chile', 'countryCode': 'CL', 'region': 'RM', 'regionName': 'Santiago Metropolitan', 'city': 'Las Condes', 'zip': '7550000', 'lat': -33.412, 'lon': -70.5796, 'timezone': 'America/Santiago', 'isp': 'VTR BANDA ANCHA S.A.', 'org': 'VTR BANDA ANCHA S.A', 'as': 'AS22047 VTR BANDA ANCHA S.A.', 'query': '200.83.82.98'}, {'status': 'success', 'country': 'Canada', 'countryCode': 'CA', 'region': 'ON', 'regionName': 'Ontario', 'city': 'Toronto', 'zip': 'M5A', 'lat': 43.6532, 'lon': -79.3832, 'timezone': 'America/Toronto', 'isp': 'Cloudflare, Inc.', 'org': 'Cloudflare, Inc.', 'as': 'AS13335 Cloudflare, Inc.', 'query': '104.18.138.190'}, {'status': 'success', 'country': 'Canada', 'countryCode': 'CA', 'region': 'ON', 'regionName': 'Ontario', 'city': 'Toronto', 'zip': 'M5A', 'lat': 43.6532, 'lon': -79.3832, 'timezone': 'America/Toronto', 'isp': 'Cloudflare, Inc.', 'org': 'Cloudflare, Inc.', 'as': 'AS13335 Cloudflare, Inc.', 'query': '104.26.8.241'}, {'status': 'success', 'country': 'Japan', 'countryCode': 'JP', 'region': '13', 'regionName': 'Tokyo', 'city': 'Chiyoda', 'zip': '100-8111', 'lat': 35.6916, 'lon': 139.768, 'timezone': 'Asia/Tokyo', 'isp': 'GMO Internet, Inc', 'org': 'GMO DigiRock, Inc.', 'as': 'AS58791 GMO Internet,Inc', 'query': '150.95.9.226'}, {'status': 'success', 'country': 'United States', 'countryCode': 'US', 'region': 'NY', 'regionName': 'New York', 'city': 'New York', 'zip': '10000', 'lat': 40.7145, 'lon': -74.003, 'timezone': 'America/New_York', 'isp': 'ColoCrossing', 'org': 'IPSERVER LP', 'as': 'AS36352 ColoCrossing', 'query': '23.95.97.34'}, {'status': 'success', 'country': 'United States', 'countryCode': 'US', 'region': 'NY', 'regionName': 'New York', 'city': 'New York', 'zip': '10000', 'lat': 40.7145, 'lon': -74.003, 'timezone': 'America/New_York', 'isp': 'ColoCrossing', 'org': 'IPSERVER LP', 'as': 'AS36352 ColoCrossing', 'query': '23.95.97.34'}, {'status': 'success', 'country': 'United States', 'countryCode': 'US', 'region': 'NY', 'regionName': 'New York', 'city': 'New York', 'zip': '10000', 'lat': 40.7145, 'lon': -74.003, 'timezone': 'America/New_York', 'isp': 'ColoCrossing', 'org': 'IPSERVER LP', 'as': 'AS36352 ColoCrossing', 'query': '23.95.97.34'}, {'status': 'success', 'country': 'Canada', 'countryCode': 'CA', 'region': 'ON', 'regionName': 'Ontario', 'city': 'Toronto', 'zip': 'M5A', 'lat': 43.6532, 'lon': -79.3832, 'timezone': 'America/Toronto', 'isp': 'Cloudflare, Inc.', 'org': 'Cloudflare, Inc.', 'as': 'AS13335 Cloudflare, Inc.', 'query': '104.20.17.14'}, {'status': 'fail', 'message': 'private range', 'query': '10.100.68.60'}]
+201.215.23.71 : Chile : Concepción : VTR BANDA ANCHA S.A. : :-36.8335:-73.0487
+201.215.23.71 : Chile : Concepción : VTR BANDA ANCHA S.A. : :-36.8335:-73.0487
+177.52.192.82 : Brazil : Rio de Janeiro : Nortenet Telecomunicacoes Do Brasil Ltda - EPP : 24000:-22.9201:-43.0811
+109.111.121.91 : Andorra : Andorra la Vella : Andorra Telecom SAU : :42.5015:1.5144
+109.111.121.91 : Andorra : Andorra la Vella : Andorra Telecom SAU : :42.5015:1.5144
+109.111.121.91 : Andorra : Andorra la Vella : Andorra Telecom SAU : :42.5015:1.5144
+200.83.82.98 : Chile : Las Condes : VTR BANDA ANCHA S.A. : 7550000:-33.412:-70.5796
+104.18.138.190 : Canada : Toronto : Cloudflare, Inc. : M5A:43.6532:-79.3832
+104.26.8.241 : Canada : Toronto : Cloudflare, Inc. : M5A:43.6532:-79.3832
+150.95.9.226 : Japan : Chiyoda : GMO Internet, Inc : 100-8111:35.6916:139.768
+23.95.97.34 : United States : New York : ColoCrossing : 10000:40.7145:-74.003
+23.95.97.34 : United States : New York : ColoCrossing : 10000:40.7145:-74.003
+23.95.97.34 : United States : New York : ColoCrossing : 10000:40.7145:-74.003
+104.20.17.14 : Canada : Toronto : Cloudflare, Inc. : M5A:43.6532:-79.3832
+['https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'http://html5shim.googlecode.com', 'https://www.googletagmanager.com', 'https://www.googletagmanager.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://api.qrserver.com', 'https://www.bitcoinwhoswho.com', 'http://lactrucking.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'http://tolbertandassociates.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'http://bufk.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'http://cascosolutions.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.Paxful.com', 'https://www.bitcoinwhoswho.com', 'https://www.paxful.com', 'https://www.bitcoinwhoswho.com', 'https://jashim.typepad.com', 'https://www.scamwarners.com', 'https://www.fraudnavi.com', 'https://www.myantispyware.com', 'https://www.myantispyware.com', 'https://www.myantispyware.com', 'https://www.pcrisk.com', 'https://code.jquery.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://us11.list-manage.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://us11.list-manage.com', 'https://twitter.com', 'https://bitcoinwhoswho.com', 'https://platform.linkedin.com', 'https://bitcoinwhoswho.us11.list-manage.com', 'https://twitter.com', 'https://www.facebook.com', 'https://www.linkedin.com', 'https://static.cloudflareinsights.com']
+[]
+/Users/bhavish051/micromamba/lib/python3.9/site-packages/torch/amp/autocast_mode.py:198: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+Found: 55 of type: CARDINAL
+Found: three of type: CARDINAL
+Found: 20 of type: CARDINAL
+Found: three of type: CARDINAL
+Found: Coinbase of type: ORG
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: 22 Oct 2020 of type: DATE
+Found: 10:49:51 of type: TIME
+Found: 10:49:51 of type: TIME
+Found: 10:49:46 of type: TIME
+Found: Thu, 22 Oct 2020 of type: DATE
+Found: 03:49:45 of type: TIME
+Found: 03:44:42 of type: TIME
+Found: 23:20:15 of type: TIME
+Found: 23:20:07 of type: TIME
+Found: Thu, 22 Oct 2020 of type: DATE
+Found: 16:20:07 of type: TIME
+Found: 01:42:36 of type: TIME
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Chile of type: GPE
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: Paxful of type: ORG
+Found: Paxful of type: ORG
+Found: Several months ago of type: DATE
+Found: 1400 USD of type: MONEY
+Found: 48 hours of type: TIME
+Found: first of type: ORDINAL
+
+
+python3 app2.py
+============NEIGHBOURS===============
+['10.100.68.60', '201.215.23.71', '201.215.23.71', '177.52.192.82', '10.100.68.60', '109.111.121.91', '109.111.121.91', '109.111.121.91', '200.83.82.98']
+[{'status': 'fail', 'message': 'private range', 'query': '10.100.68.60'}, {'status': 'success', 'country': 'Chile', 'countryCode': 'CL', 'region': 'BI', 'regionName': 'Region del Biobio', 'city': 'Concepción', 'zip': '', 'lat': -36.8335, 'lon': -73.0487, 'timezone': 'America/Santiago', 'isp': 'VTR BANDA ANCHA S.A.', 'org': 'VTR BANDA ANCHA S.A', 'as': 'AS22047 VTR BANDA ANCHA S.A.', 'query': '201.215.23.71'}, {'status': 'success', 'country': 'Chile', 'countryCode': 'CL', 'region': 'BI', 'regionName': 'Region del Biobio', 'city': 'Concepción', 'zip': '', 'lat': -36.8335, 'lon': -73.0487, 'timezone': 'America/Santiago', 'isp': 'VTR BANDA ANCHA S.A.', 'org': 'VTR BANDA ANCHA S.A', 'as': 'AS22047 VTR BANDA ANCHA S.A.', 'query': '201.215.23.71'}, {'status': 'success', 'country': 'Brazil', 'countryCode': 'BR', 'region': 'RJ', 'regionName': 'Rio de Janeiro', 'city': 'Rio de Janeiro', 'zip': '24000', 'lat': -22.9201, 'lon': -43.0811, 'timezone': 'America/Sao_Paulo', 'isp': 'Nortenet Telecomunicacoes Do Brasil Ltda - EPP', 'org': 'Nortenet Telecomunicacoes Do Brasil Ltda - EPP', 'as': 'AS262450 NORTENET TELECOMUNICACOES DO BRASIL LTDA - EPP', 'query': '177.52.192.82'}, {'status': 'fail', 'message': 'private range', 'query': '10.100.68.60'}, {'status': 'success', 'country': 'Andorra', 'countryCode': 'AD', 'region': '07', 'regionName': 'Andorra la Vella', 'city': 'Andorra la Vella', 'zip': '', 'lat': 42.5015, 'lon': 1.5144, 'timezone': 'Europe/Andorra', 'isp': 'Andorra Telecom SAU', 'org': 'Andorra Telecom SAU', 'as': 'AS6752 ANDORRA TELECOM, S.A.U.', 'query': '109.111.121.91'}, {'status': 'success', 'country': 'Andorra', 'countryCode': 'AD', 'region': '07', 'regionName': 'Andorra la Vella', 'city': 'Andorra la Vella', 'zip': '', 'lat': 42.5015, 'lon': 1.5144, 'timezone': 'Europe/Andorra', 'isp': 'Andorra Telecom SAU', 'org': 'Andorra Telecom SAU', 'as': 'AS6752 ANDORRA TELECOM, S.A.U.', 'query': '109.111.121.91'}, {'status': 'success', 'country': 'Andorra', 'countryCode': 'AD', 'region': '07', 'regionName': 'Andorra la Vella', 'city': 'Andorra la Vella', 'zip': '', 'lat': 42.5015, 'lon': 1.5144, 'timezone': 'Europe/Andorra', 'isp': 'Andorra Telecom SAU', 'org': 'Andorra Telecom SAU', 'as': 'AS6752 ANDORRA TELECOM, S.A.U.', 'query': '109.111.121.91'}, {'status': 'success', 'country': 'Chile', 'countryCode': 'CL', 'region': 'RM', 'regionName': 'Santiago Metropolitan', 'city': 'Las Condes', 'zip': '7550000', 'lat': -33.412, 'lon': -70.5796, 'timezone': 'America/Santiago', 'isp': 'VTR BANDA ANCHA S.A.', 'org': 'VTR BANDA ANCHA S.A', 'as': 'AS22047 VTR BANDA ANCHA S.A.', 'query': '200.83.82.98'}, {'status': 'fail', 'message': 'private range', 'query': '10.100.68.60'}]
+201.215.23.71 : Chile : Concepción : VTR BANDA ANCHA S.A. : :-36.8335:-73.0487
+201.215.23.71 : Chile : Concepción : VTR BANDA ANCHA S.A. : :-36.8335:-73.0487
+177.52.192.82 : Brazil : Rio de Janeiro : Nortenet Telecomunicacoes Do Brasil Ltda - EPP : 24000:-22.9201:-43.0811
+109.111.121.91 : Andorra : Andorra la Vella : Andorra Telecom SAU : :42.5015:1.5144
+109.111.121.91 : Andorra : Andorra la Vella : Andorra Telecom SAU : :42.5015:1.5144
+109.111.121.91 : Andorra : Andorra la Vella : Andorra Telecom SAU : :42.5015:1.5144
+200.83.82.98 : Chile : Las Condes : VTR BANDA ANCHA S.A. : 7550000:-33.412:-70.5796
+[]
+[]
+/Users/bhavish051/micromamba/lib/python3.9/site-packages/torch/amp/autocast_mode.py:198: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+Found: first of type: ORDINAL
+Found: first of type: ORDINAL
+Found: first of type: ORDINAL
+Found: first of type: ORDINAL
+Found: first of type: ORDINAL
+Found: first of type: ORDINAL
+Found: Paxful of type: ORG
+
+
+python3 app2.py
+============BTCABUSECSVData===============
+[]
+['https://coinportservice.online']
+[]
+/Users/bhavish051/micromamba/lib/python3.9/site-packages/torch/amp/autocast_mode.py:198: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+Found: 1400 USD of type: MONEY
+Found: last month of type: DATE
+Found: 48hours of type: TIME
+Found: 2 weeks of type: DATE
+Found: 1400 USD of type: MONEY
+Found: last month of type: DATE
+Found: United States of type: GPE
+Found: 48hours of type: TIME
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: less than 48 hours of type: TIME
+Found: 1400 USD of type: MONEY
+Found: last month of type: DATE
+Found: United States of type: GPE
+Found: 48hours of type: TIME
+Found: 2 weeks of type: DATE
+Found: less than 48 hours of type: TIME

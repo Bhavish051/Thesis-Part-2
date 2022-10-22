@@ -1,0 +1,110 @@
+python3 app2.py
+============ADDRESS===============
+['1.236.141.126', '182.176.117.135', '182.176.117.135', '182.176.117.135', '10.100.68.60', '182.176.117.135', '182.176.117.135', '182.176.117.135', '2.16.4.144']
+[{'status': 'success', 'country': 'South Korea', 'countryCode': 'KR', 'region': '41', 'regionName': 'Gyeonggi-do', 'city': 'Goyang-si', 'zip': '102', 'lat': 37.661, 'lon': 126.8324, 'timezone': 'Asia/Seoul', 'isp': 'SK Broadband Co Ltd', 'org': 'broadNnet', 'as': 'AS9318 SK Broadband Co Ltd', 'query': '1.236.141.126'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'fail', 'message': 'private range', 'query': '10.100.68.60'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'United States', 'countryCode': 'US', 'region': 'NY', 'regionName': 'New York', 'city': 'New York', 'zip': '10123', 'lat': 40.7128, 'lon': -74.006, 'timezone': 'America/New_York', 'isp': 'Akamai Technologies', 'org': '', 'as': 'AS20940 Akamai International B.V.', 'query': '2.16.4.144'}, {'status': 'success', 'country': 'South Korea', 'countryCode': 'KR', 'region': '41', 'regionName': 'Gyeonggi-do', 'city': 'Goyang-si', 'zip': '102', 'lat': 37.661, 'lon': 126.8324, 'timezone': 'Asia/Seoul', 'isp': 'SK Broadband Co Ltd', 'org': 'broadNnet', 'as': 'AS9318 SK Broadband Co Ltd', 'query': '1.236.141.126'}]
+1.236.141.126 : South Korea : Goyang-si : SK Broadband Co Ltd : 102:37.661:126.8324
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+2.16.4.144 : United States : New York : Akamai Technologies : 10123:40.7128:-74.006
+1.236.141.126 : South Korea : Goyang-si : SK Broadband Co Ltd : 102:37.661:126.8324
+['https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'http://html5shim.googlecode.com', 'https://www.googletagmanager.com', 'https://www.googletagmanager.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://api.qrserver.com', 'https://www.iplocation.net', 'https://whatismyip.live', 'https://bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://code.jquery.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://us11.list-manage.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://www.bitcoinwhoswho.com', 'https://us11.list-manage.com', 'https://twitter.com', 'https://bitcoinwhoswho.com', 'https://platform.linkedin.com', 'https://bitcoinwhoswho.us11.list-manage.com', 'https://twitter.com', 'https://www.facebook.com', 'https://www.linkedin.com', 'https://static.cloudflareinsights.com']
+[]
+/Users/bhavish051/micromamba/lib/python3.9/site-packages/torch/amp/autocast_mode.py:198: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+Found: 9 of type: CARDINAL
+Found: three of type: CARDINAL
+Found: 20 of type: CARDINAL
+Found: three of type: CARDINAL
+Found: Coinbase of type: ORG
+Found: Interpol of type: ORG
+Found: a couple of dollars/euros of type: MONEY
+Found: 1750 of type: MONEY
+Found: 2 days of type: DATE
+Found: 20220909 of type: DATE
+Found: 31.3709 of type: CARDINAL
+Found: 73.0336 of type: CARDINAL
+Found: 09:43:09 of type: TIME
+Found: 09:43:01 of type: TIME
+Found: Fri, 09 Sep 2022 of type: DATE
+Found: 02:43:01 of type: TIME
+Found: Fri, 09 Sep 2022 of type: DATE
+Found: 18:43:51 of type: TIME
+Found: 1750 of type: MONEY
+Found: 2 days of type: DATE
+Found: 1750 of type: MONEY
+Found: 2 days of type: DATE
+
+
+
+
+python3 app2.py
+============NEIGHBOURS===============
+['182.176.117.135', '182.176.117.135', '182.176.117.135', '10.100.68.60', '182.176.117.135', '182.176.117.135', '182.176.117.135', '2.16.4.144']
+[{'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'fail', 'message': 'private range', 'query': '10.100.68.60'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}, {'status': 'success', 'country': 'United States', 'countryCode': 'US', 'region': 'NY', 'regionName': 'New York', 'city': 'New York', 'zip': '10123', 'lat': 40.7128, 'lon': -74.006, 'timezone': 'America/New_York', 'isp': 'Akamai Technologies', 'org': '', 'as': 'AS20940 Akamai International B.V.', 'query': '2.16.4.144'}, {'status': 'success', 'country': 'Pakistan', 'countryCode': 'PK', 'region': 'PB', 'regionName': 'Punjab', 'city': 'Faisalabad', 'zip': '38000', 'lat': 31.3709, 'lon': 73.0336, 'timezone': 'Asia/Karachi', 'isp': 'Pakistan Telecommuication company limited', 'org': 'Pakistan Telecommuication company limited', 'as': 'AS17557 Pakistan Telecommunication Company Limited', 'query': '182.176.117.135'}]
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+2.16.4.144 : United States : New York : Akamai Technologies : 10123:40.7128:-74.006
+182.176.117.135 : Pakistan : Faisalabad : Pakistan Telecommuication company limited : 38000:31.3709:73.0336
+['https://www.iplocation.net']
+[]
+/Users/bhavish051/micromamba/lib/python3.9/site-packages/torch/amp/autocast_mode.py:198: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+Found: Interpol of type: ORG
+Found: a couple of dollars/euros of type: MONEY
+Found: 1750 of type: MONEY
+Found: Fri, 09 Sep 2022 of type: DATE
+Found: Fri, 09 Sep 2022 of type: DATE
+Found: 1750 of type: MONEY
+Found: 1750 of type: MONEY
+
+
+python3 app2.py
+============BTCABUSECSVData===============
+[]
+[]
+[]
+/Users/bhavish051/micromamba/lib/python3.9/site-packages/torch/amp/autocast_mode.py:198: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn('User provided device_type of \'cuda\', but CUDA is not available. Disabling')
+Found: 1750 of type: MONEY
+Found: 1750 of type: MONEY
+Found: 1750 of type: MONEY
+Found: 2 days of type: DATE
+Found: 1750 of type: MONEY
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: less than 48 hours of type: TIME
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: less than 48 hours of type: TIME
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: 1750 of type: MONEY
+Found: 2 days of type: DATE
+Found: 1750 of type: MONEY
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: less than 48 hours of type: TIME
+Found: Instagram of type: ORG
+Found: 2 weeks of type: DATE
+Found: 2 weeks of type: DATE
+Found: 1750 of type: MONEY
+Found: 2 days of type: DATE
+Found: 1750 of type: MONEY
+Found: 2 days of type: DATE
+Found: 1750 of type: MONEY

@@ -89,7 +89,7 @@
 <li><a href="https://www.bitcoinwhoswho.com/tags">Tag An Address</a></li>
 <li><a href="https://www.bitcoinwhoswho.com/blog">Blog</a></li>
 </ul>
-<div style="float:right; margin:15px 66px 0px 0px; color: #BBBBBB;">BTC = $19058.42</div>
+<div style="float:right; margin:15px 66px 0px 0px; color: #BBBBBB;">BTC = $18938.71</div>
 </div>
 </div>
 <div id="top_nav_right_box" class="col-md-4 pull-right">
@@ -120,7 +120,6 @@ BITCOIN ADDRESS REPORT
 <span class="top_scam_alert" id="top_scam_alert_red" style="display: none;"></span>
 <span class="create-btn-wrap top_btn_box">
 
-<button type="button" class="btn btn-info" id="watch_guest_watch_btn" data-toggle="modal" data-target="#watch_guest_modal">Watch</button>
 <button type="button" class="btn btn-warning " id="scam_report_btn" data-toggle="modal" data-target="#scam_report_modal">Report Scam</button>
 <button type="button" class="btn btn-primary" id="add_tag_btn" data-toggle="modal" data-target="#add_tag_modal">Add Tag</button>
 </span>
@@ -262,7 +261,7 @@ BITCOIN ADDRESS REPORT
 <textarea name="srm_scam_details" id="srm_scam_details" placeholder="Enter details" class="form-control"></textarea>
 </div>
 <div class="alert alert-success" role="alert" id="srm_success" style="display: none;"></div>
- <div class="alert alert-warning loading-icon" role="alert" id="srm_loading" style="display: none;">Please wait...</div>
+<div class="alert alert-warning loading-icon" role="alert" id="srm_loading" style="display: none;">Please wait...</div>
 <div class="alert alert-danger" role="alert" id="srm_error" style="display: none;"></div>
 </div>
 <div class="modal-footer" id="srm_footer">
@@ -316,6 +315,7 @@ BITCOIN ADDRESS REPORT
 </div>
 <div class="row">
 <div class="col-lg-12 float_left_box">
+<div class="alert alert-danger" role="alert">Couldn't read BTC address data from blockchain. Please refresh the page or try again later. You can still report a scam using the button above.</div>
 <div class="row text-center">
 <div class="col-lg-12">
 <div class="col-md-12 float_left_box" id="top_report_box">
@@ -331,29 +331,29 @@ BITCOIN ADDRESS REPORT
 <div class="row trblb_row">
 <div class="col-md-3 trblb_label">Current Balance</div>
 <div class="col-md-4">
-0.00000000 &nbsp;&nbsp;=&nbsp;&nbsp;$0
+&nbsp;&nbsp;=&nbsp;&nbsp;$0
 </div>
 <div class="col-md-2 trblb_label_border">Total Received</div>
 <div class="col-md-3 trblb_right_column">
-0.01007526 &nbsp;&nbsp;=&nbsp;&nbsp;$0
+&nbsp;&nbsp;=&nbsp;&nbsp;$0
 </div>
 </div>
 <div class="row trblb_row">
 <div class="col-md-3 trblb_label"># Transactions</div>
-<div class="col-md-4">76</div>
+<div class="col-md-4"></div>
 <div class="col-md-2 trblb_label_border"># Output Transactions</div>
 <div class="col-md-3 trblb_right_column" id="trb_total_output_transactions">Loading...</div>
 </div>
 <div class="row trblb_row">
 <div class="col-md-3 trblb_label">First Transaction</div>
 <div class="col-md-4">
-22 May 21 </div>
+</div>
 <div class="col-md-2 trblb_label_border">Last Transaction</div>
 <div class="col-md-3 trblb_right_column">
-8 Sep 22 </div>
+</div>
 </div>
 <div class="row trblb_row">
-<div class="col-md-3 trblb_label">Last Known Input</div>
+ <div class="col-md-3 trblb_label">Last Known Input</div>
 <div class="col-md-4" id="overview_known_input">
 <span class="pull-left">Loading...</span>
 <span class="pull-right">Loading...</span>
@@ -391,306 +391,6 @@ Repeated Outputs To
 </div>
 </div>
 </div>
-<div class="other_bitcoin_heading collapse_link">
-<a data-toggle="collapse" href="#transaction_history_box" class="obh_link">
-<span class="pull-left">
-<i class="icon_transaction_history_box glyphicon glyphicon-large glyphicon-folder-close"></i>
-</span>&nbsp;
-Transaction History
-</a>
-</div>
-<div class="collapse" id="transaction_history_box">
- <table class="table table-striped responsive responsive1">
-<tbody>
-<tr class="active">
-<td class="grid_hash grid_td_1">c4b4e98008f75d8fd6af45a4861cc5e088721b9f874f923ebaf9324aea6622d1</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-09-08 00:01:00 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_red.png">
-</td>
-<td class="grid_address_output">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG/urlid/0">3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_value">
-1.31444445 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">979b5e32ff71fc34bb8170d63c6ad8293528bb62fc5dcf2aad80492fc7227b63</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-09-07 22:55:50 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/bc1qp3f7vnmuj4pjxpfvkvf7yznac9h9r5arlv4fpv/urlid/0">bc1qp3f7vnmuj4pjxpfvkvf7yznac9h9r5arlv4fpv</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_green.png">
-</td>
-<td class="grid_address_output">
-<span class="pull-left">3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V</span>
-</td>
-<td class="grid_value">
-0.00102743 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">03c0e98c67f27948a34cb48c24156ab13bfda82338f541e00e217f9b571d4a5e</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-09-06 18:01:00 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_red.png">
-</td>
-<td class="grid_address_output">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG/urlid/0">3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG</a>
-</span>
- <span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_value">
-2.43891650 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">ca438aa8469b08699bf65b6c1de9f882aa8bce39c2910296c36e59e14a22b5a9</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-09-06 17:40:25 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/bc1q8tl83gu2w6l0qsf7zzmryz3pxdt0j28pke2x30/urlid/0">bc1q8tl83gu2w6l0qsf7zzmryz3pxdt0j28pke2x30</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/bc1qaj50psf6ywqqv7h4hez9yhhzjpjju5draw0wj9/urlid/0">bc1qaj50psf6ywqqv7h4hez9yhhzjpjju5draw0wj9</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_green.png">
-</td>
-<td class="grid_address_output">
-<span class="pull-left">3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V</span>
-</td>
-<td class="grid_value">
-0.00002547 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">c0850a7b601e5ca3e1bd0c759d672388e1eab4c9a138a75d47ca7aa2058b3fc0</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-08-23 10:01:11 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_red.png">
-</td>
-<td class="grid_address_output">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG/urlid/0">3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_value">
-0.58161405 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">4724ff44e29a3556eb3691ac96cb252b7d91eda55100ce7119a3627893509e2a</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-08-23 07:58:17 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/bc1q79gljq4g5tc5afpg5s3tqkjquzx0d0328w5sd3/urlid/0">bc1q79gljq4g5tc5afpg5s3tqkjquzx0d0328w5sd3</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_green.png">
-</td>
-<td class="grid_address_output">
-<span class="pull-left">3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V</span>
-</td>
-<td class="grid_value">
-0.00038603 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">7106c8e57b5017a1fa31118290a99481fc728e701c713710f8528b04ebc3fdb8</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-08-17 10:01:04 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_red.png">
-</td>
-<td class="grid_address_output">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG/urlid/0">3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_value">
-1.62204989 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">0d7147d09a87859bbbc64c2b6d619a49036a0af32af841e6f5499426991f337d</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-08-17 08:26:20 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/bc1q79gljq4g5tc5afpg5s3tqkjquzx0d0328w5sd3/urlid/0">bc1q79gljq4g5tc5afpg5s3tqkjquzx0d0328w5sd3</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_green.png">
-</td>
-<td class="grid_address_output">
-<span class="pull-left">3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V</span>
-</td>
-<td class="grid_value">
-0.00043384 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">0b55b7bd856a6124f0ad35666b538ada2f6cf340da944fa2725dcafb07f1bc6a</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-08-11 10:01:04 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_red.png">
-</td>
-<td class="grid_address_output">
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG/urlid/0">3AM72PRVf2ofww5EyHJ868Q31ECVEL3RXG</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_value">
-1.43221005 BTC </td>
-</tr><tr class="active">
-<td class="grid_hash grid_td_1">6f96235a022f3cc9354b94a9112df1b85e33734114777dad9502834ca867c7b1</td>
-<td class="grid_td_2"></td>
-<td class="grid_td_3"></td>
-<td class="grid_time grid_td_4">
-2022-08-11 07:56:17 </td>
-</tr>
-<tr>
-<td class="grid_address_input">
-
-<p>
-<span class="pull-left">
-<a href="https://www.bitcoinwhoswho.com/address/bc1q79gljq4g5tc5afpg5s3tqkjquzx0d0328w5sd3/urlid/0">bc1q79gljq4g5tc5afpg5s3tqkjquzx0d0328w5sd3</a>
-</span>
-<span class="pull-right">
-</span>
-</p>
-</td>
-<td class="grid_arrow">
-<img src="https://www.bitcoinwhoswho.com/public/images/arrow_right_green.png">
-</td>
-<td class="grid_address_output">
-<span class="pull-left">3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V</span>
-</td>
-<td class="grid_value">
-0.00044863 BTC </td>
-</tr> </tbody>
-</table>
-<div class="col-lg-12">
-<div class="col-sm-5 col-md-6 pagecount">
-76 records found. Showing 1 of 8.
-</div>
-<div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
-<ul class="pagination" style="display:none;" id="pagination_loading">
-<li><img id="transaction_history_loading" src="https://www.bitcoinwhoswho.com/public/images/ajax-loader.gif"></li>
-<li>Please wait while loading..</li>
-</ul>
-<ul class="pagination" id="pagination_links">
-
-<li class="disabled"><a href="javascript:void(0);">First</a></li>
-
-<li class="disabled"><a href="javascript:void(0);">&laquo;</a></li>
-
-<li class="active"><a href="javascript:void(0);">1</a></li>
-<li><a href="javascript:void(0);" class="transaction_history_nextprev" data-page="2">2</a></li>
-<li><a href="javascript:void(0);" class="transaction_history_nextprev" data-page="3">3</a></li>
-<li><a href="javascript:void(0);" class="transaction_history_nextprev" data-page="4">4</a></li>
-<li><a href="javascript:void(0);" class="transaction_history_nextprev" data-page="5">5</a></li>
-
-<li><a href="javascript:void(0);" class="transaction_history_nextprev" data-page="2">&raquo;</a></li>
-
-<li><a href="javascript:void(0);" class="transaction_history_nextprev" data-page="8">Last</a></li>
-</ul>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -718,57 +418,24 @@ Transaction History
 <script src="https://www.bitcoinwhoswho.com/public/js/page/search/address/index.js?v=1.4"></script>
 <script> 
 // START: # Output Transactions
-    $.ajax({
-        type: "POST",
-        url: "https://www.bitcoinwhoswho.com/search/overview/totaloptransactions/bitcoin_address/3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V/totaloptransactions/5",
-        dataType: "json",
-        success: function(data){
-                $("#trb_total_output_transactions").html(data.totaloptransactions);
-            }
-        });
+    $("#trb_total_output_transactions").html('');
 // END: # Output Transactions
 
 // STRAT: REPEATED INPUT OR OUTPTS.
-    $.ajax({
-        type: "POST",
-        url: "https://www.bitcoinwhoswho.com/search/overview/repeated/bitcoin_address/3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V",
-        dataType: "json",
-        success: function(data){
-                if(data.overview_repeated_input_processed == 1)
-                {
-                    $("#overview_repeated_input").html('');
-                    $.each(data.overview_repeated_input, function (key1,value1) {                        
-                        $("#overview_repeated_input").append('<p class="overview_repeated_entry"><span class="pull-left"><a href="https://www.bitcoinwhoswho.com/address/'+key1+'">'+key1.substring(0,10)+'...</a></span><span class="pull-right">'+value1+'</span></p>');
-                    });
-                }
-                else
-                {
-                    $("#overview_repeated_input").html('None');
-                }                
-                
-                if(data.overview_repeated_output_processed == 1)
-                {
-                    $("#overview_repeated_output").html('');
-                    $.each(data.overview_repeated_output, function (key1,value1) {                        
-                        $("#overview_repeated_output").append('<p class="overview_repeated_entry"><span class="pull-left"><a href="https://www.bitcoinwhoswho.com/address/'+key1+'">'+key1.substring(0,10)+'...</a></span><span class="pull-right">'+value1+'</span></p>');
-                    });
-                }
-                else
-                {
-                    $("#overview_repeated_output").html('None');
-                }
-            }
-        });
+    $("#overview_repeated_input").html('None');
+    $("#overview_repeated_output").html('None');
 // END: REPEATED INPUT OR OUTPTS.
 
 // START - Overview - Most Recent Known Input & Output
+        $("#overview_known_output").html('None');
   
     
+        $("#overview_known_input").html('None');
     
   
 $.ajax({
     type: "POST",
-    url: "https://www.bitcoinwhoswho.com/search/overview/connection/bitcoin_address/3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V/inputfound/0/outputfound/0",
+    url: "https://www.bitcoinwhoswho.com/search/overview/connection/bitcoin_address/3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V/inputfound//outputfound/",
     dataType: "json",
     success: function(data){
 
@@ -803,7 +470,7 @@ $("#watch_guest_submit_btn").click(function(){
     $("#watch_guest_success").hide();
     $.ajax({
     type: "POST",
-    url:  "https://www.bitcoinwhoswho.com/watch/addemail/index/bitcoin_address/3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V/n_tx/76",
+    url:  "https://www.bitcoinwhoswho.com/watch/addemail/index/bitcoin_address/3BCBbYaaf4dGbNbwZMdfkQivtLizatci1V/n_tx/",
     data: { 'email': $("#watch_guest_email").val()},
     dataType: "json",
     success: function(data){
@@ -863,7 +530,7 @@ $("#watch_guest_submit_btn").click(function(){
 Bitcoin Who's Who is dedicated to profiling the extraordinary members of the bitcoin ecosystem. <br><br> Our goal is to help you verify a bitcoin address owner and avoid a bitcoin scam or fraud.
 </address>
 <strong>Our bitcoin address:</strong>
- <p><a href="https://bitcoinwhoswho.com/address/1MX96CwmUJABMwAiU4PjSxjm1Avr2cDHPd/">1MX96CwmUJABMwAiU4PjSxjm1Avr2cDHPd</a></p>
+<p><a href="https://bitcoinwhoswho.com/address/1MX96CwmUJABMwAiU4PjSxjm1Avr2cDHPd/">1MX96CwmUJABMwAiU4PjSxjm1Avr2cDHPd</a></p>
 <br>
 </div>
 </div>
@@ -918,7 +585,7 @@ Bitcoin Who's Who is dedicated to profiling the extraordinary members of the bit
 </div>
 </div>
 <div id="sub-footer">
-<div class="container">
+ <div class="container">
 <div class="row">
 <div class="col-lg-6">
 <div class="copyright">
@@ -940,6 +607,6 @@ Bitcoin Who's Who is dedicated to profiling the extraordinary members of the bit
 </footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"75866363cee3558d","version":"2022.8.1","r":1,"token":"e9031b8c61104f9c8ff0dedabaac54c6","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"75d9bf560d98a938","version":"2022.10.3","r":1,"token":"e9031b8c61104f9c8ff0dedabaac54c6","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>

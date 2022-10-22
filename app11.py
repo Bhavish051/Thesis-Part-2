@@ -1,6 +1,6 @@
 import requests
 
-TARGET_ADDRESS = "3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85B"
+TARGET_ADDRESS = "1pSw6eh5GoWtBrETzPbM36DGxc6Tes5Mp"
 
 def extractHTML(address) : 
     btcWhoIsWhoUrl = "https://www.bitcoinwhoswho.com/address/" + address

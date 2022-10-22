@@ -13,10 +13,10 @@ import sqlite3
 
 conn = sqlite3.connect(os.path.dirname(os.path.realpath(__file__)) + "/locationdata.db")
 
-nltk.download('punkt')
-nltk.download('maxent_ne_chunker')
-nltk.download('words')
-nltk.download('averaged_perceptron_tagger')
+# nltk.download('punkt')
+# nltk.download('maxent_ne_chunker')
+# nltk.download('words')
+# nltk.download('averaged_perceptron_tagger')
 
 # GeoPy gives the extact address as well.
 
@@ -29,7 +29,17 @@ pbar = ProgressBar(widgets=[Bar('>', '[', ']'), ' ',Percentage(), ' ',ETA()])
 # nlp = spacy.load('en_core_web_lg')
 nlp = spacy.load('en_core_web_trf')
 
-with open ("3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85BTARGET_ADDRESS.json", "r") as f:
+# TARGET_FILE = "1pSw6eh5GoWtBrETzPbM36DGxc6Tes5MpTARGET_ADDRESS.json"
+# print("============NEIGHBOURS===============")
+
+# TARGET_FILE = "./btcabuseaddresses/1pSw6eh5GoWtBrETzPbM36DGxc6Tes5Mp.html"
+# print("============ADDRESS===============")
+
+
+TARGET_FILE = "1pSw6eh5GoWtBrETzPbM36DGxc6Tes5MpCSVData.txt"
+print("============BTCABUSECSVData===============")
+
+with open (TARGET_FILE, "r") as f:
     string = f.readlines()
     
 # tokens = nlkt.word_tokenize(string)
@@ -43,7 +53,7 @@ urls = []
 emails = []
 ipList = []
 
-with open("3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85BTARGET_ADDRESS.json") as file:
+with open(TARGET_FILE) as file:
         for line in file:
             # \b((?:https?://)?(?:(?:www\.)?(?:[\da-z\.-]+)\.(?:[a-z]{2,6})|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|(?:(?:[0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,7}:|(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}|(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}|(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}|(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:(?:(?::[0-9a-fA-F]{1,4}){1,6})|:(?:(?::[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(?::[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(?:ffff(?::0{1,4}){0,1}:){0,1}(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])|(?:[0-9a-fA-F]{1,4}:){1,4}:(?:(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(?:25[0-5]|(?:2[0-4]|1{0,1}[0-9]){0,1}[0-9])))(?::[0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])?(?:/[\w\.-]*)*/?)\b
 
@@ -92,7 +102,6 @@ if len(ipList) > 0:
     data = "["
     for x in ipList:
         data = data + '"' + x + '"' + ", "
-
 
     data = data + '"' + ipList[0] + '"' + "]"
 

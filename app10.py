@@ -1,4 +1,3 @@
-from cgi import print_arguments
 import json
 from os.path import exists
 from bs4 import BeautifulSoup
@@ -29,7 +28,7 @@ def processHTML(x) :
     return {"HTML" : finalSection,"numberOfAlerts" : numScamAlerts}  
 
 
-TARGET_ADDRESS = "3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85B"
+TARGET_ADDRESS = "1pSw6eh5GoWtBrETzPbM36DGxc6Tes5Mp"
 FILE_NAME = "neighborData.json"
 
 with open(FILE_NAME, "r") as f :

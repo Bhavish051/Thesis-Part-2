@@ -26,13 +26,14 @@ async def extractHTML(session, address) :
         print(data)
         return data
 
-async def findIfBtcWhoIsWhoHasReport(address,session) : 
-    print("Extracting HTML")
-    print(address)
-    html = await extractHTML(session, address)
-    if html is not None:
-        print(html)
-        writeToFile(html, address)
+async def findIfBtcWhoIsWhoHasReport(address,session) :
+    if not (os.path.exists("./btcabuseNeighbours/" + str(address) + ".html")) :
+        print("Extracting HTML")
+        print(address)
+        html = await extractHTML(session, address)
+        if html is not None:
+            print(html)
+            writeToFile(html, address)
     # parsedHtml = BeautifulSoup(html, "html.parser")
     
     # if parsedHtml.body is not None :
@@ -178,10 +179,11 @@ with open(FILE_NAME, "r") as f :
     data = f.read()
     data = json.loads(data)
 
-TARGET_ADDRESS = "3My1dmytUPWZJa4zxsfAWBTtcwrGpDc85B"
+TARGET_ADDRESS = "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
     
 addressesToInvestigate = []
 for x in data :
+    # if len(x["neighbours"]) > 0 and x["address"] == TARGET_ADDRESS :
     if len(x["neighbours"]) > 0 :
         for y in x["neighbours"] :
             addressesToInvestigate.append(y)
@@ -196,9 +198,9 @@ BUFFER = 10000
 
 
 loop = asyncio.get_event_loop() 
-asyncio.ensure_future(validateResults(set(addressesToInvestigate)))
-loop.run_forever()
+# asyncio.ensure_future(validateResults(set(addressesToInvestigate)))
+# loop.run_forever()
 
 # while len(os.listdir("./btcabuseNeighbours")) < len(set(addressesToInvestigate)) - BUFFER :
 # with suppress(asyncio.TimeoutError) : 
-# loop.run_until_complete(validateResults(set(addressesToInvestigate)))
+loop.run_until_complete(validateResults(set(addressesToInvestigate)))
