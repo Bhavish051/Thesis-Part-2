@@ -44,7 +44,6 @@ with open (TARGET_FILE, "r") as f:
     
 # tokens = nlkt.word_tokenize(string)
 
-pattern = re.compile(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})')
 ipAddresses = []
 
 sents = []
@@ -73,6 +72,7 @@ with open(TARGET_FILE) as file:
     # Can use Geekflare to get A record for the domain
     # Remember the rate limiter 1 request per second
     # ipList.append()
+pattern = re.compile(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})')
 
 for line in string:
     if pattern.search(line) is not None:
