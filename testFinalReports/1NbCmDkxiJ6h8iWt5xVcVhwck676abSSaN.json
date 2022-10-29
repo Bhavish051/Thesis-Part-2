@@ -1,0 +1,320 @@
+[{'address': '1NbCmDkxiJ6h8iWt5xVcVhwck676abSSaN', 'scams': [[], [<div class="col-md-11 srtr_div">Fake email path with possible fake IP origin (138.177.54.77 - DoD Network Information Center, Columbus, OH/USA and there is no direct link between DoD and Bahnhofs' email server ...)<br>
+<br/>
+Email message in Swedish. (I don't use Windows, nor Thunderbird)<br/>
+<br/>
+Message info:<br/>
+<br/>
+Return-Path: <br/>
+Received: from localhost (mf.bahnhof.se [213.80.101.20])<br/>
+by mx1-reinject (Postfix) with ESMTP id 2A12442C8C<br/>
+for ; Tue, 19 Jul 2022 18:13:52 +0200 (CEST)<br/>
+X-Virus-Scanned: Debian amavisd-new at bahnhof.se<br/>
+X-Spam-Flag: NO<br/>
+X-Spam-Score: 5.932<br/>
+X-Spam-Level: *****<br/>
+X-Spam-Status: No, score=5.932 tagged_above=-999 required=6.31<br/>
+tests=[BAYES_00=-1.9, BITCOIN_MALF_HTML=3.496, BITCOIN_SPAM_02=0.001,<br/>
+BITCOIN_SPAM_07=1, HTML_EXTRA_CLOSE=0.001, HTML_MESSAGE=0.001,<br/>
+NO_FM_NAME_IP_HOSTN=0.001, PDS_BTC_ID=0.498, RCVD_IN_XBL=0.375,<br/>
+RDNS_NONE=0.793, SPF_SOFTFAIL=0.665, TO_EQ_FM_DIRECT_MX=1,<br/>
+URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no<br/>
+Received: from mf1.bahnhof.se ([127.0.0.1])<br/>
+by localhost (mf1.bahnhof.se [127.0.0.1]) (amavisd-new, port 10024)<br/>
+with ESMTP id TpXhhaomTLIf for ;<br/>
+Tue, 19 Jul 2022 18:13:50 +0200 (CEST)<br/>
+Received-SPF: Softfail (mailfrom) identity=mailfrom; client-ip=138.117.54.77; helo=[138.117.54.77]; <a class="__cf_email__" data-cfemail="5e3b30283b32312e3b73382c313363333f2a2d70322b303a2d2a2c31331e3c3f3630363138702d3b" href="/cdn-cgi/l/email-protection">[email protected]</a>; receiver=<br/>
+Received: from [138.117.54.77] (unknown [138.117.54.77])<br/>
+by mf1.bahnhof.se (Postfix) with ESMTP id 27F8D10019C<br/>
+for ; Tue, 19 Jul 2022 18:13:49 +0200 (CEST)<br/>
+Message-ID: <br/>
+Date: Tue, 19 Jul 2022 09:13:54 -0400<br/>
+From: <br/>
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20120410 Thunderbird/11.0.1<br/>
+MIME-Version: 1.0<br/>
+To: <br/>
+Subject: =?utf-8?B?RGV0IGZpbm5zIGVuIGbDtnJmYWxsZW4gc2t1bGQgaSBkaXR0IG5hbW4uIFbDpG5saWdlbiBiZXRhbGEg?= =?utf-8?B?ZGluYSBza3VsZGVyIHNuYXJhc3QgbcO2amxpZ3Qu?=<br/>
+Content-Type: multipart/alternative;<br/>
+boundary="------------070403090409060502080902" </br></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">1NbCmDkxiJ6h8iWt5xVcVhwck676abSSaN</div>], [], [<div class="col-md-11 srtr_div">Header:<br/>
+Received: from AS8PR10MB4712.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:20b:31d::16)<br/>
+by AM9PR10MB4150.EURPRD10.PROD.OUTLOOK.COM with HTTPS; Fri, 22 Jul 2022<br/>
+08:18:37 +0000<br/>
+Received: from DB9PR01CA0021.eurprd01.prod.exchangelabs.com<br/>
+(2603:10a6:10:1d8::26) by AS8PR10MB4712.EURPRD10.PROD.OUTLOOK.COM<br/>
+(2603:10a6:20b:31d::16) with Microsoft SMTP Server (version=TLS1_2,<br/>
+cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5458.19; Fri, 22 Jul<br/>
+2022 08:18:33 +0000<br/>
+Received: from DBAEUR03FT030.eop-EUR03.prod.protection.outlook.com<br/>
+(2603:10a6:10:1d8:cafe::2b) by DB9PR01CA0021.outlook.office365.com<br/>
+(2603:10a6:10:1d8::26) with Microsoft SMTP Server (version=TLS1_2,<br/>
+cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5458.18 via Frontend<br/>
+Transport; Fri, 22 Jul 2022 08:18:33 +0000<br/>
+Authentication-Results: spf=none (sender IP is 102.177.195.98)<br/>
+smtp.mailfrom=rhodins-ror.se; dkim=none (message not signed)<br/>
+header.d=none;dmarc=none action=none header.from=rhodins-ror.se;compauth=fail<br/>
+reason=601<br/>
+Received-SPF: None (protection.outlook.com: rhodins-ror.se does not designate<br/>
+permitted sender hosts)<br/>
+Received: from [102.177.195.98] (102.177.195.98) by<br/>
+DBAEUR03FT030.mail.protection.outlook.com (100.127.142.197) with Microsoft<br/>
+SMTP Server id 15.20.5458.17 via Frontend Transport; Fri, 22 Jul 2022<br/>
+08:18:30 +0000<br/>
+Message-ID: <br/>
+From: <br/>
+To: <br/>
+Subject: =?utf-8?B?RGV0IGZpbm5zIGVuIGbDtnJmYWxsZW4gc2t1bGQgaSBkaXR0IG5hbW4uIFbDpG5saWdlbiBiZXRhbGEg?= =?utf-8?B?ZGluYSBza3VsZGVyIHNuYXJhc3QgbcO2amxpZ3Qu?=<br/>
+Date: 22 Jul 2022 11:11:27 +0100<br/>
+MIME-Version: 1.0<br/>
+Content-Type: multipart/alternative;<br/>
+boundary="----=_NextPart_000_002A_01D89DB4.0549D58F"<br/>
+X-Priority: 3<br/>
+X-MSMail-Priority: Normal<br/>
+X-Mailer: Microsoft Outlook Express 6.00.2600.1341<br/>
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.1341<br/>
+Return-Path: <a class="__cf_email__" data-cfemail="f7988192b7859f98939e9984da859885d98492" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Jul 2022 08:18:32.6669<br/>
+(UTC)<br/>
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit<br/>
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000<br/>
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit<br/>
+X-MS-Exchange-Organization-Network-Message-Id:<br/>
+90443525-831e-4d5b-805f-08da6bbac43b<br/>
+X-EOPAttributedMessage: 0<br/>
+X-EOPTenantAttributedMessage: 293d8e82-1b45-4e35-bd52-be533b958fd6:0<br/>
+X-MS-Exchange-Organization-MessageDirectionality: Incoming<br/>
+X-MS-PublicTrafficType: Email<br/>
+X-MS-Exchange-Organization-AuthSource:<br/>
+DBAEUR03FT030.eop-EUR03.prod.protection.outlook.com<br/>
+X-MS-Exchange-Organization-AuthAs: Anonymous<br/>
+X-MS-Office365-Filtering-Correlation-Id: 90443525-831e-4d5b-805f-08da6bbac43b<br/>
+X-MS-TrafficTypeDiagnostic: AS8PR10MB4712:EE_<br/>
+X-MS-Exchange-AtpMessageProperties: SA|SL<br/>
+X-MS-Exchange-Organization-SCL: 5<br/>
+X-Forefront-Antispam-Report:<br/>
+CIP:102.177.195.98;CTRY:ZW;LANG:sv;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:[102.177.195.98];PTR:InfoDomainNonexistent;CAT:SPOOF;SFS:(13230016)(6049001)(4636009)(7916004)(6916009)(224303003)(6706004)(16576012)(86362001)(36736006)(33716001)(2876002)(9316004)(356005)(6200100001)(9686003)(26005)(45954011)(6486002)(5660300002)(44736005)(83380400001)(66574015)(30864003)(6666004)(81166007)(19627235002)(956004)(1096003)(336012)(49966023);DIR:INB;<br/>
+X-Microsoft-Antispam: BCL:0;<br/>
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Jul 2022 08:18:30.2452<br/>
+(UTC)<br/>
+X-MS-Exchange-CrossTenant-Network-Message-Id: 90443525-831e-4d5b-805f-08da6bbac43b<br/>
+X-MS-Exchange-CrossTenant-Id: 293d8e82-1b45-4e35-bd52-be533b958fd6<br/>
+X-MS-Exchange-CrossTenant-AuthSource:<br/>
+DBAEUR03FT030.eop-EUR03.prod.protection.outlook.com<br/>
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous<br/>
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet<br/>
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8PR10MB4712<br/>
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.7111189<br/>
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5458.019<br/>
+X-Microsoft-Antispam-Mailbox-Delivery:<br/>
+ucf:0;jmr:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(910001)(944506458)(944626604)(920097)(930097)(3100021);RF:JunkEmail;<br/>
+X-Microsoft-Antispam-Message-Info:<br/>
+=?us-ascii?Q?+kxP7oJIryeo65yofPURCbQLmkTQcwAQ9jJs+3Ccet3PPulNZTr2zhczE9T1?=<br/>
+=?us-ascii?Q?ewTKsP3t9TUYjIX+9v+0UZ2BCyxIQwDFxB2MrU2loej9UqdJVon85EB47wr3?=<br/>
+=?us-ascii?Q?8NUYzi2LA9FOD0bDkbBXsISfrdgGWNYbHcw563m8+mbwfVveaXrmWK26yzUL?=<br/>
+=?us-ascii?Q?RpU8bo7DCW04Vkqc1ry8B4yVdtq7+uYn6/bYG5WSH/ECEfuWrsNSSe6aqKY7?=<br/>
+=?us-ascii?Q?iTdN4yhfxkf4PkZCdcpLEwue5wotZ4oN00SBQ3g0IUBW0RML88jMu1oCcWuW?=<br/>
+=?us-ascii?Q?ZG+Dqd5ZPk5JSHvFLPmBntBvjVLlKn2MOhXH6deMwwlFoYKIdMX8/hWeEGwA?=<br/>
+=?us-ascii?Q?DMjx42XBv2BuksdiKxBuu36OfhW7Y+WcbeK7WgS1gvaNLyH75mAiEeiR1sjc?=<br/>
+=?us-ascii?Q?YoVK2OwvZYBnuuXj5UOk6V64RDtLV6FRBv3ONWiLkTiB3kdkEdNBJEJID20M?=<br/>
+=?us-ascii?Q?6m7IWuMC7O8e7WfScabcHXf9320qCqfEELor85dcGbCMmirj+SXgzXZ8iH84?=<br/>
+=?us-ascii?Q?On3BfRcc1PxSA0fJoooyknXzO35Jc+ojdeyRLMkbMhGosJ+LsxmUnrjMgiUN?=<br/>
+=?us-ascii?Q?Nsm3oEyF25ZhE+7NTFS/Ld5dF/0zNuZpnmBMf9JPZy0lgt1LtmrOhGwicPqG?=<br/>
+=?us-ascii?Q?s324PkkJcTUJSUlKMyQFW2JAakRfYB7rQb0PHQ0eklyuvqKJcry8+5KMHRNj?=<br/>
+=?us-ascii?Q?z3GNlsGNK2ET9OFm2dAkv3MfFspXHzcgs6ZoIlwmtlPR3v2BimAbKtzzKqk5?=<br/>
+=?us-ascii?Q?a87qOzxTyf+6NZQTs+h9vrDneWyD+PW6rOUf5uFv9fA0DFHM4x6hs+Gr2NN1?=<br/>
+=?us-ascii?Q?nqDksmRPWTApwUnsLdxBc1r3vym+h4ovftybuRDdm4+lI5uRW1NxessYA08j?=<br/>
+=?us-ascii?Q?hqKv9MaqouXM/soh9EHgeHN6RQeUm49hN91YaPAXeQ7zzChLyuge1T9EqaaY?=<br/>
+=?us-ascii?Q?lMy7feayLIjgnvswd+OxduKerESq5rcOPp8kRHovDmZV+3JX9h9bWjNSQKb6?=<br/>
+=?us-ascii?Q?pN7ok+4IEQK79STrfJFSF0oQw9GSOGaScrw/vhWd3rb5fDkdQRMBSzisuR6K?=<br/>
+=?us-ascii?Q?sCcLab0qYruVl1kSOT/quPEbdj5nAroe/OkBbOJ3mCNuR/vYY8802vd3Ac09?=<br/>
+=?us-ascii?Q?9JV7yE5rThuOqbKbILKlWL6j9zzK7nVx9mqwWhZWesif9SlDVRC2WMUcBVDy?=<br/>
+=?us-ascii?Q?prN/FiORDnVAqqU566VnHThKUJlyH3cI9i1dh/FMf8qrUwdBIX3Dio5PSoxV?=<br/>
+=?us-ascii?Q?p/f+RBzKXcXtcqfZyGc2tyyYjZd0wCNYxoryyVZQjoR17zCS8xaZ9cnifO2F?=<br/>
+=?us-ascii?Q?ofdAf+di1y7bDtZBHMXiwXFLaXCpEJ6nu1ZCMrw5XucYR0YzZioC6dXlw1Fr?=<br/>
+=?us-ascii?Q?ul5WTBLgdJIwEubdAaJkPGDAyH6ntmZjdWoITiyNispLkoGMz4409to/INab?=<br/>
+=?us-ascii?Q?Ff4RaTb1a/Km2NGh45UKO1izQGbVhJZLtXYw3KyEr5kNPJl+qs0Z4GDSSusd?=<br/>
+=?us-ascii?Q?anxqDBCWjHlLEU/qZZZ9/s+NO17Ob1mZHpdmoR45bqFYqiqJHHGgVLRG+zGt?=<br/>
+=?us-ascii?Q?Ywls8ZMss1aG5uZ7u/7H6lAFTiEuW/GPtLac5y94np+FAAvyiT6xF/UCHcKV?=<br/>
+=?us-ascii?Q?MkYZhKMCTkfa2Rlbbgxa3RMgQ96b0tnndEl4DFiYeN6D5AZYE8yougNP0Puc?=<br/>
+=?us-ascii?Q?6tDzT20Z56QqEMqFGmdNYPy9QhUrjg4mLfmN1vF2QGU2I/WfGCUXQ3MRylO/?=<br/>
+=?us-ascii?Q?dMCFmI/PgrBW3Q+tid4RbVwcyWjEXpV/w04xZSlnJIw8tJYk2q0XjvRqwqBR?=<br/>
+=?us-ascii?Q?sdldjNTLJOpdp3L5iRxz7p6jTayKfZqLbqgz+rbdPbwPnMSobduEvorPM1eO?=<br/>
+=?us-ascii?Q?GKuKLKNJ5viuurraeSzGyW4mhTeqA6vAppCig7DIur96sEDiOjHusFdSiA2W?=<br/>
+=?us-ascii?Q?E1bR2DS4rCTleq8oF0k5u7CdCa/ezqgP0Hb/YFePnKA9+6tbncGLsOC7YiEJ?=<br/>
+=?us-ascii?Q?mHzoq50MOZj2HGy8ZkSl1Vjx/vXL/wQ+icyt/2pF8nfvkjJSkvLPHb58+n36?=<br/>
+=?us-ascii?Q?NHN71sYuKvu3OxWX3v/e/Kjbm0w9WrWd5v1gXl9Iubni5ZjGQsMQJjyAi8MB?=<br/>
+=?us-ascii?Q?7yI2Y7YrY3uJs/lk6xdnccL1m1RF/2mg6JLEL62ZyMa3MxIgV1k7W+BGOwL5?=<br/>
+=?us-ascii?Q?psi9ofrtERw7pRkzYFFHJndLuYaNpeCxl55YHxzx44Z9nx5KtLaiHQjY5/AT?=<br/>
+=?us-ascii?Q?0hXsVG4n/fij414vHW/kYaZFM4Ilw2MX950igg8ouSwCjkLRpDzAMq5Rg/8/?=<br/>
+=?us-ascii?Q?DWD/daA6MeFGBRS5Re3omby2NSaDPBdDjBKdx5OXelBK50RcAS5lpm1WkYSr?=<br/>
+=?us-ascii?Q?myQC/+4fadfHfkctJMoQlpvAO/yPyCCq70wpOCO3ASRWuPZyIsOezD5zNQfo?=<br/>
+=?us-ascii?Q?r/sEobYGsEKI5ujPHEgOeYor1SPbnTz4cdlO4UQlJwvZJh8brQbnqRC5vytp?=<br/>
+=?us-ascii?Q?NczcW4vXso8X+ptFCyksL8Di9xALuIBUPX//WSKKY42+rQjUlKY1TgcIolFc?=<br/>
+=?us-ascii?Q?bGsSbO82o80cZQWTwwI=3D?=</div>]], 'numberOfAlerts': 10.0}, [{'address': 'bc1q8pj3tly84pcq4d525vwur6uww4nkcgwjgzwwlm', 'scams': [], 'numberOfAlerts': 0}, {'address': '1NbCmDkxiJ6h8iWt5xVcVhwck676abSSaN', 'scams': [[], [<div class="col-md-11 srtr_div">Fake email path with possible fake IP origin (138.177.54.77 - DoD Network Information Center, Columbus, OH/USA and there is no direct link between DoD and Bahnhofs' email server ...)<br>
+<br/>
+Email message in Swedish. (I don't use Windows, nor Thunderbird)<br/>
+<br/>
+Message info:<br/>
+<br/>
+Return-Path: <br/>
+Received: from localhost (mf.bahnhof.se [213.80.101.20])<br/>
+by mx1-reinject (Postfix) with ESMTP id 2A12442C8C<br/>
+for ; Tue, 19 Jul 2022 18:13:52 +0200 (CEST)<br/>
+X-Virus-Scanned: Debian amavisd-new at bahnhof.se<br/>
+X-Spam-Flag: NO<br/>
+X-Spam-Score: 5.932<br/>
+X-Spam-Level: *****<br/>
+X-Spam-Status: No, score=5.932 tagged_above=-999 required=6.31<br/>
+tests=[BAYES_00=-1.9, BITCOIN_MALF_HTML=3.496, BITCOIN_SPAM_02=0.001,<br/>
+BITCOIN_SPAM_07=1, HTML_EXTRA_CLOSE=0.001, HTML_MESSAGE=0.001,<br/>
+NO_FM_NAME_IP_HOSTN=0.001, PDS_BTC_ID=0.498, RCVD_IN_XBL=0.375,<br/>
+RDNS_NONE=0.793, SPF_SOFTFAIL=0.665, TO_EQ_FM_DIRECT_MX=1,<br/>
+URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no<br/>
+Received: from mf1.bahnhof.se ([127.0.0.1])<br/>
+by localhost (mf1.bahnhof.se [127.0.0.1]) (amavisd-new, port 10024)<br/>
+with ESMTP id TpXhhaomTLIf for ;<br/>
+Tue, 19 Jul 2022 18:13:50 +0200 (CEST)<br/>
+Received-SPF: Softfail (mailfrom) identity=mailfrom; client-ip=138.117.54.77; helo=[138.117.54.77]; <a class="__cf_email__" data-cfemail="482d263e2d2427382d652e3a27257525293c3b66243d262c3b3c3a2725082a29202620272e663b2d" href="/cdn-cgi/l/email-protection">[email protected]</a>; receiver=<br/>
+Received: from [138.117.54.77] (unknown [138.117.54.77])<br/>
+by mf1.bahnhof.se (Postfix) with ESMTP id 27F8D10019C<br/>
+for ; Tue, 19 Jul 2022 18:13:49 +0200 (CEST)<br/>
+Message-ID: <br/>
+Date: Tue, 19 Jul 2022 09:13:54 -0400<br/>
+From: <br/>
+User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20120410 Thunderbird/11.0.1<br/>
+MIME-Version: 1.0<br/>
+To: <br/>
+Subject: =?utf-8?B?RGV0IGZpbm5zIGVuIGbDtnJmYWxsZW4gc2t1bGQgaSBkaXR0IG5hbW4uIFbDpG5saWdlbiBiZXRhbGEg?= =?utf-8?B?ZGluYSBza3VsZGVyIHNuYXJhc3QgbcO2amxpZ3Qu?=<br/>
+Content-Type: multipart/alternative;<br/>
+boundary="------------070403090409060502080902" </br></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">1NbCmDkxiJ6h8iWt5xVcVhwck676abSSaN</div>], [], [<div class="col-md-11 srtr_div">Header:<br/>
+Received: from AS8PR10MB4712.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:20b:31d::16)<br/>
+by AM9PR10MB4150.EURPRD10.PROD.OUTLOOK.COM with HTTPS; Fri, 22 Jul 2022<br/>
+08:18:37 +0000<br/>
+Received: from DB9PR01CA0021.eurprd01.prod.exchangelabs.com<br/>
+(2603:10a6:10:1d8::26) by AS8PR10MB4712.EURPRD10.PROD.OUTLOOK.COM<br/>
+(2603:10a6:20b:31d::16) with Microsoft SMTP Server (version=TLS1_2,<br/>
+cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5458.19; Fri, 22 Jul<br/>
+2022 08:18:33 +0000<br/>
+Received: from DBAEUR03FT030.eop-EUR03.prod.protection.outlook.com<br/>
+(2603:10a6:10:1d8:cafe::2b) by DB9PR01CA0021.outlook.office365.com<br/>
+(2603:10a6:10:1d8::26) with Microsoft SMTP Server (version=TLS1_2,<br/>
+cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5458.18 via Frontend<br/>
+Transport; Fri, 22 Jul 2022 08:18:33 +0000<br/>
+Authentication-Results: spf=none (sender IP is 102.177.195.98)<br/>
+smtp.mailfrom=rhodins-ror.se; dkim=none (message not signed)<br/>
+header.d=none;dmarc=none action=none header.from=rhodins-ror.se;compauth=fail<br/>
+reason=601<br/>
+Received-SPF: None (protection.outlook.com: rhodins-ror.se does not designate<br/>
+permitted sender hosts)<br/>
+Received: from [102.177.195.98] (102.177.195.98) by<br/>
+DBAEUR03FT030.mail.protection.outlook.com (100.127.142.197) with Microsoft<br/>
+SMTP Server id 15.20.5458.17 via Frontend Transport; Fri, 22 Jul 2022<br/>
+08:18:30 +0000<br/>
+Message-ID: <br/>
+From: <br/>
+To: <br/>
+Subject: =?utf-8?B?RGV0IGZpbm5zIGVuIGbDtnJmYWxsZW4gc2t1bGQgaSBkaXR0IG5hbW4uIFbDpG5saWdlbiBiZXRhbGEg?= =?utf-8?B?ZGluYSBza3VsZGVyIHNuYXJhc3QgbcO2amxpZ3Qu?=<br/>
+Date: 22 Jul 2022 11:11:27 +0100<br/>
+MIME-Version: 1.0<br/>
+Content-Type: multipart/alternative;<br/>
+boundary="----=_NextPart_000_002A_01D89DB4.0549D58F"<br/>
+X-Priority: 3<br/>
+X-MSMail-Priority: Normal<br/>
+X-Mailer: Microsoft Outlook Express 6.00.2600.1341<br/>
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.1341<br/>
+Return-Path: <a class="__cf_email__" data-cfemail="432c352603312b2c272a2d306e312c316d3026" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Jul 2022 08:18:32.6669<br/>
+(UTC)<br/>
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit<br/>
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000<br/>
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit<br/>
+X-MS-Exchange-Organization-Network-Message-Id:<br/>
+90443525-831e-4d5b-805f-08da6bbac43b<br/>
+X-EOPAttributedMessage: 0<br/>
+X-EOPTenantAttributedMessage: 293d8e82-1b45-4e35-bd52-be533b958fd6:0<br/>
+X-MS-Exchange-Organization-MessageDirectionality: Incoming<br/>
+X-MS-PublicTrafficType: Email<br/>
+X-MS-Exchange-Organization-AuthSource:<br/>
+DBAEUR03FT030.eop-EUR03.prod.protection.outlook.com<br/>
+X-MS-Exchange-Organization-AuthAs: Anonymous<br/>
+X-MS-Office365-Filtering-Correlation-Id: 90443525-831e-4d5b-805f-08da6bbac43b<br/>
+X-MS-TrafficTypeDiagnostic: AS8PR10MB4712:EE_<br/>
+X-MS-Exchange-AtpMessageProperties: SA|SL<br/>
+X-MS-Exchange-Organization-SCL: 5<br/>
+X-Forefront-Antispam-Report:<br/>
+CIP:102.177.195.98;CTRY:ZW;LANG:sv;SCL:5;SRV:;IPV:NLI;SFV:SPM;H:[102.177.195.98];PTR:InfoDomainNonexistent;CAT:SPOOF;SFS:(13230016)(6049001)(4636009)(7916004)(6916009)(224303003)(6706004)(16576012)(86362001)(36736006)(33716001)(2876002)(9316004)(356005)(6200100001)(9686003)(26005)(45954011)(6486002)(5660300002)(44736005)(83380400001)(66574015)(30864003)(6666004)(81166007)(19627235002)(956004)(1096003)(336012)(49966023);DIR:INB;<br/>
+X-Microsoft-Antispam: BCL:0;<br/>
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Jul 2022 08:18:30.2452<br/>
+(UTC)<br/>
+X-MS-Exchange-CrossTenant-Network-Message-Id: 90443525-831e-4d5b-805f-08da6bbac43b<br/>
+X-MS-Exchange-CrossTenant-Id: 293d8e82-1b45-4e35-bd52-be533b958fd6<br/>
+X-MS-Exchange-CrossTenant-AuthSource:<br/>
+DBAEUR03FT030.eop-EUR03.prod.protection.outlook.com<br/>
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous<br/>
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet<br/>
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8PR10MB4712<br/>
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:07.7111189<br/>
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5458.019<br/>
+X-Microsoft-Antispam-Mailbox-Delivery:<br/>
+ucf:0;jmr:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(910001)(944506458)(944626604)(920097)(930097)(3100021);RF:JunkEmail;<br/>
+X-Microsoft-Antispam-Message-Info:<br/>
+=?us-ascii?Q?+kxP7oJIryeo65yofPURCbQLmkTQcwAQ9jJs+3Ccet3PPulNZTr2zhczE9T1?=<br/>
+=?us-ascii?Q?ewTKsP3t9TUYjIX+9v+0UZ2BCyxIQwDFxB2MrU2loej9UqdJVon85EB47wr3?=<br/>
+=?us-ascii?Q?8NUYzi2LA9FOD0bDkbBXsISfrdgGWNYbHcw563m8+mbwfVveaXrmWK26yzUL?=<br/>
+=?us-ascii?Q?RpU8bo7DCW04Vkqc1ry8B4yVdtq7+uYn6/bYG5WSH/ECEfuWrsNSSe6aqKY7?=<br/>
+=?us-ascii?Q?iTdN4yhfxkf4PkZCdcpLEwue5wotZ4oN00SBQ3g0IUBW0RML88jMu1oCcWuW?=<br/>
+=?us-ascii?Q?ZG+Dqd5ZPk5JSHvFLPmBntBvjVLlKn2MOhXH6deMwwlFoYKIdMX8/hWeEGwA?=<br/>
+=?us-ascii?Q?DMjx42XBv2BuksdiKxBuu36OfhW7Y+WcbeK7WgS1gvaNLyH75mAiEeiR1sjc?=<br/>
+=?us-ascii?Q?YoVK2OwvZYBnuuXj5UOk6V64RDtLV6FRBv3ONWiLkTiB3kdkEdNBJEJID20M?=<br/>
+=?us-ascii?Q?6m7IWuMC7O8e7WfScabcHXf9320qCqfEELor85dcGbCMmirj+SXgzXZ8iH84?=<br/>
+=?us-ascii?Q?On3BfRcc1PxSA0fJoooyknXzO35Jc+ojdeyRLMkbMhGosJ+LsxmUnrjMgiUN?=<br/>
+=?us-ascii?Q?Nsm3oEyF25ZhE+7NTFS/Ld5dF/0zNuZpnmBMf9JPZy0lgt1LtmrOhGwicPqG?=<br/>
+=?us-ascii?Q?s324PkkJcTUJSUlKMyQFW2JAakRfYB7rQb0PHQ0eklyuvqKJcry8+5KMHRNj?=<br/>
+=?us-ascii?Q?z3GNlsGNK2ET9OFm2dAkv3MfFspXHzcgs6ZoIlwmtlPR3v2BimAbKtzzKqk5?=<br/>
+=?us-ascii?Q?a87qOzxTyf+6NZQTs+h9vrDneWyD+PW6rOUf5uFv9fA0DFHM4x6hs+Gr2NN1?=<br/>
+=?us-ascii?Q?nqDksmRPWTApwUnsLdxBc1r3vym+h4ovftybuRDdm4+lI5uRW1NxessYA08j?=<br/>
+=?us-ascii?Q?hqKv9MaqouXM/soh9EHgeHN6RQeUm49hN91YaPAXeQ7zzChLyuge1T9EqaaY?=<br/>
+=?us-ascii?Q?lMy7feayLIjgnvswd+OxduKerESq5rcOPp8kRHovDmZV+3JX9h9bWjNSQKb6?=<br/>
+=?us-ascii?Q?pN7ok+4IEQK79STrfJFSF0oQw9GSOGaScrw/vhWd3rb5fDkdQRMBSzisuR6K?=<br/>
+=?us-ascii?Q?sCcLab0qYruVl1kSOT/quPEbdj5nAroe/OkBbOJ3mCNuR/vYY8802vd3Ac09?=<br/>
+=?us-ascii?Q?9JV7yE5rThuOqbKbILKlWL6j9zzK7nVx9mqwWhZWesif9SlDVRC2WMUcBVDy?=<br/>
+=?us-ascii?Q?prN/FiORDnVAqqU566VnHThKUJlyH3cI9i1dh/FMf8qrUwdBIX3Dio5PSoxV?=<br/>
+=?us-ascii?Q?p/f+RBzKXcXtcqfZyGc2tyyYjZd0wCNYxoryyVZQjoR17zCS8xaZ9cnifO2F?=<br/>
+=?us-ascii?Q?ofdAf+di1y7bDtZBHMXiwXFLaXCpEJ6nu1ZCMrw5XucYR0YzZioC6dXlw1Fr?=<br/>
+=?us-ascii?Q?ul5WTBLgdJIwEubdAaJkPGDAyH6ntmZjdWoITiyNispLkoGMz4409to/INab?=<br/>
+=?us-ascii?Q?Ff4RaTb1a/Km2NGh45UKO1izQGbVhJZLtXYw3KyEr5kNPJl+qs0Z4GDSSusd?=<br/>
+=?us-ascii?Q?anxqDBCWjHlLEU/qZZZ9/s+NO17Ob1mZHpdmoR45bqFYqiqJHHGgVLRG+zGt?=<br/>
+=?us-ascii?Q?Ywls8ZMss1aG5uZ7u/7H6lAFTiEuW/GPtLac5y94np+FAAvyiT6xF/UCHcKV?=<br/>
+=?us-ascii?Q?MkYZhKMCTkfa2Rlbbgxa3RMgQ96b0tnndEl4DFiYeN6D5AZYE8yougNP0Puc?=<br/>
+=?us-ascii?Q?6tDzT20Z56QqEMqFGmdNYPy9QhUrjg4mLfmN1vF2QGU2I/WfGCUXQ3MRylO/?=<br/>
+=?us-ascii?Q?dMCFmI/PgrBW3Q+tid4RbVwcyWjEXpV/w04xZSlnJIw8tJYk2q0XjvRqwqBR?=<br/>
+=?us-ascii?Q?sdldjNTLJOpdp3L5iRxz7p6jTayKfZqLbqgz+rbdPbwPnMSobduEvorPM1eO?=<br/>
+=?us-ascii?Q?GKuKLKNJ5viuurraeSzGyW4mhTeqA6vAppCig7DIur96sEDiOjHusFdSiA2W?=<br/>
+=?us-ascii?Q?E1bR2DS4rCTleq8oF0k5u7CdCa/ezqgP0Hb/YFePnKA9+6tbncGLsOC7YiEJ?=<br/>
+=?us-ascii?Q?mHzoq50MOZj2HGy8ZkSl1Vjx/vXL/wQ+icyt/2pF8nfvkjJSkvLPHb58+n36?=<br/>
+=?us-ascii?Q?NHN71sYuKvu3OxWX3v/e/Kjbm0w9WrWd5v1gXl9Iubni5ZjGQsMQJjyAi8MB?=<br/>
+=?us-ascii?Q?7yI2Y7YrY3uJs/lk6xdnccL1m1RF/2mg6JLEL62ZyMa3MxIgV1k7W+BGOwL5?=<br/>
+=?us-ascii?Q?psi9ofrtERw7pRkzYFFHJndLuYaNpeCxl55YHxzx44Z9nx5KtLaiHQjY5/AT?=<br/>
+=?us-ascii?Q?0hXsVG4n/fij414vHW/kYaZFM4Ilw2MX950igg8ouSwCjkLRpDzAMq5Rg/8/?=<br/>
+=?us-ascii?Q?DWD/daA6MeFGBRS5Re3omby2NSaDPBdDjBKdx5OXelBK50RcAS5lpm1WkYSr?=<br/>
+=?us-ascii?Q?myQC/+4fadfHfkctJMoQlpvAO/yPyCCq70wpOCO3ASRWuPZyIsOezD5zNQfo?=<br/>
+=?us-ascii?Q?r/sEobYGsEKI5ujPHEgOeYor1SPbnTz4cdlO4UQlJwvZJh8brQbnqRC5vytp?=<br/>
+=?us-ascii?Q?NczcW4vXso8X+ptFCyksL8Di9xALuIBUPX//WSKKY42+rQjUlKY1TgcIolFc?=<br/>
+=?us-ascii?Q?bGsSbO82o80cZQWTwwI=3D?=</div>]], 'numberOfAlerts': 10.0}, {'address': 'bc1qqw5el0nre3ytdl997pjspp5p6sx9za06vcg0wd', 'scams': [], 'numberOfAlerts': 0}, {'address': '3PgCpm9Uz2gFWpcKxLCvFu6LAPiftPByn7', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qrz2fvpwn0t27f3fzdzvyplp48em3vm0d78ywgu', 'scams': [], 'numberOfAlerts': 0}, {'address': '3G1bQzysSn7VpMKBFuv4VkE9HD22QiPjeX', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q9uf052rcfxe6cqd6vyk2dyhcu2sf89whtw3tj4', 'scams': [], 'numberOfAlerts': 0}, {'address': '3EW3ECEsPnPU8N9RYxbHzJjMD9vXeXsGqV', 'scams': [], 'numberOfAlerts': 0}, {'address': '3AusHmPZSsLmyzAaSnKRKXxa4bLky676Cg', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qncfsfuet6dyfyu0xwa6mjslert5064xe6a9xgs', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qa0a2djy9u59znkmdrd0xkrss6ed8l0marl5gh9', 'scams': [], 'numberOfAlerts': 0}, None, {'address': 'bc1qkmwxzv4wymql6tjg559mdvvqgdras3fv6qhm99', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qr6tfmzv2zye2tt26n3n7z46j3epqsg46tj5ghh', 'scams': [], 'numberOfAlerts': 0}, {'address': '32qJqpEZD9mcamAAAx3yPgZtfSTTMhc3G6', 'scams': [], 'numberOfAlerts': 0}, {'address': '3KgNqjL1YAsMcY9nTZNKnVhgSKPFDVbwTD', 'scams': [], 'numberOfAlerts': 0}, {'address': '1Pidi8wG3TkThhe6oeHtDHanV6YTiRURUK', 'scams': [], 'numberOfAlerts': 0}, {'address': '3CQEE7umBbLFsu6eu9MhMmjSsmp8A1JrjS', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q88xaq6zphv5vwfkfafhf899js9yc782yfdelxj', 'scams': [], 'numberOfAlerts': 0}, {'address': '3DHRTdWKNB6RtriMZGEQm2fchX4aBSzekH', 'scams': [], 'numberOfAlerts': 0}, {'address': '3LUeqGGicS9pu9GPK6CBtrHMU2JavaXhVK', 'scams': [], 'numberOfAlerts': 0}, {'address': '338i1zarHSJroBcF8LwjJQFhW5su49pzKq', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qsrsw7uxz0fre2tr8q8jtvlrjdfw49f9rfzcd0e', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q8aq4cgt24krxcmkanafcccfau7mgj9pcsrf5m9', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qmy54syauf376ce4zcgy78d5c67mp2p08yxhqq7', 'scams': [], 'numberOfAlerts': 0}, None, {'address': 'bc1qtv2h8uskysgzgg3h93sgrnr9gup2nxm4dprxpj', 'scams': [], 'numberOfAlerts': 0}, {'address': '3GPpAscMLpFRHVsRfK9Q9L13hABwicDZL5', 'scams': [], 'numberOfAlerts': 0}, {'address': '18kt3JUeQR2iHfwrwBcXdf3WfuFH8UM8GR', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qu020h0zn8f3s5e5vy28druyyv38k2da24dt5sy', 'scams': [], 'numberOfAlerts': 0}, {'address': '3GaEGCChTB7emtGby9rs2UvRmZU1T1Jord', 'scams': [], 'numberOfAlerts': 0}, {'address': '1HEGs7aPuVBbV2DG1LhJwkZDmgCNDk1fXK', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qqtu79y63r4vfcy2mp4wgyt9x4qjy7v5rkp8rhz', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h', 'scams': [[], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">Fraudulent or unauthorized transactions<br>
+<br/>
+Scammer address: bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h<br/>
+<br/>
+BTC deposit address via Tokensets Global (unauthorized address/scam): 3QvnUgGMWeHB73KDtmRJUJvY8PPWZzL1eR</br></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">Investment scam.</div>], [], [<div class="col-md-11 srtr_div">This crypto wallet was used to receive funds from another scam wallet, which was used by scammers impersonating as Social Security Administration &amp; Local Law Enforcement (Cops). Scammers threatened an unsuspecting person with investigation of dubious property purchases in USA.</div>], [], [<div class="col-md-11 srtr_div">this is the main BTC wallet where all BTC are received from other wallets mentioned in websites.<br/>
+Fake traders, fake investors, fake people. hope they will get justice for life and all btc taken .</div>], [], [<div class="col-md-11 srtr_div">Investment scam</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">used the email <a class="__cf_email__" data-cfemail="64050508080801010a080113130d17240309050d084a070b09" href="/cdn-cgi/l/email-protection">[email protected]</a></div>], [], [<div class="col-md-11 srtr_div">THE SCAMMER USE LIVE YOUTUBE VIDEO OF ELON MUSK &amp; Vitalik Buterin BUT IT IS OLD VIDEO..</div>], [], [<div class="col-md-11 srtr_div">Microsoft ransomware on computer asking to call number. Perp on phone had victim go to bitcoin ATM and cash over 30k and send to this address along with others.</div>], [], [<div class="col-md-11 srtr_div">scam</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">Hello, I was scammed for $ 9430. I have all the proof of the payments made on chickenfast.com. I await your resolution. Thank you</div>], [], [<div class="col-md-11 srtr_div">Hello, I was scammed for $ 9430. I have all the proof of the payments made on chickenfast.com. I await your resolution. Thank you</div>], [], [<div class="col-md-11 srtr_div">Hello, I was scammed for $ 9430. I have all the proof of the payments made on chickenfast.com. I await your resolution. <br/>
+Thank you<br/>
+My e-mail is: <a class="__cf_email__" data-cfemail="8be7eafdeee7e7eaa5eae5eceee7e4cbe3e4ffe6eae2e7a5e8e4e6" href="/cdn-cgi/l/email-protection">[email protected]</a> or <a class="__cf_email__" data-cfemail="98f4f9eefdf4f4f9b6f6f1fbf7f4fdaaa8a8add8fff5f9f1f4b6fbf7f5" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+My Full Name: Lavella Angelo<br/>
+Address: Via Filippo Massarenghi n. 17 - 70032 Bitonto (Bari) - Italy<br/>
+</div>], [], [<div class="col-md-11 srtr_div">Funded by theft</div>], [], [<div class="col-md-11 srtr_div">introduced as cra and money laundering scam</div>], [], [<div class="col-md-11 srtr_div">Scumbag threatening to 'end me' if I dont pay money </div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">I fell for a scam, original BTC address is sent to was <br/>
+bc1qzt7wwar0kaark6j2re0mga32e6n0hne2h3yfw0<br/>
+Then to this one<br/>
+bc1qhz0mwcjjf5j2rf8v47qp7mqjt3cfjkqvkwu4am<br/>
+<br/>
+They both end up here<br/>
+bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h<br/>
+<br/>
+Instagram has now taken down the account as I found whose identity was being used to scam people.</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">She send message on Instagram. She said transfer the BTC for she's address and sent after 2hour more assets. But she didn't send my assets. She didn't reply proper. She want more money</div>]], 'numberOfAlerts': 27.0}, {'address': 'bc1qq85mf5fatcf52j2k4dx79ez7ph89deqnd67ukv', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qvwgpphdnh286scfcjwffzqyt4x8dcr8s85n6jc', 'scams': [], 'numberOfAlerts': 0}, None, {'address': 'bc1qlavewrjk5gjzd4p4887hl52f5h2jgjpw2lsayu', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qrmdhaam9z79nhvtm8tadqftfafysn53ddups9f', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qvzs0xmfh4ykkl6dppgavlnaxh504zt7na6mum5', 'scams': [], 'numberOfAlerts': 0}, {'address': '3JigdhxrE6MxYaEhBBX5NLZLJGf6MCpbVc', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q7q6gkgxvqkkrpys22lxt8s3lzhwat3gcqv8crs', 'scams': [], 'numberOfAlerts': 0}, {'address': '1BvJ4NkkKEXb1ovMxLJoFsMLizDYSo7kF8', 'scams': [], 'numberOfAlerts': 0}, {'address': '1HVzyX3TbqwSt4S2bv5xUy7V7pcLQNuNSh', 'scams': [], 'numberOfAlerts': 0}, {'address': '14uhSxAR86qNeMEXx6bEjYkPBpaqhDyXZV', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qnutyz6hkhqpkng7w2nk8dmqlzl783rgtelr6k9', 'scams': [], 'numberOfAlerts': 0}, {'address': '3JTcGTVvJMaiTxUNjQPf1owm7apADW1pmM', 'scams': [], 'numberOfAlerts': 0}, {'address': '3Aub5sxomLxcHginLYxgnSiDnNhS9gy7Vx', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q892t878heh2t4l8xq5gnp6j3k5ngyjjr0repf8', 'scams': [], 'numberOfAlerts': 0}, {'address': '1BTKgeozFwoj3njMKr4GMJWziQHiwfBjEM', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '3Q47fnHGLAGQS2ZmucKCRewKqp8KAg3K2B', 'scams': [], 'numberOfAlerts': 0}, {'address': '3PzcUnjHmqc8BYBdCSRk6JU4DUmypj2VGR', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qr3tv4r6krctswp7qyvvlzp4szagu0czphnppku', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q7cyrfmck2ffu2ud3rn5l5a8yv6f0chkp0zpemf', 'scams': [[], [<div class="col-md-11 srtr_div">All the funds in this wallet were stolen by whoever owns it. They stole billions from thousands of investors including my $100k</div>], [], [<div class="col-md-11 srtr_div">They have a million different websites using this bitcoin wallet address</div>], [], [<div class="col-md-11 srtr_div">I was on Hinge dating app. I fell for this very cute Chinese man. We talked and got to know each other. Later he tells me about bitcoin and how he trades it for living. He then tells me he can teach me. I fall for it and he provides me with this site to download. https://www.borsaint.com/#/ . He contacted me with a whatsapp number which is 1 (479)-269-0123. He then started helping me make money. He told me to deposit from coinbase to this app which I provided. Later on I started to dislike this man and just wanted to pull my initial investment out. However, the company says you need to pay all the money percentage tax. Which is 20% of almost 100k. I put in around 37k. I am super upset and I do not know what to do. I was scammed. I don't have much information on the person but all I have is the block chain and it looks as the person is scamming so many people it says that 507 transitions have been made. </div>], [], [<div class="col-md-11 srtr_div">The Scam starts with posting a link in comments to The Martini Guys legit Twitter page. It takes you to Telegram app where they then lure you into paying for crypto trading training services. Which is obviously fake </div>], [], [<div class="col-md-11 srtr_div">Fake Profile, Posting images from stock photos to trick people into believing its a real person. </div>], [], [<div class="col-md-11 srtr_div">An investment platform that promises huge returns, but when you try to withdraw your profits, they charge you ridiculously large fees. And this happens over and over again. </div>], [], [<div class="col-md-11 srtr_div">The hacker/scammer has placed stolen bitcoin from this wallet: bc1qp05ajaat26quqdfyvam9r4hu7x8f4cxvxavphn into this account.<br>
+</br></div>], [], [<div class="col-md-11 srtr_div">Selling drugs and non authorized drugs on prescription</div>], [], [<div class="col-md-11 srtr_div">Some guy named Dylan scammed me $300 usd to invest and trade but he ripped me off</div>], [], [<div class="col-md-11 srtr_div">Based in Malta collect money in Bitcoin for the purpose of trading and giving returns to investors </div>], [], [<div class="col-md-11 srtr_div">Soliciting funds in the form of Bitcoin from customers via the premium portal in exchange of a promise of a daily percentage of return on investment.</div>], [], [<div class="col-md-11 srtr_div">Sent 4.24 BTC to address "3L1VN3wufFZVeCrUJcnniqRN3wc1xyZ6SM". And Convincing new investor to fund. </div>], [], [<div class="col-md-11 srtr_div">http://www.hkexpro.xyz/#/</div>], [], [<div class="col-md-11 srtr_div">Ask for different settlement to get withdrawals, ask commission but never get the payouts</div>], [], [<div class="col-md-11 srtr_div">They turned all my crypto into bitcoin and then withdrew it all to their account</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">SCAMMER</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">bc1q9wy04ely3c4yhyfgn5dvcd2q688lsn0ujn09r6</div>], [], [<div class="col-md-11 srtr_div">Someone impersonating accredited Broker. Scammed hundreds of thousands of dollars.</div>]], 'numberOfAlerts': 23.0}, {'address': '3CJq9obPSxpXxTNzh4MvqUyfXXTPNN19ed', 'scams': [], 'numberOfAlerts': 0}, {'address': '3QTG3xqsnLorn9NbRPzG9UiLjQSHCdRaJj', 'scams': [], 'numberOfAlerts': 0}, {'address': '3Kho3t5LE8G9kQxa6fKUbg8ejM6pVqZHVF', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q6yzjfwxr47r4ltseh5x3vk30u8ref47lzyez78', 'scams': [], 'numberOfAlerts': 0}, {'address': '35XPDwvpVKxuqArGCCb1Rw2j6BMFXLZ3pn', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qrjw3fdd8g9n2g44hc0447kuccd45cnt4agfhut', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q3fkp4d9wwu3jzf0yks5ayey6ameeean26ztshc', 'scams': [], 'numberOfAlerts': 0}, None], {'numberOfNeighbours': 63}, {'numberOfNeighboursWithScams': 3}, {'numberOfScamsInNeighbours': 60.0}, {'numberOfScamsInAddress': 10.0}, {'parsedAddressData': {'urls': [], 'emails': [], 'ipAddresses': [['138.177.54.77', '213.80.101.20', '127.0.0.1', '127.0.0.1', '138.117.54.77', '138.117.54.77', '138.117.54.77', '138.117.54.77'], ['102.177.195.98', '102.177.195.98', '102.177.195.98', '100.127.142.197', '102.177.195.98', '102.177.195.98']], 'spacy_data': [{'text': 'Columbus', 'label': 'GPE'}, {'text': 'OH', 'label': 'GPE'}, {'text': 'DoD', 'label': 'ORG'}, {'text': 'Tue, 19 Jul 2022', 'label': 'DATE'}, {'text': '18:13:52 +0200', 'label': 'TIME'}, {'text': 'Tue, 19 Jul 2022', 'label': 'DATE'}, {'text': '18:13:50 +0200', 'label': 'TIME'}, {'text': 'Tue, 19 Jul 2022', 'label': 'DATE'}, {'text': '18:13:49', 'label': 'TIME'}, {'text': 'Tue, 19 Jul 2022', 'label': 'DATE'}, {'text': '09:13:54', 'label': 'TIME'}, {'text': 'Fri, 22 Jul 2022', 'label': 'DATE'}, {'text': 'Fri, 22 Jul', 'label': 'DATE'}, {'text': 'Fri, 22 Jul 2022', 'label': 'DATE'}, {'text': '08:18:33', 'label': 'TIME'}, {'text': 'Fri, 22 Jul 2022', 'label': 'DATE'}, {'text': '08:18:30', 'label': 'TIME'}, {'text': '22 Jul 2022', 'label': 'DATE'}, {'text': '11:11:27', 'label': 'TIME'}, {'text': '22 Jul 2022', 'label': 'DATE'}, {'text': '08:18:30.2452', 'label': 'TIME'}], 'ipData': ['138.177.54.77 : United States : Whitehall : DoD Network Information Center : 43218:39.9747:-82.8947', '213.80.101.20 : Sweden : Stockholm : Bahnhof Internet : 195 87:59.3274:18.0653', '138.117.54.77 : Brazil : Araruama : Global Flash Telecom E Tecnologia Ltda - ME : 28970:-22.8732:-42.3396', '138.117.54.77 : Brazil : Araruama : Global Flash Telecom E Tecnologia Ltda - ME : 28970:-22.8732:-42.3396', '138.117.54.77 : Brazil : Araruama : Global Flash Telecom E Tecnologia Ltda - ME : 28970:-22.8732:-42.3396', '138.117.54.77 : Brazil : Araruama : Global Flash Telecom E Tecnologia Ltda - ME : 28970:-22.8732:-42.3396', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '138.177.54.77 : United States : Whitehall : DoD Network Information Center : 43218:39.9747:-82.8947']}}, {'parsedNeighbourData': [{'urls': [], 'emails': [], 'ipAddresses': [['138.177.54.77', '213.80.101.20', '127.0.0.1', '127.0.0.1', '138.117.54.77', '138.117.54.77', '138.117.54.77', '138.117.54.77'], ['102.177.195.98', '102.177.195.98', '102.177.195.98', '100.127.142.197', '102.177.195.98', '102.177.195.98']], 'spacy_data': [{'text': 'Columbus', 'label': 'GPE'}, {'text': 'OH', 'label': 'GPE'}, {'text': 'DoD', 'label': 'ORG'}, {'text': 'Tue, 19 Jul 2022', 'label': 'DATE'}, {'text': '18:13:52 +0200', 'label': 'TIME'}, {'text': 'Tue, 19 Jul 2022', 'label': 'DATE'}, {'text': '18:13:50 +0200', 'label': 'TIME'}, {'text': 'Tue, 19 Jul 2022', 'label': 'DATE'}, {'text': '18:13:49', 'label': 'TIME'}, {'text': 'Tue, 19 Jul 2022', 'label': 'DATE'}, {'text': '09:13:54', 'label': 'TIME'}, {'text': 'Fri, 22 Jul 2022', 'label': 'DATE'}, {'text': 'Fri, 22 Jul', 'label': 'DATE'}, {'text': 'Fri, 22 Jul 2022', 'label': 'DATE'}, {'text': '08:18:33', 'label': 'TIME'}, {'text': 'Fri, 22 Jul 2022', 'label': 'DATE'}, {'text': '08:18:30', 'label': 'TIME'}, {'text': '22 Jul 2022', 'label': 'DATE'}, {'text': '11:11:27', 'label': 'TIME'}, {'text': '22 Jul 2022', 'label': 'DATE'}, {'text': '08:18:30.2452', 'label': 'TIME'}], 'ipData': ['138.177.54.77 : United States : Whitehall : DoD Network Information Center : 43218:39.9747:-82.8947', '213.80.101.20 : Sweden : Stockholm : Bahnhof Internet : 195 87:59.3274:18.0653', '138.117.54.77 : Brazil : Araruama : Global Flash Telecom E Tecnologia Ltda - ME : 28970:-22.8732:-42.3396', '138.117.54.77 : Brazil : Araruama : Global Flash Telecom E Tecnologia Ltda - ME : 28970:-22.8732:-42.3396', '138.117.54.77 : Brazil : Araruama : Global Flash Telecom E Tecnologia Ltda - ME : 28970:-22.8732:-42.3396', '138.117.54.77 : Brazil : Araruama : Global Flash Telecom E Tecnologia Ltda - ME : 28970:-22.8732:-42.3396', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '102.177.195.98 : Zimbabwe : Harare : Hammer and Tongues Africa Holdings (Private) Limited : :-17.8252:31.0335', '138.177.54.77 : United States : Whitehall : DoD Network Information Center : 43218:39.9747:-82.8947']}, {'urls': [], 'emails': [], 'ipAddresses': [], 'spacy_data': [{'text': '9430', 'label': 'MONEY'}, {'text': '9430', 'label': 'MONEY'}, {'text': '9430', 'label': 'MONEY'}, {'text': 'Lavella Angelo', 'label': 'PERSON'}], 'ipData': []}, {'urls': [['https://www.borsaint.com'], ['http://www.hkexpro.xyz']], 'emails': [], 'ipAddresses': [], 'spacy_data': [{'text': 'billions', 'label': 'CARDINAL'}, {'text': 'thousands', 'label': 'CARDINAL'}, {'text': 'Hinge', 'label': 'ORG'}, {'text': 'Chinese', 'label': 'NORP'}, {'text': 'coinbase', 'label': 'ORG'}, {'text': '20%', 'label': 'PERCENT'}, {'text': 'almost 100k', 'label': 'CARDINAL'}, {'text': '507', 'label': 'CARDINAL'}, {'text': '$300 usd', 'label': 'MONEY'}, {'text': '4.24 BTC', 'label': 'MONEY'}, {'text': 'hundreds of thousands of dollars.</div', 'label': 'MONEY'}], 'ipData': []}]}]

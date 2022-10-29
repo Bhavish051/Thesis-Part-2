@@ -1,0 +1,37 @@
+[
+    [
+        {
+            "address": "18Jro9LNFqBQarcc63WYGf3w7PdDAiwXpk"
+        },
+        {
+            "numberOfAlerts": 31.0
+        },
+        {
+            "numberOfNeighbours": 73
+        },
+        {
+            "numberOfNeighboursWithScams": 0
+        },
+        {
+            "numberOfScamsInNeighbours": 0
+        },
+        {
+            "numberOfScamsInAddress": 31.0
+        },
+        {
+            "parsedAddressData": {
+                "urls": [],
+                "emails": [],
+                "ipAddresses": [
+                    "41.191.70.24",
+                    "37.203.3.57",
+                    "151.70.232.243"
+                ],
+                "spacy_data": []
+            }
+        },
+        {
+            "parsedNeighbourData": []
+        }
+    ]
+]

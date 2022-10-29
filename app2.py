@@ -1,6 +1,4 @@
 import re
-from turtle import pen
-# import nltk
 import os
 import spacy
 import requests

@@ -1,0 +1,1207 @@
+[{'address': '1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA', 'scams': [[], [<div class="col-md-11 srtr_div"><br>
+=====[ NOTES ]==================================================================<br/>
+<br/>
+user name changed to 'xxxx'<br/>
+user site changed to 'yyyy'<br/>
+<br/>
+used https://www.iplocation.net/trace-email<br/>
+or<br/>
+https://whatismyip.live/ip-lookup<br/>
+to trace origination<br/>
+<br/>
+used https://bitcoinwhoswho.com/ to report it<br/>
+<br/>
+Note that the origination point is usually a VPN, but with the origination point<br/>
+and the time of mailing (both in the header) a law agency could (possibly<br/>
+by mapping date/time &amp; connections) trace the email back to the originator.<br/>
+<br/>
+<br/>
+=====[ REPORT ]=================================================================<br/>
+<br/>
+Type: Extortion Attempt<br/>
+Date: 20220914<br/>
+Bitcoin Account: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+Email Source IP: 27.51.146.32<br/>
+<br/>
+IP Location Info:<br/>
+<br/>
+IP Address: 27.51.146.32<br/>
+Reverse DNS: 27-51-146-32.adsl.fetnet.net<br/>
+City: Taipei<br/>
+Region: Taipei city<br/>
+Country: Taiwan (TW)<br/>
+Organization/ISP: Far EastTone Telecommunication Co., Ltd.<br/>
+Latitude/Longitude: 25.0504, 121.5324<br/>
+<br/>
+<br/>
+=====[ Email Header]============================================================<br/>
+<br/>
+Return-Path: <br/>
+Delivered-To: <a class="__cf_email__" data-cfemail="08707070704871717171266b6765" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+Received: (qmail 8331 invoked by uid 200); 14 Sep 2022 22:06:29 -0000<br/>
+Delivered-To: <a class="__cf_email__" data-cfemail="f091949d999eb089898989de939f9d" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+Received: (qmail 8325 invoked from network); 14 Sep 2022 22:06:29 -0000<br/>
+Received: from unknown (HELO xsmtp22.mail2web.com) ([10.100.68.61])<br/>
+(envelope-sender )<br/>
+by xmail04.myhosting.com (qmail-ldap-1.03) with AES256-SHA encrypted SMTP<br/>
+for ; 14 Sep 2022 22:06:22 -0000<br/>
+Received: from 27-51-146-32.adsl.fetnet.net ([27.51.146.32])<br/>
+by xsmtp22.mail2web.com with esmtp (Exim 4.92)<br/>
+(envelope-from )<br/>
+id 1oYaWU-0004gP-04<br/>
+for <a class="__cf_email__" data-cfemail="7011141d191e30090909095e131f1d" href="/cdn-cgi/l/email-protection">[email protected]</a>; Wed, 14 Sep 2022 15:06:22 -0700<br/>
+Message-ID: <br/>
+From: <br/>
+To: <br/>
+Subject: [spam][Bitdefender extortion detection] You have outstanding<br/>
+debt.<br/>
+Date: 15 Sep 2022 12:36:19 +0700<br/>
+MIME-Version: 1.0<br/>
+Content-Type: text/plain;<br/>
+charset="iso-8859-3"<br/>
+Content-Transfer-Encoding: 8bit<br/>
+X-Priority: 3<br/>
+X-MSMail-Priority: Normal<br/>
+X-Mailer: Microsoft Windows Live Mail 15.4.3508.1109<br/>
+X-MimeOLE: Produced By Microsoft MimeOLE V15.4.3508.1109<br/>
+X-SA-Exim-Connect-IP: 27.51.146.32<br/>
+X-SA-Exim-Mail-From: <a class="__cf_email__" data-cfemail="1a7b7e7773745a6363636334797577" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+X-SA-Exim-Scanned: No (on xsmtp22.mail2web.com); SAEximRunCond expanded to false<br/>
+X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.4.1445, Stamp: 3],<br/>
+Multi: [Enabled, t: (0.000009,0.029933)], BW: [Enabled, t: (0.000034),<br/>
+skipping (From == To)], RTDA: [Enabled, t: (0.086885), Hit: Yes,<br/>
+Details: v2.41.0; Id: 12.52054t.1gcv1el0k.23iec; mclb; categories:<br/>
+extortion(btc,fipr,fuzzy); ip(456364576:899;);<br/>
+fipr(105r3ff3c8d13179fcd4b26d1cbcd143e082:849;);<br/>
+fz(10365d7351166ce2aeb949056c514c4fd0af:919;);<br/>
+btc(c1dbb26b68f9881640f20507003937eb:899;);<br/>
+ai(1_0_6-5953ac015f0d9f63fc6a1f9b1ee50c45-rtdaai.v335.3031828839-model:999;)],<br/>
+total: 999(775)<br/>
+X-BitdefenderWKS-Spam: Yes - 999<br/>
+X-BitdefenderWKS-Categories: extortion<br/>
+<br/>
+<br/>
+=====[ Message Text]============================================================<br/>
+<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events:<br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="fe9f9a939790be87878787d09d9193" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately.<br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago!<br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+</br></div>], [], [<div class="col-md-11 srtr_div">I received this - it indicates it was sent from my email address:<br/>
+<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events: <br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="69111111291111111111111147111111" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately. <br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago! <br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+<br/>
+Header shows:<br/>
+<br/>
+Received: from idnsoft.co.kr (idnsoft.co.kr [110.11.98.100] (may be forged))<br/>
+by alpd679.prodigy.net (Inbound 8.15.2/8.15.2) with ESMTP id 28F4GgUC017161<br/>
+for ; Thu, 15 Sep 2022 00:16:43 -0400<br/>
+</div>], [], [<div class="col-md-11 srtr_div">This message came from MacroLan Internet services (41.78.7.202)<br/>
+Typical low rate cut-n-paste attempt at illegal blackmail. If any hosting service is providing or hosting this wallet address do not block or cancel, only monitor access to obtain a fresh source IP address and notify and cooperate with the authorities. Be aware this kind of thing lowers the value of bitcoin and hurts your bottom line so anything you can do to bring this sad and pathetic fuckwad to justice will help your own profits.</div>], [], [<div class="col-md-11 srtr_div"><br/>
+=====[ NOTES ]==================================================================<br/>
+<br/>
+user name changed to 'xxxx'<br/>
+user site changed to 'yyyy'<br/>
+<br/>
+used https://www.iplocation.net/trace-email<br/>
+or<br/>
+https://whatismyip.live/ip-lookup<br/>
+to trace origination<br/>
+<br/>
+used https://bitcoinwhoswho.com/ to report it<br/>
+<br/>
+Note that the origination point is usually a VPN, but with the origination point<br/>
+and the time of mailing (both in the header) a law agency could (possibly<br/>
+by mapping date/time &amp; connections) trace the email back to the originator.<br/>
+<br/>
+<br/>
+=====[ REPORT ]=================================================================<br/>
+<br/>
+Type: Extortion Attempt<br/>
+Date: 20220915<br/>
+Bitcoin Account: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+Email Source IP: 31.41.94.253<br/>
+<br/>
+IP Location Info:<br/>
+<br/>
+IP Address: 31.41.94.253<br/>
+Reverse DNS: 253-94-41-31.users.novi.uz.ua<br/>
+City: Dubrynychi<br/>
+Region: Transcarpathia<br/>
+Country: Ukraine (UA)<br/>
+Organization/ISP: New Information Systems PP<br/>
+Latitude/Longitude: 48.8052, 22.4892<br/>
+<br/>
+<br/>
+=====[ Email Header]============================================================<br/>
+<br/>
+Return-Path: <br/>
+Delivered-To: <a class="__cf_email__" data-cfemail="0c747474744c75757575226f6361" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+Received: (qmail 30091 invoked from network); 15 Sep 2022 14:09:01 -0000<br/>
+Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br/>
+(envelope-sender )<br/>
+by xmail11.myhosting.com (qmail-ldap-1.03) with AES256-SHA encrypted SMTP<br/>
+for ; 15 Sep 2022 14:08:52 -0000<br/>
+Received: from [31.41.94.253] (helo=253-94-41-31.users.novi.uz.ua)<br/>
+by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br/>
+(envelope-from )<br/>
+id 1oYpXv-0005p3-OT<br/>
+for <a class="__cf_email__" data-cfemail="e59d9d9d9da59c9c9c9ccb868a88" href="/cdn-cgi/l/email-protection">[email protected]</a>; Thu, 15 Sep 2022 07:08:52 -0700<br/>
+Date: 15 Sep 2022 17:54:08 +0200<br/>
+From: <br/>
+X-Priority: 3<br/>
+Message-ID: <br/>
+To: <br/>
+Subject: [spam][Bitdefender extortion detection] You have outstanding<br/>
+debt.<br/>
+MIME-Version: 1.0<br/>
+Content-Type: text/plain; charset="iso-8859-3"<br/>
+Content-Transfer-Encoding: 8bit<br/>
+X-Host-Lookup-Failed: Reverse DNS lookup failed for 31.41.94.253 (failed)<br/>
+X-SA-Exim-Connect-IP: 31.41.94.253<br/>
+X-SA-Exim-Mail-From: <a class="__cf_email__" data-cfemail="dca4a4a4a49ca5a5a5a5f2bfb3b1" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br/>
+X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.4.1445, Stamp: 3],<br/>
+Multi: [Enabled, t: (0.000004,0.010037)], BW: [Enabled, t: (0.000014),<br/>
+skipping (From == To)], RTDA: [Enabled, t: (0.057262), Hit: Yes,<br/>
+Details: v2.41.0; Id: 12.52031t.1gd0ouar1.n1; mclb; categories:<br/>
+extortion(btc,fipr,fuzzy,sign); ip(522804989:849;);<br/>
+fipr(105r3ff3c8d13179fcd4b26d1cbcd143e082:849;);<br/>
+fz(10365d7351166ce2aeb949056c514c4fd0af:919;);<br/>
+btc(c1dbb26b68f9881640f20507003937eb:899;);<br/>
+ai(1_0_6-a24e027fe6d10a35667bafc961af2688-rtdaai.v335.3031828839-model:999;);<br/>
+sign(8b13b57c0ccec3bbaa4472a9f2a57450:992;)], total: 999(775)<br/>
+X-BitdefenderWKS-Spam: Yes - 999<br/>
+X-BitdefenderWKS-Categories: extortion<br/>
+<br/>
+<br/>
+=====[ Message Text]============================================================<br/>
+<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events:<br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="9ee6e6e6e6dee7e7e7e7b0fdf1f3" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately.<br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago!<br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+<br/>
+<br/>
+<br/>
+</div>], [], [<div class="col-md-11 srtr_div">Typical low rate cut-n-paste attempt at illegal blackmail. If any hosting service is providing or hosting this wallet address do not block or cancel, only monitor access to obtain a fresh source IP address and notify and cooperate with the authorities. Be aware this kind of thing lowers the value of bitcoin and hurts your bottom line so anything you can do to bring this sad and pathetic fuckwad to justice will help your own profits.</div>], [], [<div class="col-md-11 srtr_div"><br/>
+=====[ NOTES ]==================================================================<br/>
+<br/>
+user name changed to 'xxxx'<br/>
+user site changed to 'yyyy'<br/>
+<br/>
+used https://www.iplocation.net/trace-email<br/>
+or<br/>
+https://whatismyip.live/ip-lookup<br/>
+to trace origination<br/>
+<br/>
+used https://bitcoinwhoswho.com/ to report it<br/>
+<br/>
+Note that the origination point is usually a VPN, but with the origination point<br/>
+and the time of mailing (both in the header) a law agency could (possibly<br/>
+by mapping date/time &amp; connections) trace the email back to the originator.<br/>
+<br/>
+<br/>
+=====[ REPORT ]=================================================================<br/>
+<br/>
+Type: Extortion Attempt<br/>
+Date: 20220916<br/>
+Bitcoin Account: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+Email Source IP: 190.194.17.120<br/>
+<br/>
+IP Location Info:<br/>
+<br/>
+IP Address: 190.194.17.120<br/>
+Reverse DNS: 120-17-194-190.cab.prima.net.ar<br/>
+City: Córdoba<br/>
+Region: Córdoba<br/>
+Country: Argentina (AR)<br/>
+Organization/ISP: Telecom Argentina S.A.<br/>
+Latitude/Longitude: -31.425, -64.175<br/>
+<br/>
+<br/>
+=====[ Email Header]============================================================<br/>
+<br/>
+Return-Path: <br/>
+Delivered-To: <a class="__cf_email__" data-cfemail="79010101013900000000571a1614" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+Received: (qmail 10791 invoked from network); 16 Sep 2022 09:32:19 -0000<br/>
+Received: from unknown (HELO xsmtp22.mail2web.com) ([10.100.68.61])<br/>
+(envelope-sender )<br/>
+by xmail09.myhosting.com (qmail-ldap-1.03) with AES256-SHA encrypted SMTP<br/>
+for ; 16 Sep 2022 09:32:09 -0000<br/>
+Received: from [190.194.17.120] (helo=120-17-194-190.cab.prima.net.ar)<br/>
+by xsmtp22.mail2web.com with esmtp (Exim 4.92)<br/>
+(envelope-from )<br/>
+id 1oZ7hh-0005YO-3c<br/>
+for <a class="__cf_email__" data-cfemail="f48c8c8c8cb48d8d8d8dda979b99" href="/cdn-cgi/l/email-protection">[email protected]</a>; Fri, 16 Sep 2022 02:32:09 -0700<br/>
+Message-ID: <br/>
+From: <br/>
+To: <br/>
+Subject: [spam][Bitdefender extortion detection] You have outstanding<br/>
+debt.<br/>
+Date: 16 Sep 2022 02:01:11 -0400<br/>
+MIME-Version: 1.0<br/>
+Content-Type: text/plain;<br/>
+charset="iso-8859-3"<br/>
+Content-Transfer-Encoding: 8bit<br/>
+X-Priority: 3<br/>
+X-MSMail-Priority: Normal<br/>
+Importance: Normal<br/>
+X-Mailer: Microsoft Windows Live Mail 16.4.3505.912<br/>
+X-MimeOLE: Produced By Microsoft MimeOLE V16.4.3505.912<br/>
+X-Host-Lookup-Failed: Reverse DNS lookup failed for 190.194.17.120 (failed)<br/>
+X-SA-Exim-Connect-IP: 190.194.17.120<br/>
+X-SA-Exim-Mail-From: <a class="__cf_email__" data-cfemail="fc84848484bc85858585d29f9391" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+X-SA-Exim-Scanned: No (on xsmtp22.mail2web.com); SAEximRunCond expanded to false<br/>
+X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.4.1445, Stamp: 3],<br/>
+Multi: [Enabled, t: (0.000004,0.009333)], BW: [Enabled, t: (0.000042),<br/>
+skipping (From == To)], RTDA: [Enabled, t: (0.084575), Hit: Yes,<br/>
+Details: v2.41.0; Id: 12.5204pj.1gd463cpr.555; mclb; categories:<br/>
+extortion(btc,fipr,fuzzy); ip(3200389496:849;);<br/>
+fipr(105r3ff3c8d13179fcd4b26d1cbcd143e082:849;);<br/>
+fz(10365d7351166ce2aeb949056c514c4fd0af:919;);<br/>
+btc(c1dbb26b68f9881640f20507003937eb:899;);<br/>
+ai(1_0_6-0374c2a5a6055e0bd444e02d1100ff1a-rtdaai.v335.3031828839-model:999;)],<br/>
+total: 999(775)<br/>
+X-BitdefenderWKS-Spam: Yes - 999<br/>
+X-BitdefenderWKS-Categories: extortion<br/>
+<br/>
+<br/>
+=====[ Message Text]============================================================<br/>
+<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events:<br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="e991919191a990909090c78a8684" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately.<br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago!<br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+<br/>
+<br/>
+<br/>
+</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">they send a bullshit email.<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events:<br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (email here).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately.<br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago!<br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">phishing my email , stating that there is unauthorized access to my computer- demanding $1495 to be sent to the above address</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">Blast email sent to my workplace.</div>], [], [<div class="col-md-11 srtr_div">Phishing email sent to a computer that doesn't have a webcam <br/>
+"Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events: <br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="0b7d6e636268676e6f6e6d676e6e7f4b7868647f6c79647e7b25686466" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately. <br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago! <br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+"</div>], [], [<div class="col-md-11 srtr_div"></div>]], 'numberOfAlerts': 16.0}, [{'address': '3NBY1L4GL3gXrDPRe4JeCree42HeB9ogwF', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qcepcvn80q60e2ytk9c9rrhcfac3gar8kwcuh67', 'scams': [], 'numberOfAlerts': 0}, {'address': '34wmibAdqWpMxsNC5W8Q9vxAGyCnLi66ih', 'scams': [], 'numberOfAlerts': 0}, {'address': '37jXhD21itjCcaSKYnv5iYKkAuXoxneERB', 'scams': [], 'numberOfAlerts': 0}, {'address': '3QWgWV19xM3axNjHEmUeJD7Qr1FBXgoFgS', 'scams': [], 'numberOfAlerts': 0}, {'address': '3B791aae6JjdLUdVrohxNWaqCdWcgZuMo4', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qqqrchfzwq90jn8ke8a837ff4vvqmpmne7qchxu', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qtqvkz06ydk5muy2yr7utlpy2f6ahd8a9a59sap', 'scams': [], 'numberOfAlerts': 0}, {'address': '3FwbVbZLJVPTCC6Hc7i3DvYxe5oszsmFon', 'scams': [], 'numberOfAlerts': 0}, {'address': '33ZTd5MaxuN7mayqFCVocBZWA2oGUgkF84', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q4udj390w3lcz8mpjh3qtdgjt30p6pls8z2uf095ku9hewj03q0psne2td4', 'scams': [], 'numberOfAlerts': 0}, {'address': '33m4ZuZso3KZWDjsvoj3KCm3sqdUpkPsts', 'scams': [], 'numberOfAlerts': 0}, {'address': '38rbBUXKFAstu84c9kagW3hoDMG8R8oxDC', 'scams': [], 'numberOfAlerts': 0}, None, {'address': 'bc1qp0gll8wzjg7jvc7cc7uwxcs6llljy6aw9d3c3e', 'scams': [], 'numberOfAlerts': 0}, {'address': '14ndLBwDHWySLuHJQn28SfwVVpjvPCLgRp', 'scams': [], 'numberOfAlerts': 0}, {'address': '35Mpm1AAVcmTzGWoT1wdCg2UGAxG7hBHkN', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '17YC392gzXRTDKoaRt5FY3eQj8duzYtw3k', 'scams': [], 'numberOfAlerts': 0}, {'address': '1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA', 'scams': [[], [<div class="col-md-11 srtr_div"><br>
+=====[ NOTES ]==================================================================<br/>
+<br/>
+user name changed to 'xxxx'<br/>
+user site changed to 'yyyy'<br/>
+<br/>
+used https://www.iplocation.net/trace-email<br/>
+or<br/>
+https://whatismyip.live/ip-lookup<br/>
+to trace origination<br/>
+<br/>
+used https://bitcoinwhoswho.com/ to report it<br/>
+<br/>
+Note that the origination point is usually a VPN, but with the origination point<br/>
+and the time of mailing (both in the header) a law agency could (possibly<br/>
+by mapping date/time &amp; connections) trace the email back to the originator.<br/>
+<br/>
+<br/>
+=====[ REPORT ]=================================================================<br/>
+<br/>
+Type: Extortion Attempt<br/>
+Date: 20220914<br/>
+Bitcoin Account: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+Email Source IP: 27.51.146.32<br/>
+<br/>
+IP Location Info:<br/>
+<br/>
+IP Address: 27.51.146.32<br/>
+Reverse DNS: 27-51-146-32.adsl.fetnet.net<br/>
+City: Taipei<br/>
+Region: Taipei city<br/>
+Country: Taiwan (TW)<br/>
+Organization/ISP: Far EastTone Telecommunication Co., Ltd.<br/>
+Latitude/Longitude: 25.0504, 121.5324<br/>
+<br/>
+<br/>
+=====[ Email Header]============================================================<br/>
+<br/>
+Return-Path: <br/>
+Delivered-To: <a class="__cf_email__" data-cfemail="8bf3f3f3f3cbf2f2f2f2a5e8e4e6" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+Received: (qmail 8331 invoked by uid 200); 14 Sep 2022 22:06:29 -0000<br/>
+Delivered-To: <a class="__cf_email__" data-cfemail="bfdedbd2d6d1ffc6c6c6c691dcd0d2" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+Received: (qmail 8325 invoked from network); 14 Sep 2022 22:06:29 -0000<br/>
+Received: from unknown (HELO xsmtp22.mail2web.com) ([10.100.68.61])<br/>
+(envelope-sender )<br/>
+by xmail04.myhosting.com (qmail-ldap-1.03) with AES256-SHA encrypted SMTP<br/>
+for ; 14 Sep 2022 22:06:22 -0000<br/>
+Received: from 27-51-146-32.adsl.fetnet.net ([27.51.146.32])<br/>
+by xsmtp22.mail2web.com with esmtp (Exim 4.92)<br/>
+(envelope-from )<br/>
+id 1oYaWU-0004gP-04<br/>
+for <a class="__cf_email__" data-cfemail="4726232a2e29073e3e3e3e6924282a" href="/cdn-cgi/l/email-protection">[email protected]</a>; Wed, 14 Sep 2022 15:06:22 -0700<br/>
+Message-ID: <br/>
+From: <br/>
+To: <br/>
+Subject: [spam][Bitdefender extortion detection] You have outstanding<br/>
+debt.<br/>
+Date: 15 Sep 2022 12:36:19 +0700<br/>
+MIME-Version: 1.0<br/>
+Content-Type: text/plain;<br/>
+charset="iso-8859-3"<br/>
+Content-Transfer-Encoding: 8bit<br/>
+X-Priority: 3<br/>
+X-MSMail-Priority: Normal<br/>
+X-Mailer: Microsoft Windows Live Mail 15.4.3508.1109<br/>
+X-MimeOLE: Produced By Microsoft MimeOLE V15.4.3508.1109<br/>
+X-SA-Exim-Connect-IP: 27.51.146.32<br/>
+X-SA-Exim-Mail-From: <a class="__cf_email__" data-cfemail="09686d6460674970707070276a6664" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+X-SA-Exim-Scanned: No (on xsmtp22.mail2web.com); SAEximRunCond expanded to false<br/>
+X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.4.1445, Stamp: 3],<br/>
+Multi: [Enabled, t: (0.000009,0.029933)], BW: [Enabled, t: (0.000034),<br/>
+skipping (From == To)], RTDA: [Enabled, t: (0.086885), Hit: Yes,<br/>
+Details: v2.41.0; Id: 12.52054t.1gcv1el0k.23iec; mclb; categories:<br/>
+extortion(btc,fipr,fuzzy); ip(456364576:899;);<br/>
+fipr(105r3ff3c8d13179fcd4b26d1cbcd143e082:849;);<br/>
+fz(10365d7351166ce2aeb949056c514c4fd0af:919;);<br/>
+btc(c1dbb26b68f9881640f20507003937eb:899;);<br/>
+ai(1_0_6-5953ac015f0d9f63fc6a1f9b1ee50c45-rtdaai.v335.3031828839-model:999;)],<br/>
+total: 999(775)<br/>
+X-BitdefenderWKS-Spam: Yes - 999<br/>
+X-BitdefenderWKS-Categories: extortion<br/>
+<br/>
+<br/>
+=====[ Message Text]============================================================<br/>
+<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events:<br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="345550595d5a744d4d4d4d1a575b59" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately.<br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago!<br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+</br></div>], [], [<div class="col-md-11 srtr_div">I received this - it indicates it was sent from my email address:<br/>
+<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events: <br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="641c1c1c241c1c1c1c1c1c1c4a1c1c1c" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately. <br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago! <br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+<br/>
+Header shows:<br/>
+<br/>
+Received: from idnsoft.co.kr (idnsoft.co.kr [110.11.98.100] (may be forged))<br/>
+by alpd679.prodigy.net (Inbound 8.15.2/8.15.2) with ESMTP id 28F4GgUC017161<br/>
+for ; Thu, 15 Sep 2022 00:16:43 -0400<br/>
+</div>], [], [<div class="col-md-11 srtr_div">This message came from MacroLan Internet services (41.78.7.202)<br/>
+Typical low rate cut-n-paste attempt at illegal blackmail. If any hosting service is providing or hosting this wallet address do not block or cancel, only monitor access to obtain a fresh source IP address and notify and cooperate with the authorities. Be aware this kind of thing lowers the value of bitcoin and hurts your bottom line so anything you can do to bring this sad and pathetic fuckwad to justice will help your own profits.</div>], [], [<div class="col-md-11 srtr_div"><br/>
+=====[ NOTES ]==================================================================<br/>
+<br/>
+user name changed to 'xxxx'<br/>
+user site changed to 'yyyy'<br/>
+<br/>
+used https://www.iplocation.net/trace-email<br/>
+or<br/>
+https://whatismyip.live/ip-lookup<br/>
+to trace origination<br/>
+<br/>
+used https://bitcoinwhoswho.com/ to report it<br/>
+<br/>
+Note that the origination point is usually a VPN, but with the origination point<br/>
+and the time of mailing (both in the header) a law agency could (possibly<br/>
+by mapping date/time &amp; connections) trace the email back to the originator.<br/>
+<br/>
+<br/>
+=====[ REPORT ]=================================================================<br/>
+<br/>
+Type: Extortion Attempt<br/>
+Date: 20220915<br/>
+Bitcoin Account: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+Email Source IP: 31.41.94.253<br/>
+<br/>
+IP Location Info:<br/>
+<br/>
+IP Address: 31.41.94.253<br/>
+Reverse DNS: 253-94-41-31.users.novi.uz.ua<br/>
+City: Dubrynychi<br/>
+Region: Transcarpathia<br/>
+Country: Ukraine (UA)<br/>
+Organization/ISP: New Information Systems PP<br/>
+Latitude/Longitude: 48.8052, 22.4892<br/>
+<br/>
+<br/>
+=====[ Email Header]============================================================<br/>
+<br/>
+Return-Path: <br/>
+Delivered-To: <a class="__cf_email__" data-cfemail="c7bfbfbfbf87bebebebee9a4a8aa" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+Received: (qmail 30091 invoked from network); 15 Sep 2022 14:09:01 -0000<br/>
+Received: from unknown (HELO xsmtp21.mail2web.com) ([10.100.68.60])<br/>
+(envelope-sender )<br/>
+by xmail11.myhosting.com (qmail-ldap-1.03) with AES256-SHA encrypted SMTP<br/>
+for ; 15 Sep 2022 14:08:52 -0000<br/>
+Received: from [31.41.94.253] (helo=253-94-41-31.users.novi.uz.ua)<br/>
+by xsmtp21.mail2web.com with esmtp (Exim 4.92)<br/>
+(envelope-from )<br/>
+id 1oYpXv-0005p3-OT<br/>
+for <a class="__cf_email__" data-cfemail="dda5a5a5a59da4a4a4a4f3beb2b0" href="/cdn-cgi/l/email-protection">[email protected]</a>; Thu, 15 Sep 2022 07:08:52 -0700<br/>
+Date: 15 Sep 2022 17:54:08 +0200<br/>
+From: <br/>
+X-Priority: 3<br/>
+Message-ID: <br/>
+To: <br/>
+Subject: [spam][Bitdefender extortion detection] You have outstanding<br/>
+debt.<br/>
+MIME-Version: 1.0<br/>
+Content-Type: text/plain; charset="iso-8859-3"<br/>
+Content-Transfer-Encoding: 8bit<br/>
+X-Host-Lookup-Failed: Reverse DNS lookup failed for 31.41.94.253 (failed)<br/>
+X-SA-Exim-Connect-IP: 31.41.94.253<br/>
+X-SA-Exim-Mail-From: <a class="__cf_email__" data-cfemail="126a6a6a6a526b6b6b6b3c717d7f" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+X-SA-Exim-Scanned: No (on xsmtp21.mail2web.com); SAEximRunCond expanded to false<br/>
+X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.4.1445, Stamp: 3],<br/>
+Multi: [Enabled, t: (0.000004,0.010037)], BW: [Enabled, t: (0.000014),<br/>
+skipping (From == To)], RTDA: [Enabled, t: (0.057262), Hit: Yes,<br/>
+Details: v2.41.0; Id: 12.52031t.1gd0ouar1.n1; mclb; categories:<br/>
+extortion(btc,fipr,fuzzy,sign); ip(522804989:849;);<br/>
+fipr(105r3ff3c8d13179fcd4b26d1cbcd143e082:849;);<br/>
+fz(10365d7351166ce2aeb949056c514c4fd0af:919;);<br/>
+btc(c1dbb26b68f9881640f20507003937eb:899;);<br/>
+ai(1_0_6-a24e027fe6d10a35667bafc961af2688-rtdaai.v335.3031828839-model:999;);<br/>
+sign(8b13b57c0ccec3bbaa4472a9f2a57450:992;)], total: 999(775)<br/>
+X-BitdefenderWKS-Spam: Yes - 999<br/>
+X-BitdefenderWKS-Categories: extortion<br/>
+<br/>
+<br/>
+=====[ Message Text]============================================================<br/>
+<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events:<br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="5a222222221a2323232374393537" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately.<br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago!<br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+<br/>
+<br/>
+<br/>
+</div>], [], [<div class="col-md-11 srtr_div">Typical low rate cut-n-paste attempt at illegal blackmail. If any hosting service is providing or hosting this wallet address do not block or cancel, only monitor access to obtain a fresh source IP address and notify and cooperate with the authorities. Be aware this kind of thing lowers the value of bitcoin and hurts your bottom line so anything you can do to bring this sad and pathetic fuckwad to justice will help your own profits.</div>], [], [<div class="col-md-11 srtr_div"><br/>
+=====[ NOTES ]==================================================================<br/>
+<br/>
+user name changed to 'xxxx'<br/>
+user site changed to 'yyyy'<br/>
+<br/>
+used https://www.iplocation.net/trace-email<br/>
+or<br/>
+https://whatismyip.live/ip-lookup<br/>
+to trace origination<br/>
+<br/>
+used https://bitcoinwhoswho.com/ to report it<br/>
+<br/>
+Note that the origination point is usually a VPN, but with the origination point<br/>
+and the time of mailing (both in the header) a law agency could (possibly<br/>
+by mapping date/time &amp; connections) trace the email back to the originator.<br/>
+<br/>
+<br/>
+=====[ REPORT ]=================================================================<br/>
+<br/>
+Type: Extortion Attempt<br/>
+Date: 20220916<br/>
+Bitcoin Account: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+Email Source IP: 190.194.17.120<br/>
+<br/>
+IP Location Info:<br/>
+<br/>
+IP Address: 190.194.17.120<br/>
+Reverse DNS: 120-17-194-190.cab.prima.net.ar<br/>
+City: Córdoba<br/>
+Region: Córdoba<br/>
+Country: Argentina (AR)<br/>
+Organization/ISP: Telecom Argentina S.A.<br/>
+Latitude/Longitude: -31.425, -64.175<br/>
+<br/>
+<br/>
+=====[ Email Header]============================================================<br/>
+<br/>
+Return-Path: <br/>
+Delivered-To: <a class="__cf_email__" data-cfemail="2a525252526a5353535304494547" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+Received: (qmail 10791 invoked from network); 16 Sep 2022 09:32:19 -0000<br/>
+Received: from unknown (HELO xsmtp22.mail2web.com) ([10.100.68.61])<br/>
+(envelope-sender )<br/>
+by xmail09.myhosting.com (qmail-ldap-1.03) with AES256-SHA encrypted SMTP<br/>
+for ; 16 Sep 2022 09:32:09 -0000<br/>
+Received: from [190.194.17.120] (helo=120-17-194-190.cab.prima.net.ar)<br/>
+by xsmtp22.mail2web.com with esmtp (Exim 4.92)<br/>
+(envelope-from )<br/>
+id 1oZ7hh-0005YO-3c<br/>
+for <a class="__cf_email__" data-cfemail="176f6f6f6f576e6e6e6e3974787a" href="/cdn-cgi/l/email-protection">[email protected]</a>; Fri, 16 Sep 2022 02:32:09 -0700<br/>
+Message-ID: <br/>
+From: <br/>
+To: <br/>
+Subject: [spam][Bitdefender extortion detection] You have outstanding<br/>
+debt.<br/>
+Date: 16 Sep 2022 02:01:11 -0400<br/>
+MIME-Version: 1.0<br/>
+Content-Type: text/plain;<br/>
+charset="iso-8859-3"<br/>
+Content-Transfer-Encoding: 8bit<br/>
+X-Priority: 3<br/>
+X-MSMail-Priority: Normal<br/>
+Importance: Normal<br/>
+X-Mailer: Microsoft Windows Live Mail 16.4.3505.912<br/>
+X-MimeOLE: Produced By Microsoft MimeOLE V16.4.3505.912<br/>
+X-Host-Lookup-Failed: Reverse DNS lookup failed for 190.194.17.120 (failed)<br/>
+X-SA-Exim-Connect-IP: 190.194.17.120<br/>
+X-SA-Exim-Mail-From: <a class="__cf_email__" data-cfemail="661e1e1e1e261f1f1f1f4805090b" href="/cdn-cgi/l/email-protection">[email protected]</a><br/>
+X-SA-Exim-Scanned: No (on xsmtp22.mail2web.com); SAEximRunCond expanded to false<br/>
+X-BitdefenderWKS-SpamStamp: Build: [Engines: 2.16.4.1445, Stamp: 3],<br/>
+Multi: [Enabled, t: (0.000004,0.009333)], BW: [Enabled, t: (0.000042),<br/>
+skipping (From == To)], RTDA: [Enabled, t: (0.084575), Hit: Yes,<br/>
+Details: v2.41.0; Id: 12.5204pj.1gd463cpr.555; mclb; categories:<br/>
+extortion(btc,fipr,fuzzy); ip(3200389496:849;);<br/>
+fipr(105r3ff3c8d13179fcd4b26d1cbcd143e082:849;);<br/>
+fz(10365d7351166ce2aeb949056c514c4fd0af:919;);<br/>
+btc(c1dbb26b68f9881640f20507003937eb:899;);<br/>
+ai(1_0_6-0374c2a5a6055e0bd444e02d1100ff1a-rtdaai.v335.3031828839-model:999;)],<br/>
+total: 999(775)<br/>
+X-BitdefenderWKS-Spam: Yes - 999<br/>
+X-BitdefenderWKS-Categories: extortion<br/>
+<br/>
+<br/>
+=====[ Message Text]============================================================<br/>
+<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events:<br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="fb83838383bb82828282d5989496" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately.<br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago!<br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+<br/>
+<br/>
+<br/>
+</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">they send a bullshit email.<br/>
+Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events:<br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (email here).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately.<br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago!<br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">phishing my email , stating that there is unauthorized access to my computer- demanding $1495 to be sent to the above address</div>], [], [<div class="col-md-11 srtr_div"></div>], [], [<div class="col-md-11 srtr_div">Blast email sent to my workplace.</div>], [], [<div class="col-md-11 srtr_div">Phishing email sent to a computer that doesn't have a webcam <br/>
+"Hello there!<br/>
+<br/>
+Unfortunately, there are some bad news for you.<br/>
+Around several months ago I have obtained access to your devices that you were using to browse internet.<br/>
+Subsequently, I have proceeded with tracking down internet activities of yours.<br/>
+<br/>
+Below, is the sequence of past events: <br/>
+In the past, I have bought access from hackers to numerous email accounts (today, that is a very straightforward task that can be done online).<br/>
+Clearly, I have effortlessly logged in to email account of yours (<a class="__cf_email__" data-cfemail="c3b5a6abaaa0afa6a7a6a5afa6a6b783b0a0acb7a4b1acb6b3eda0acae" href="/cdn-cgi/l/email-protection">[email protected]</a>).<br/>
+<br/>
+A week after that, I have managed to install Trojan virus to Operating Systems of all your devices that are used for email access.<br/>
+Actually, that was quite simple (because you were clicking the links in inbox emails).<br/>
+All smart things are quite straightforward. (^-^)<br/>
+<br/>
+The software of mine allows me to access to all controllers in your devices, such as video camera, microphone and keyboard.<br/>
+I have managed to download all your personal data, as well as web browsing history and photos to my servers.<br/>
+I can access all messengers of yours, as well as emails, social networks, contacts list and even chat history.<br/>
+My virus unceasingly refreshes its signatures (since it is driver-based), and hereby stays invisible for your antivirus.<br/>
+<br/>
+So, by now you should already understand the reason why I remained unnoticed until this very moment...<br/>
+<br/>
+While collecting your information, I have found out that you are also a huge fan of websites for adults.<br/>
+You truly enjoy checking out porn websites and watching dirty videos, while having a lot of kinky fun.<br/>
+I have recorded several kinky scenes of yours and montaged some videos, where you reach orgasms while passionately masturbating.<br/>
+<br/>
+If you still doubt my serious intentions, it only takes couple mouse clicks to share your videos with your friends, relatives and even colleagues.<br/>
+It is also not a problem for me to allow those vids for access of public as well.<br/>
+I truly believe, you would not want this to occur, understanding how special are the videos you love watching, (you are clearly aware of that) all that stuff can result in a real disaster for you.<br/>
+<br/>
+Let's resolve it like this:<br/>
+All you need is $1450 USD transfer to my account (bitcoin equivalent based on exchange rate during your transfer), and after the transaction is successful, I will proceed to delete all that kinky stuff without delay.<br/>
+Afterwards, we can pretend that we have never met before. In addition, I assure you that all the harmful software will be deleted from all your devices. Be sure, I keep my promises.<br/>
+<br/>
+That is quite a fair deal with a low price, bearing in mind that I have spent a lot of effort to go through your profile and traffic for a long period.<br/>
+If you are unaware how to buy and send bitcoins - it can be easily fixed by searching all related information online.<br/>
+<br/>
+Below is bitcoin wallet of mine: 1C2ek9b57xdVY9rPUaUnczxN5vGjVS8EhA<br/>
+<br/>
+You are given not more than 48 hours after you have opened this email (2 days to be precise).<br/>
+<br/>
+Below is the list of actions that you should not attempt doing:<br/>
+&gt; Do not attempt to reply my email (the email in your inbox was created by me together with return address).<br/>
+&gt; Do not attempt to call police or any other security services. Moreover, don't even think to share this with friends of yours. Once I find that out (make no doubt about it, I can do that effortlessly, bearing in mind that I have full control over all your systems) - the video of yours will become available to public immediately. <br/>
+&gt; Do not attempt to search for me - there is completely no point in that. All cryptocurrency transactions remain anonymous at all times.<br/>
+&gt; Do not attempt reinstalling the OS on devices of yours or get rid of them. It is meaningless too, because all your videos are already available at remote servers.<br/>
+<br/>
+Below is the list of things you don't need to be concerned about:<br/>
+&gt; That I will not receive the money you transferred.<br/>
+- Don't you worry, I can still track it, after the transaction is successfully completed, because I still monitor all your activities (trojan virus of mine includes a remote-control option, just like TeamViewer).<br/>
+&gt; That I still will make your videos available to public after your money transfer is complete.<br/>
+- Believe me, it is meaningless for me to keep on making your life complicated. If I indeed wanted to make it happen, it would happen long time ago! <br/>
+<br/>
+Everything will be carried out based on fairness!<br/>
+<br/>
+Before I forget...moving forward try not to get involved in this kind of situations anymore!<br/>
+An advice from me - regularly change all the passwords to your accounts.<br/>
+"</div>], [], [<div class="col-md-11 srtr_div"></div>]], 'numberOfAlerts': 16.0}, {'address': 'bc1q0pqrumynayuyraslauw2rv9n0aj95qvxyd48vu', 'scams': [], 'numberOfAlerts': 0}, {'address': '3JCV9pHQEV7rBpcEBc2MPtfWwJqaX7dF5C', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q78kzn7ztk5arrg3ju0ss8jf4m2rqlc4h05lrc8', 'scams': [], 'numberOfAlerts': 0}, {'address': '3CZAQb9UPZ2TFTr6ShegGr5RDfWQvm2gbx', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q5krjrwsjutwaquxmxn7d0xcq0ddt4h0hanndv6', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '3DfEnRvafAbXpbUgHrHbcY24k2Wj1XUjKg', 'scams': [], 'numberOfAlerts': 0}, {'address': '3E5Gy2J5kBZW9f7tskYYHeSshv6WskpYS3', 'scams': [], 'numberOfAlerts': 0}, {'address': '3Huwr4D1kA3HqAvViJArhJPjMoYVfS2UZk', 'scams': [], 'numberOfAlerts': 0}, {'address': '38EeooGfarEbvqKQva8w8J553eFAsgzHd9', 'scams': [], 'numberOfAlerts': 0}, {'address': '3Bn6aDJMaTMFVYtuvYB7oRK27q82MqmcTn', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qwklx4gyyv3ed6xrtupuje7zv88vhkjyx6d5v8v', 'scams': [], 'numberOfAlerts': 0}, {'address': '39ViXTkBQ9Wu147p6skRux9dE8aosap7ki', 'scams': [], 'numberOfAlerts': 0}, {'address': '3MZu7f1TzNDwZqfjrBQATXpmzxydQjdsNU', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qm59glch5w0hu9afj8l7vkrasl4tnrvqk6sgfas', 'scams': [], 'numberOfAlerts': 0}, {'address': '3B4CHu77Ke3PTJBjhDxVzVFMaeKuhZn6tm', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qynex3ut08f7gqqslqd7f246pdk5y2gy26qtzc8', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qfjk7x44qfcun3v67c4cthh8cp4t24fq89a593k', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qfegmw3nlhe6vnf6zes76ujfsvz66m3pgneyqfk', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q2uu9ptxcz2gja4rnpj20m8mk7eqhytqq65ggxl', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qd7pdl0ygwmduwmh93u9wr0ycgfkyfrv09uvfhu', 'scams': [], 'numberOfAlerts': 0}, {'address': '3QNRjjbAGyuXDrJD794mUJFfWpJdGprTV7', 'scams': [], 'numberOfAlerts': 0}, {'address': '3AfaWkuHimzpKp5hfT7zZ4ajmoS35jT8Wj', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qdnqwx9448c3xyx050u9v6n5jrylgw2gf8xetmd', 'scams': [], 'numberOfAlerts': 0}, {'address': '3PktHvniBt8pG2PfFUUU7S6Tab9XH9M4X5', 'scams': [], 'numberOfAlerts': 0}, {'address': '38iN8wAjcgu2e1Cq64LsSid6KVb3aAcDjh', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q8u4jmzcav8ulqhjp2r7mtj97wgmkejtufcd3ku', 'scams': [], 'numberOfAlerts': 0}, {'address': '3EfQ8UQsrn2Hg4WHDcPnZgPq6m13EDRR2H', 'scams': [], 'numberOfAlerts': 0}, {'address': '3HVyQ93UVkBR7LBfPfXzmskR1aSw5EhTpj', 'scams': [], 'numberOfAlerts': 0}, {'address': '3MxTABNt6VEjCRDK1MRw9X5NX5sbwsi5DJ', 'scams': [], 'numberOfAlerts': 0}, {'address': '3DGCBp4Cw4Vc12u99E6JBQyEqhu5SjG4S1', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qmv2tr72lkcxtkfxs8854uxxd9zpypukd7umkkh', 'scams': [], 'numberOfAlerts': 0}, {'address': '1HBKewEU4Kb6LCjaR21Em3WbotsSvfZREq', 'scams': [], 'numberOfAlerts': 0}, {'address': '3LG6q2qrDMXj78FxjhLfKcroenExJ42uPX', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qhmaeym6p3l8q2fsthfvyf203097pwahgtvyt07', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q8pm7nfemmevsml3p7qrflwttkfhgh0wvenlkkc', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '3B76uQhPP5SUUoVtTmBRAJC3Zufu4mkGg7', 'scams': [], 'numberOfAlerts': 0}, {'address': '3L5kVPgfaCTpgGjB8dKgG5sj4vN6kjKRwg', 'scams': [], 'numberOfAlerts': 0}, {'address': '3DY2sN5tMsvE6KMRLkzizMjMNoWaGVr3da', 'scams': [], 'numberOfAlerts': 0}, {'address': '36TckEQLm7cQBoQKjdr66j3xGZKLwKQEcx', 'scams': [], 'numberOfAlerts': 0}, {'address': '34Dcdnj837rVM7i2hj1eKfxQfQChRbxdYK', 'scams': [], 'numberOfAlerts': 0}, {'address': '3DS2pf663Cqn1CDBPVZrMj7DoauwWqdiCA', 'scams': [], 'numberOfAlerts': 0}, {'address': '15BCEbc6MidQZPgbtqUtPkKNs5GbTNCLnu', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qewzwwdzxc09y2ga8je5x72dunxg9wuj2u2ltm8', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qfapeu6hvr5p6vkp0h9gt3wtdmx0y8aqpnhqr4glhk74c3v4sk2ns62hw6y', 'scams': [], 'numberOfAlerts': 0}, {'address': '3LNkSYE9N7LwFBEbE8tS5sY2qeaxqwDfHN', 'scams': [], 'numberOfAlerts': 0}, {'address': '1HpyTtK7GK1QdHJ9MnLw6Vvg86oKqL56eX', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '3FGtrw4Qv66ZrT7rvP9VsQVHXMLqtQMJmS', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q87sfsx70dj5cc36rdfr3kntfjxazrh5qa8ue0a', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qcgkp027hdgvu83dp8sauavl07ewfll4mky3e8p', 'scams': [], 'numberOfAlerts': 0}, {'address': '33Er8CXJYyjDuR1MXKMmvZeHX4NiGAzMZT', 'scams': [], 'numberOfAlerts': 0}, {'address': '17UtAjPJWcBFzS514AmJ5NDrk4ZDubvko8', 'scams': [], 'numberOfAlerts': 0}, {'address': '39nWEZ1hb16umgaq4qkKJFLdw2wmsSunvf', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qt0l90cxeclppwf9c0h05eryl22dy6ay43dfp84', 'scams': [], 'numberOfAlerts': 0}, {'address': '3A2jKAMWQ7bSTSM9x9uMNYwZQTT3UP4nvu', 'scams': [], 'numberOfAlerts': 0}, {'address': '31s71psEQMWwDefmmH3gwQWB1vy5f25hBM', 'scams': [], 'numberOfAlerts': 0}, {'address': '3QAPWef1EWU5rW4Qnp7TgeN7t7cYcH6fgC', 'scams': [], 'numberOfAlerts': 0}, {'address': '37TxvL19NYgNsQvhfDorg6UA48YrGt2fqm', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q3mh4hgu0x7dust32j2ndhawpl4d4p354shpf2n', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '3ABUSfzw2q3a2TK1C6AkRRpmQ8ruuRC5Zb', 'scams': [], 'numberOfAlerts': 0}, {'address': '1uke6H9HFCCWuQG4ndLRFsGYyje4vH3av', 'scams': [], 'numberOfAlerts': 0}, {'address': '3CKArtY2Y2M5tj9KCUavrVHv8cPcBGsZf8', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '1QAAPGaF4fdyjuMfkmpGX4tfsqxQJXjh1W', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qxdea8daz6sfacq7etyynuzwehdwd3h77fsg4yu', 'scams': [], 'numberOfAlerts': 0}, {'address': '34g8MyLS654fEzVL5KjC6f21P18knEqyje', 'scams': [], 'numberOfAlerts': 0}, {'address': '1AQsvrDvH6n1GmpEByWpqRKwGQczLvzvbE', 'scams': [], 'numberOfAlerts': 0}, {'address': '36Ke2sJEH2NVE2btp6Qc2Y3qbxAzuKNiCF', 'scams': [], 'numberOfAlerts': 0}, {'address': '1Bjux4BZSZXbeR2Ny3ER4Z9keMbPwFY7qc', 'scams': [], 'numberOfAlerts': 0}, {'address': '3AcRCtZ7n2HNZwVyoGbUb3fNTivU8415CV', 'scams': [], 'numberOfAlerts': 0}, {'address': '3HqJeSGiuhxB2xh349g2DkQFujc3nJfAku', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qk9jfulalyp0rglj9pqcv0t8fh2svz3cr8tt9f5', 'scams': [], 'numberOfAlerts': 0}, {'address': '367rnFKhAVZopZ7yBagWZFbPwsSFgeL9kZ', 'scams': [], 'numberOfAlerts': 0}, {'address': '3KQZ6pX9L1XXi1etbud1D7vVXJW7o86ssv', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1ql7qn23v9uslnkt0462qqghcc4kn47dh773tfd2', 'scams': [], 'numberOfAlerts': 0}, {'address': '19FwnLZARxa5XKKj3pVTYNZR9Gr7vitxqV', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qepuc7fe6hy5p0eesxk8gytsuu8qh248mlvaqan', 'scams': [], 'numberOfAlerts': 0}, {'address': '19U79Crins4WKGBRnEaq2neb9HMWPHhtiW', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '1FQiR2hFfrL1bCSwsKgSL1n1gEau3eQ6qp', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qjp0l7w38vpsks4l2mu2duv8ngs730zfx4t3d8w', 'scams': [], 'numberOfAlerts': 0}, {'address': '341NCSmWS8skX2KjL1Tfz3zo1gxUeDPUKG', 'scams': [], 'numberOfAlerts': 0}, {'address': '142raawHVdgwTo12Sa8CfkEkcdgj4ep1Mh', 'scams': [], 'numberOfAlerts': 0}, {'address': '3LHxkQQJzPyQvzCcWv8vMf6kVv1U3YdVhy', 'scams': [], 'numberOfAlerts': 0}, {'address': '3GT5wgN3hfxJ8tPQhkGHN1CXQGKtkPfsQT', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qaj6swcmn0l6nunqg5xjvya7grtzmkk2ry97pmg', 'scams': [], 'numberOfAlerts': 0}, {'address': '37YYm89x7TGKPDqHJ2t7Rwk5j86dvKmBWF', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q7eyrf6tqfw3q7e9dnanq0nm2zqe3fgkrk2tgc9', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q3vs0gxrcyuw03klmn6qj70c0duhl5s0rxmxw0c', 'scams': [], 'numberOfAlerts': 0}, {'address': '1XddbD9LVvMU3n1rfWnpHCQwfPvKTB9q5', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '32iSHj7rXGsddjYnrRYGK9sZSkbdPekpZR', 'scams': [], 'numberOfAlerts': 0}, {'address': '15XNR8dECnXzrTLZtRZkABHVHbqVsxiNyA', 'scams': [], 'numberOfAlerts': 0}, {'address': '3MFuxWG4PzpCENUAjVQtBfEekE1EZ4aBVW', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qxpxh6422k89jlaxdudrhtavf9q0uu07a9x8hhplu4dak88c5dwaskyc3sl', 'scams': [], 'numberOfAlerts': 0}, None, {'address': 'bc1qqzysfmd4cfxr73s9au5hs62ty9pk82uf0tmg7l', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qlks60erfjlldpky659rlj83pxccz35zlhsrmzg', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q3kdv34unqwz7a9ehuwvcptah77eh22ayru59rkdlw4g5eeeecg0qw9tz0g', 'scams': [], 'numberOfAlerts': 0}, {'address': '34zL6VrF3V6Cb1qkJKTCNNHM71hEKaYPGG', 'scams': [], 'numberOfAlerts': 0}, {'address': '3FHRRyKusacVMD3UBxcKLhMtiw9XtNUgxv', 'scams': [], 'numberOfAlerts': 0}, {'address': '3NvcBndK7xHNTijo8y2ZiGnakYcWia3Evc', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qm7ey2r4wvgfk0v7u6aqhhh3pqpua3p0hylyaeh', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qcv78hnmszjq0ekw2gle42kuq8cq2l67mr60lacxquh77h7h9eagsl6es2n', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qvr8zum2626t6h6ftzlv5tw7hyhxua5aeh93nmw', 'scams': [], 'numberOfAlerts': 0}, {'address': '3NdZhvYYuWovihdbvvCxAvbNhn1BfrezSd', 'scams': [], 'numberOfAlerts': 0}, {'address': '32JPNvzXFPUzzxDvMYchVjNiFM5ETtmn48', 'scams': [], 'numberOfAlerts': 0}, None, {'address': 'bc1q5s9e8lyrp5jjnjt4y6wm66vs3hgmw3vva6p9yj', 'scams': [], 'numberOfAlerts': 0}, {'address': '3LkDPF1GwQ1dMfpvqi7Uop4rkVfD8oaE4y', 'scams': [], 'numberOfAlerts': 0}, None, {'address': 'bc1q3px86ylsjjt3rrxrjf6q8d630wv2z05h8egcum', 'scams': [], 'numberOfAlerts': 0}, None, {'address': '3QaVcN119V1ERqWLUyFADaQxKxSvmTg4LE', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qmp5znndqxfwlqp3apk2w6fzkztq42y74pyc7yj', 'scams': [], 'numberOfAlerts': 0}, {'address': '1EGd9HMMg86jqhTs8oXSNF3z7NGjTKNhyL', 'scams': [], 'numberOfAlerts': 0}, {'address': '39dBteHf6GXTxMAQEnE51yJwGue3uFZtGm', 'scams': [], 'numberOfAlerts': 0}, {'address': '349hX6LeDKVXfefKV3yNwaEr3FbcSuS1uU', 'scams': [], 'numberOfAlerts': 0}, {'address': '31sSrrFojaZAJCxvqorrqkMkAmQKVNZ5WX', 'scams': [], 'numberOfAlerts': 0}, {'address': '31n7iRjDmxcMaySLb9yFRCqnUGVTJZJ8bu', 'scams': [], 'numberOfAlerts': 0}, {'address': '13trkwFajLH2XXo6FQThZxzJqYoq7RAedJ', 'scams': [], 'numberOfAlerts': 0}, {'address': '3C5e5ajgMjdgiJcPN3WFFczPBkNiLQLELo', 'scams': [], 'numberOfAlerts': 0}, {'address': '3DJbfdwVzBe2uGP3jPW6i1gQtSNTQbvRHu', 'scams': [], 'numberOfAlerts': 0}, {'address': '3FSQuyaeZe7HkH4UqZSYnjafCgE6vrVYMg', 'scams': [], 'numberOfAlerts': 0}, {'address': '193MtGcCVEJhQT9qY25huo7pnTd2WJN3oz', 'scams': [], 'numberOfAlerts': 0}, {'address': '1Fj6tpDEnzjra4UJgs1hKJ7R4nZX5pAHP8', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qschqaravzyx67t5mwz4umr74s5a9lzvapfexa9', 'scams': [], 'numberOfAlerts': 0}, {'address': '1GAb2hzoccFJFNLCaoKDYuDRr7hRb5sEaK', 'scams': [], 'numberOfAlerts': 0}, {'address': '39A4yNLbGgdDrH9ixa22AbYRHL5qQH3yHw', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qg4fjnl96mskse5gqtmh5m6t4twldh6fxg06aae', 'scams': [], 'numberOfAlerts': 0}, {'address': '35uDnHrvsRBC9RPtMdDY2Sh461UqSAni21', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1q0fypp3q6zkjrh54pdmelnqsumy7hag0e7sffp2', 'scams': [], 'numberOfAlerts': 0}, {'address': '3E5hPyMnmdKEguvH2Yp5BJjiRS3L68ppgE', 'scams': [], 'numberOfAlerts': 0}, {'address': '3P7DxATi7Gq8aApPRmQYnJ5AVcJE9u5Tsb', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qf9a653ezdguxnn7vur654jw6zxpdnum5qdhjzq', 'scams': [], 'numberOfAlerts': 0}, {'address': '34RXVAAxwddhujUZxUnQi3AsS4DjH1mnnJ', 'scams': [], 'numberOfAlerts': 0}, {'address': '18sRvpw3EvTRuM2oHQ9AUKJ4PEJgPsyr5n', 'scams': [], 'numberOfAlerts': 0}, {'address': 'bc1qsexu7gtjvnkqe67yll03xjgvqly653qkhzhy8m', 'scams': [], 'numberOfAlerts': 0}], {'numberOfNeighbours': 161}, {'numberOfNeighboursWithScams': 1}, {'numberOfScamsInNeighbours': 16.0}, {'numberOfScamsInAddress': 16.0}, {'parsedAddressData': {'urls': [['https://www.iplocation.net', 'https://whatismyip.live', 'https://bitcoinwhoswho.com'], ['https://www.iplocation.net', 'https://whatismyip.live', 'https://bitcoinwhoswho.com'], ['https://www.iplocation.net', 'https://whatismyip.live', 'https://bitcoinwhoswho.com']], 'emails': [], 'ipAddresses': [['27.51.146.32', '27.51.146.32', '10.100.68.61', '27.51.146.32', '27.51.146.32', '2.16.4.144'], ['110.11.98.100'], ['41.78.7.202'], ['31.41.94.253', '31.41.94.253', '10.100.68.60', '31.41.94.253', '31.41.94.253', '31.41.94.253', '2.16.4.144'], ['190.194.17.120', '190.194.17.120', '10.100.68.61', '190.194.17.120', '190.194.17.120', '190.194.17.120', '2.16.4.144']], 'spacy_data': [{'text': 'Taipei', 'label': 'GPE'}, {'text': 'Taiwan', 'label': 'GPE'}, {'text': '14 Sep 2022', 'label': 'DATE'}, {'text': 'Wed, 14 Sep 2022', 'label': 'DATE'}, {'text': '15:06:22', 'label': 'TIME'}, {'text': '15 Sep 2022', 'label': 'DATE'}, {'text': '12:36:19', 'label': 'TIME'}, {'text': '2.16.4.1445', 'label': 'CARDINAL'}, {'text': '1450', 'label': 'MONEY'}, {'text': '1450', 'label': 'MONEY'}, {'text': 'Thu, 15 Sep 2022', 'label': 'DATE'}, {'text': '00:16:43', 'label': 'TIME'}, {'text': 'Ukraine', 'label': 'GPE'}, {'text': '15 Sep 2022', 'label': 'DATE'}, {'text': 'Thu, 15 Sep 2022', 'label': 'DATE'}, {'text': '07:08:52', 'label': 'TIME'}, {'text': '17:54:08', 'label': 'TIME'}, {'text': '1450', 'label': 'MONEY'}, {'text': 'Córdoba', 'label': 'GPE'}, {'text': 'Córdoba', 'label': 'GPE'}, {'text': 'Fri, 16 Sep 2022', 'label': 'DATE'}, {'text': '02:01:11', 'label': 'TIME'}, {'text': '2.16.4.1445', 'label': 'CARDINAL'}, {'text': '1450', 'label': 'MONEY'}, {'text': '1450', 'label': 'MONEY'}, {'text': '1495', 'label': 'MONEY'}, {'text': '1450', 'label': 'MONEY'}], 'ipData': ['27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324', '27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324', '27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324', '27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324', '2.16.4.144 : United States : New York : Akamai Technologies : 10123:40.7128:-74.006', '110.11.98.100 : South Korea : Gangbuk-gu : SK Broadband Co Ltd : 010:37.6294:127.0067', '41.78.7.202 : South Africa : Germiston : SEACOM WC : 1401:-26.2135:28.1858', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '2.16.4.144 : United States : New York : Akamai Technologies : 10123:40.7128:-74.006', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '2.16.4.144 : United States : New York : Akamai Technologies : 10123:40.7128:-74.006', '27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324']}}, {'parsedNeighbourData': [{'urls': [['https://www.iplocation.net', 'https://whatismyip.live', 'https://bitcoinwhoswho.com'], ['https://www.iplocation.net', 'https://whatismyip.live', 'https://bitcoinwhoswho.com'], ['https://www.iplocation.net', 'https://whatismyip.live', 'https://bitcoinwhoswho.com']], 'emails': [], 'ipAddresses': [['27.51.146.32', '27.51.146.32', '10.100.68.61', '27.51.146.32', '27.51.146.32', '2.16.4.144'], ['110.11.98.100'], ['41.78.7.202'], ['31.41.94.253', '31.41.94.253', '10.100.68.60', '31.41.94.253', '31.41.94.253', '31.41.94.253', '2.16.4.144'], ['190.194.17.120', '190.194.17.120', '10.100.68.61', '190.194.17.120', '190.194.17.120', '190.194.17.120', '2.16.4.144']], 'spacy_data': [{'text': 'Taipei', 'label': 'GPE'}, {'text': 'Taiwan', 'label': 'GPE'}, {'text': '14 Sep 2022', 'label': 'DATE'}, {'text': 'Wed, 14 Sep 2022', 'label': 'DATE'}, {'text': '15:06:22', 'label': 'TIME'}, {'text': '15 Sep 2022', 'label': 'DATE'}, {'text': '12:36:19', 'label': 'TIME'}, {'text': '2.16.4.1445', 'label': 'CARDINAL'}, {'text': '1450', 'label': 'MONEY'}, {'text': '1450', 'label': 'MONEY'}, {'text': 'Thu, 15 Sep 2022', 'label': 'DATE'}, {'text': '00:16:43', 'label': 'TIME'}, {'text': 'Ukraine', 'label': 'GPE'}, {'text': '15 Sep 2022', 'label': 'DATE'}, {'text': 'Thu, 15 Sep 2022', 'label': 'DATE'}, {'text': '07:08:52', 'label': 'TIME'}, {'text': '17:54:08', 'label': 'TIME'}, {'text': '1450', 'label': 'MONEY'}, {'text': 'Córdoba', 'label': 'GPE'}, {'text': 'Córdoba', 'label': 'GPE'}, {'text': '16 Sep 2022', 'label': 'DATE'}, {'text': 'Fri, 16 Sep 2022', 'label': 'DATE'}, {'text': '02:01:11', 'label': 'TIME'}, {'text': '2.16.4.1445', 'label': 'CARDINAL'}, {'text': '1450', 'label': 'MONEY'}, {'text': '1450', 'label': 'MONEY'}, {'text': '1495', 'label': 'MONEY'}, {'text': '1450', 'label': 'MONEY'}], 'ipData': ['27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324', '27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324', '27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324', '27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324', '2.16.4.144 : United States : New York : Akamai Technologies : 10123:40.7128:-74.006', '110.11.98.100 : South Korea : Gangbuk-gu : SK Broadband Co Ltd : 010:37.6294:127.0067', '41.78.7.202 : South Africa : Germiston : SEACOM WC : 1401:-26.2135:28.1858', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '31.41.94.253 : Ukraine : Dubrynychi : PP "New information systems" : 89210:48.8052:22.4892', '2.16.4.144 : United States : New York : Akamai Technologies : 10123:40.7128:-74.006', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '190.194.17.120 : Argentina : Córdoba : Telecom Argentina S.A. : 5000:-31.425:-64.175', '2.16.4.144 : United States : New York : Akamai Technologies : 10123:40.7128:-74.006', '27.51.146.32 : Taiwan : Taipei : Far EastTone Telecommunication Co., Ltd. : :25.0504:121.5324']}]}]

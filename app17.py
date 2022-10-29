@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from progressbar import Percentage, ProgressBar,Bar,ETA
 import re
 import spacy
+import csv
 
 # App to generate a report of the address
 # Step 1: Open the address HTML file
@@ -59,6 +60,7 @@ def extractNeighbours(x) :
         for address in data:
             if address['address'] == x:
                 return address['neighbours']
+            
 finalReportData = []
 def extractAddressData(x, folderName) :
     if (os.path.exists("./" + folderName + "/" + x + ".html")):
@@ -70,7 +72,6 @@ def extractAddressData(x, folderName) :
             return data
 
 
-
 def parseHTML(html) :
     pattern = re.compile(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})')
     urls = []
@@ -79,22 +80,46 @@ def parseHTML(html) :
     spacy_data = []
     
     for x in html :
-        url = re.findall('https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+', str(x))
+        x = str(x)
+        url = re.findall('https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+', x)
         if len(url) > 0 :
-            urls.appendA(url)
-        email = re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", str(x))
+            urls.append(url)
+        email = re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", x)
         if len(email) > 0 :
             emails.append(email)
         if pattern.search(x) is not None:
-            ipAddresses.append(pattern.findall(x))
+            ipAddresses.append(pattern.findall(x)[0])
         spacy_parser = nlp(x)
         for entity in spacy_parser.ents:
             spacy_data.append({'text': entity.text, 'label': entity.label_})
             
-    ipData = postProcessIPs(ipAddresses)
     return {"urls" : urls, "emails" : emails, "ipAddresses" : ipAddresses, "spacy_data" : spacy_data}
 
+def writeAddressReport(data, fileName) :
+    print("Writing Address Report")
+    print(data)
+    # with open("./finalReports"+ "/" + fileName + ".json", "w") as f:
+        # json.dump(json.loads(data), f, indent=4)
+        # for x in data :
+            # for y in x:
+                # f.write(json.dumps(y, indent=4))
+    with open(fileName + ".json","w") as f:
+        json.dump(data,f)
+    # csv_file = fileName + ".csv"
+    # headers = ['address', 'numberOfAlerts', 'neighbours', 'numberOfNeighbours', 'numberOfNeighboursWithScams', 'numberOfScamsInNeighbours', 'numberOfScamsInAddress', 'parsedAddressData', 'parsedNeighbourData']
+    # with open(csv_file, 'w', encoding='UTF8', newline='') as csvfile:
+    #     writer = csv.DictWriter(f, fieldnames=headers)
+    #     writer.writerow(headers)
+    #     for k,v in data :
+    #         writer.writerow(v)
+        # writer.writerow(data)
+        
 countOfNeighbours = 0
+
+allAddressesData = []
+
+# x = slice(1)
+
 for x in pbar(set(TargetAddresses)):
     # Per address Execution
     addressReport = []
@@ -105,28 +130,58 @@ for x in pbar(set(TargetAddresses)):
     numberOfNeighboursWithScams = 0
     numberOfScamsInNeighbours = 0
     numberOfScamsInAddress = addressData['numberOfAlerts']
+    parsedNeighbourData = []
+    parsedAddressData = parseHTML(addressData['scams'])
+    if addressData is not None:
+        addressData.pop('scams')
     for y in set(neighbours):
-        nData = extractAddressData(y, "btcabuseneighbours")
-        neighbourData.append(nData)
-        if (nData is not None and nData['numberOfAlerts'] > 0):
-            numberOfNeighboursWithScams += 1
-            numberOfScamsInNeighbours += nData['numberOfAlerts']
-    addressReport.append(addressData)
-    addressReport.append(neighbourData)
+        if y != x : 
+            nData = extractAddressData(y, "btcabuseneighbours")
+            if (nData is not None and nData['numberOfAlerts'] > 0):
+                numberOfNeighboursWithScams += 1
+                numberOfScamsInNeighbours += nData['numberOfAlerts']
+                parsedNeighbourData.append(parseHTML(nData['scams']))
+            if nData is not None :
+                nData.pop('scams')
+            neighbourData.append(nData)
+    
+    addressReport.append({"address" : addressData["address"]})
+    # if addressData.__contains__('scams') :
+        # addressReport.append(addressData["scams"])
+    addressReport.append({"numberOfAlerts" : addressData["numberOfAlerts"]})
+    # addressReport.append({"neighbours" : neighbourData})
     addressReport.append({"numberOfNeighbours" : len(set(neighbours))})
+    # addressReport.append(len(set(neighbours)))
     addressReport.append({"numberOfNeighboursWithScams" : numberOfNeighboursWithScams})
+    # addressReport.append(numberOfNeighboursWithScams)
+    # addressReport.append(numberOfScamsInNeighbours)
     addressReport.append({"numberOfScamsInNeighbours" : numberOfScamsInNeighbours})
     addressReport.append({"numberOfScamsInAddress" : numberOfScamsInAddress})
-    parsedAddressData = parseHTML(addressData['scams'])
+    # addressReport.append(numberOfScamsInAddress)
+    
+    addressReport.append({"parsedAddressData" : parsedAddressData})
+    
+    # addressReport.append(parsedAddressData)
+    
+    
+    addressReport.append({"parsedNeighbourData" : parsedNeighbourData})
+    
+    # addressReport.append(parsedNeighbourData)
+    # CSV Here instead of JSON 
+    # writeAddressReport(addressReport, x)
+    allAddressesData.append(addressReport)
+    print(addressReport)
     # Append Extra Objects such as 
     # 1. Number of Neighbours --> Done
     # 2. Number of Neighbours with Scams --> Done
     # 3. Number of Scams in Neighbours -->Done
     # 4. Number of Scams in Address --> Done
-    # 5. Parsed Data about the address
-    # 6. Parsed Data about the neighbours
-    # 7. Common Data among the neighbours and the address
-    # Write to a file
+    # 5. Parsed Data about the address --> Done
+    # 6. Parsed Data about the neighbours --> Done
+    # 7. Write to a file
+    # 8. Common Data among the neighbours and the address
     # print(addressReport)
-    
+
+writeAddressReport(allAddressesData, "allAddressesData")
+
 # print(finalReportData)
