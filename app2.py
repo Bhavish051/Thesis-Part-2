@@ -30,12 +30,12 @@ nlp = spacy.load('en_core_web_trf')
 # TARGET_FILE = "1pSw6eh5GoWtBrETzPbM36DGxc6Tes5MpTARGET_ADDRESS.json"
 # print("============NEIGHBOURS===============")
 
-# TARGET_FILE = "./btcabuseaddresses/1pSw6eh5GoWtBrETzPbM36DGxc6Tes5Mp.html"
-# print("============ADDRESS===============")
+TARGET_FILE = "./btcabuseaddresses/1Cg1X5xS6wkLqPksNcsVzm41Mf24PsrE1.html"
+print("============ADDRESS===============")
 
 
-TARGET_FILE = "1pSw6eh5GoWtBrETzPbM36DGxc6Tes5MpCSVData.txt"
-print("============BTCABUSECSVData===============")
+# TARGET_FILE = "1pSw6eh5GoWtBrETzPbM36DGxc6Tes5MpCSVData.txt"
+# print("============BTCABUSECSVData===============")
 
 with open (TARGET_FILE, "r") as f:
     string = f.readlines()

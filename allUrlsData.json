@@ -1,0 +1,223 @@
+[
+    {
+        "address": "http://legadoo.com",
+        "aRec": [
+            {
+                "address": "94.23.250.214",
+                "ttl": 164
+            }
+        ]
+    },
+    {
+        "address": "https://cmohr-konzeption.de",
+        "aRec": [
+            {
+                "address": "217.160.0.149",
+                "ttl": 164
+            }
+        ]
+    },
+    {
+        "address": "https://cmohr-konzeption.de",
+        "aRec": [
+            {
+                "address": "217.160.0.149",
+                "ttl": 19
+            }
+        ]
+    },
+    {
+        "address": "https://senderscore.org",
+        "aRec": [
+            {
+                "address": "141.193.213.21",
+                "ttl": 147
+            },
+            {
+                "address": "141.193.213.20",
+                "ttl": 147
+            }
+        ]
+    },
+    {
+        "address": "https://geminipayments.blogspot.com",
+        "aRec": [
+            {
+                "address": "142.251.16.132",
+                "ttl": 164
+            }
+        ]
+    },
+    {
+        "address": "https://forxminers.com",
+        "aRec": [
+            {
+                "address": "172.98.192.36",
+                "ttl": 146
+            }
+        ]
+    },
+    {
+        "address": "https://forxminers.com",
+        "aRec": [
+            {
+                "address": "172.98.192.36",
+                "ttl": 236
+            }
+        ]
+    },
+    {
+        "address": "https://www.cool-brain.com",
+        "aRec": [
+            {
+                "address": "107.6.169.66",
+                "ttl": 165
+            }
+        ]
+    },
+    {
+        "address": "https://github.com",
+        "aRec": [
+            {
+                "address": "140.82.113.3",
+                "ttl": 34
+            }
+        ]
+    },
+    {
+        "address": "https://alaskarocks.com",
+        "aRec": [
+            {
+                "address": "172.67.191.167",
+                "ttl": 164
+            },
+            {
+                "address": "104.21.60.51",
+                "ttl": 164
+            }
+        ]
+    },
+    {
+        "address": "https://alaskarocks.com",
+        "aRec": [
+            {
+                "address": "172.67.191.167",
+                "ttl": 163
+            },
+            {
+                "address": "104.21.60.51",
+                "ttl": 163
+            }
+        ]
+    },
+    {
+        "address": "http://weedhere.org",
+        "aRec": [
+            {
+                "address": "162.0.232.138",
+                "ttl": 164
+            }
+        ]
+    },
+    {
+        "address": "https://earnbtc.live",
+        "aRec": [
+            {
+                "address": "162.255.119.186",
+                "ttl": 300
+            }
+        ]
+    },
+    {
+        "address": "https://www.borsaint.com",
+        "aRec": [
+            {
+                "address": "3.64.163.50",
+                "ttl": 300
+            }
+        ]
+    },
+    {
+        "address": "https://www.blocktrail.com",
+        "aRec": [
+            {
+                "address": "172.67.204.125",
+                "ttl": 300
+            },
+            {
+                "address": "104.21.58.139",
+                "ttl": 300
+            }
+        ]
+    },
+    {
+        "address": "https://youtu.be",
+        "aRec": [
+            {
+                "address": "142.251.111.190",
+                "ttl": 29
+            },
+            {
+                "address": "142.251.111.93",
+                "ttl": 29
+            },
+            {
+                "address": "142.251.111.136",
+                "ttl": 29
+            },
+            {
+                "address": "142.251.111.91",
+                "ttl": 29
+            }
+        ]
+    },
+    {
+        "address": "https://mailguard.cosmichamlet.net",
+        "aRec": [
+            {
+                "address": "65.74.104.19",
+                "ttl": 210
+            }
+        ]
+    },
+    {
+        "address": "http://weedhere.org",
+        "aRec": [
+            {
+                "address": "162.0.232.138",
+                "ttl": 124
+            }
+        ]
+    },
+    {
+        "address": "https://earnbtc.live",
+        "aRec": [
+            {
+                "address": "162.255.119.186",
+                "ttl": 288
+            }
+        ]
+    },
+    {
+        "address": "https://youtu.be",
+        "aRec": [
+            {
+                "address": "172.217.0.46",
+                "ttl": 170
+            }
+        ]
+    },
+    {
+        "address": "https://www.mystore.no",
+        "aRec": [
+            {
+                "address": "199.60.103.254",
+                "ttl": 119
+            },
+            {
+                "address": "199.60.103.2",
+                "ttl": 119
+            }
+        ]
+    }
+]
