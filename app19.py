@@ -49,6 +49,7 @@ totalNumberOfNeighboursWithReports = 0
 totalNumberOfReportsPerTargetAddress = 0
 totalNumberOfReportsInNeighbours = 0
 totalNumberOfNeighboursWithReportsPerTargetAddress = 0
+allCountriesFromAddress = []
 
 averageNumberOfNeighboursPerAddress = 0
 averageNumberOfReportsPerTargetAddress = 0
@@ -56,6 +57,7 @@ averageNumberOfReportsInNeighbours = 0
 averageNumberOfNeighboursWithReportsPerTargetAddress = 0
 commonDataPerAddress = []
 numberOfAddressesWithCommonData = 0
+allCountriesFromNeighbours = []
 
 for x in data:
     address = x[0]['address']
@@ -72,8 +74,13 @@ for x in data:
         
     urlsFromAddress = extractItems(x[6]['parsedAddressData']['urls'])
     
-    locationDataFromAddress = set(extractLocationFromIps(ipAddressesFromAddress + getIpsFromUrls(urlsFromAddress)))
-    locationDataFromNeighbours = set(extractLocationFromIps(ipAddressesFromNeighbours + getIpsFromUrls(urlsFromNeighbours)))
+    locDataFromAddr = extractLocationFromIps(ipAddressesFromAddress + getIpsFromUrls(urlsFromAddress))
+    locationDataFromAddress = set(locDataFromAddr)
+    locDataFromNeigh = extractLocationFromIps(ipAddressesFromNeighbours + getIpsFromUrls(urlsFromNeighbours))
+    locationDataFromNeighbours = set(locDataFromNeigh)
+    
+    allCountriesFromAddress = allCountriesFromAddress + locDataFromAddr
+    allCountriesFromNeighbours = allCountriesFromNeighbours + locDataFromNeigh
     
     commonElements = common_member(locationDataFromAddress, locationDataFromNeighbours)
     if (commonElements) :
@@ -88,6 +95,18 @@ averageNumberOfNeighboursPerAddress = totalNumberOfNeighbours/totalNumberOfTarge
 averageNumberOfReportsInNeighbours = totalNumberOfReportsInNeighbours/totalNumberOfNeighbours 
 averageNumberOfNeighboursWithReportsPerTargetAddress = totalNumberOfNeighboursWithReports/totalNumberOfTargetAddressesWithData
 
+
+countriesSetFromAddress = set(allCountriesFromAddress)
+countriesSetFromNeighbours = set(allCountriesFromNeighbours)
+
+countriesDictFromAddress = {}
+countriesDictFromNeighbours = {}
+for x in countriesSetFromAddress :
+    countriesDictFromAddress[x] = allCountriesFromAddress.count(x)
+
+for x in countriesSetFromNeighbours :
+    countriesDictFromNeighbours[x] = allCountriesFromNeighbours.count(x)
+    
 print("totalNumberOfTargetAddresses : ", totalNumberOfTargetAddresses)
 print("totalNumberOfTargetAddressesWithData : ", totalNumberOfTargetAddressesWithData)
 print("averageNumberOfReportsPerTargetAddress : " + str(averageNumberOfReportsPerTargetAddress))
@@ -96,3 +115,11 @@ print("averageNumberOfReportsInNeighbours : " + str(averageNumberOfReportsInNeig
 print("averageNumberOfNeighboursWithReportsPerTargetAddress : " + str(averageNumberOfNeighboursWithReportsPerTargetAddress))
 print("totalNumberOfReportsInNeighbours : " + str(totalNumberOfReportsInNeighbours))
 print("numberOfAddressesWithCommonData : " + str(numberOfAddressesWithCommonData))
+
+print("allCountriesFromAddress : " )
+for w in sorted(countriesDictFromAddress, key=countriesDictFromAddress.get, reverse=True):
+    print(w, countriesDictFromAddress[w])
+    
+print("allCountriesFromNeighbours : " )
+for w in sorted(countriesDictFromNeighbours, key=countriesDictFromNeighbours.get, reverse=True):
+    print(w, countriesDictFromNeighbours[w])

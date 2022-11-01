@@ -8,9 +8,9 @@ with open("allAddressesData.json") as f:
     data = json.load(f)
     
 with open("allUrlsData.json") as f:
-    data = json.load(f)
+    d = json.load(f)
     ips = []
-    for x in data :
+    for x in d :
         for y in x['aRec']:
             ips.append(y['address'])
     print(ips)
